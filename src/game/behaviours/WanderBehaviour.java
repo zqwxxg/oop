@@ -1,4 +1,4 @@
-package game;
+package game.behaviours;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -44,7 +44,16 @@ public class WanderBehaviour extends Action implements Behaviour {
 
 	@Override
 	public String execute(Actor actor, GameMap map) {
-		return menuDescription(actor);
+		Action action = getAction(actor, map);
+		action.execute(actor, map);
+
+		// return the line by chance, to decrease unnecessary lines in display
+		if (random.nextInt(4)==0) {
+			return menuDescription(actor);
+		}
+		else {
+			return null;
+		}
 	}
 
 	@Override

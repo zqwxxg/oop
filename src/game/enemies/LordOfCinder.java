@@ -11,8 +11,8 @@ public class LordOfCinder extends Enemies {
     /**
      * Constructor.
      */
-    public LordOfCinder(String name, char displayChar, int hitPoints) {
-        super(name, displayChar, hitPoints );
+    public LordOfCinder(String name, char displayChar, int hitPoints, int soulCount) {
+        super(name, displayChar, hitPoints, soulCount);
     }
 
     /**

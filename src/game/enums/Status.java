@@ -8,4 +8,6 @@ public enum Status {
     HOSTILE_TO_ENEMY, // use this capability to be hostile towards something (e.g., to be attacked by enemy)
     REST,
     SOFT_RESET,
+    SPAWN_UNDEAD,
+    ENTER_FIRELINK_SHRINE
 }

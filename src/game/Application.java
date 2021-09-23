@@ -8,7 +8,6 @@ import edu.monash.fit2099.engine.FancyGroundFactory;
 import edu.monash.fit2099.engine.GameMap;
 import edu.monash.fit2099.engine.World;
 import game.enemies.LordOfCinder;
-import game.enemies.Undead;
 import game.grounds.*;
 
 /**
@@ -83,11 +82,11 @@ public class Application {
 				"..................................#_______#......................+++............",
 				"...C.......++.....................#___B___#.......................+.............",
 				".........+++......................#_______#........................++...........",
-				"............+++...................####_####..........................+..........",
+				"............+++...................####_####...............C..........+..........",
 				"..............+......................................................++.........",
 				"..............++.................................................++++++.........",
 				"............+++...................................................++++..........",
-				"+...................................................C..............++...........",
+				"+..................................................................++...........",
 				"++...+++.........................................................++++...........",
 				"+++......................C...............+++........................+.++........",
 				"++++.......++++.........................++.........................+....++......",
@@ -131,18 +130,13 @@ public class Application {
 
 		Player player = new Player("Unkindled (Player)", '@', 100);
 		world.addPlayer(player, gameMap.at(38, 12));
-		// save the north location of first bonfire
-		player.setLastBonfire(gameMap.at(38, 10));
+		player.setLastBonfire(gameMap.at(38, 11));
 
-		// Place Yhorm the Giant/boss in the map
-		LordOfCinder lordOfCinder = new LordOfCinder("Yhorm the Giant", 'Y', 500);
+//		 Place Yhorm the Giant/boss in the map
+		LordOfCinder lordOfCinder = new LordOfCinder("Yhorm the Giant", 'Y', 500, 5000);
 		gameMap.at(6, 25).addActor(lordOfCinder);
 		lordOfCinder.setInitialPosition(gameMap.at(6, 25));
 
-
-		// Place a Hollow in the the map
-		// FIXME: the Undead should be generated from the Cemetery
-//		gameMap.at(32, 7).addActor(new Undead("Undead"));
 		world.run();
 
 

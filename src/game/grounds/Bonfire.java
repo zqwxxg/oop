@@ -2,6 +2,7 @@ package game.grounds;
 
 import edu.monash.fit2099.engine.*;
 import game.actions.RestAction;
+import game.enums.Status;
 
 public class Bonfire extends Ground {
 
@@ -12,7 +13,9 @@ public class Bonfire extends Ground {
     @Override
     public Actions allowableActions(Actor actor, Location location, String direction) {
         Actions actions = new Actions();
-        actions.add(new RestAction(direction, "b"));
+        if (actor.hasCapability(Status.REST)) {
+            actions.add(new RestAction(direction, "b"));
+        }
         return actions;
     }
 }

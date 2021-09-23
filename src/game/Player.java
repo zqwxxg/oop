@@ -29,6 +29,9 @@ public class Player extends Actor implements Soul, Resettable {
 		super(name, displayChar, hitPoints);
 		soulCount = 0;
 		this.addCapability(Status.HOSTILE_TO_ENEMY);
+		this.addCapability(Status.REST);
+		this.addCapability(Status.SOFT_RESET);
+		this.addCapability(Status.ENTER_FIRELINK_SHRINE);
 		registerInstance();
 		inventory.add(new EstusFlask("Estus Flask", 'e', false));
 	}
@@ -84,7 +87,7 @@ public class Player extends Actor implements Soul, Resettable {
 	@Override
 	public void resetInstance(GameMap map,Status status, String direction) {
 		this.heal(super.maxHitPoints);
-		for (Item item: this.getInventory()) {
+		for (Item item: getInventory()) {
 			if (item.hasCapability(Abilities.ESTUS_FLASK)) {
 				((EstusFlask) item).resetChargeCount();
 			}
@@ -134,7 +137,7 @@ public class Player extends Actor implements Soul, Resettable {
 			case REST -> lastBonfire = location;
 			case SOFT_RESET -> {
 				Token token = Token.getInstance("Token of Souls", '$');
-				this.transferSouls(token);
+				transferSouls(token);
 				location.addItem(token);
 				if (lastToken != null) {
 					lastToken.removeItem(token);

@@ -1,8 +1,8 @@
 package game.grounds;
 
 import edu.monash.fit2099.engine.*;
-import game.Player;
 import game.actions.SoftResetAction;
+import game.enums.Status;
 
 /**
  * The gorge or endless gap that is dangerous for the Player.
@@ -17,7 +17,7 @@ public class Valley extends Ground {
 
 	@Override
 	public boolean canActorEnter(Actor actor) {
-		return actor instanceof Player;
+		return actor.hasCapability(Status.SOFT_RESET);
 	}
 
 	@Override
