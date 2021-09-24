@@ -50,6 +50,7 @@ public class ResetManager {
      * FIXME: it does nothing, you need to implement it :)
      */
     public void run(GameMap map, Status status, String direction){
+        cleanUp(map);
         for (Resettable resettable: resettableList) {
             resettable.resetInstance(map, status, direction);
         }

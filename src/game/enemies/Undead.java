@@ -2,10 +2,8 @@ package game.enemies;
 
 
 import edu.monash.fit2099.engine.*;
-import game.actions.SoftResetAction;
 import game.actions.UndeadDieAction;
 import game.behaviours.AttackBehaviour;
-import game.behaviours.FollowBehaviour;
 import game.behaviours.WanderBehaviour;
 import game.enums.Status;
 import game.interfaces.Behaviour;
@@ -16,20 +14,20 @@ import java.util.Random;
  */
 public class Undead extends Enemies {
 
-	private final Random random = new Random();
-	private static final String[] ATTACK_PROMPT = {"thwacks", "punches"};
+	private Random random = new Random();
+	private final String[] ATTACK_PROMPT = {"thwacks", "punches"};
 
 
 	/** 
 	 * Constructor.
 	 * All Undeads are represented by an 'u' and have 30 hit points.
-	 * @param name the name of this Undead
 	 */
-	public Undead(String name) {
-		super(name, 'u', 50, 50);
+	public Undead() {
+		super("Undead", 'u', 50, 50);
 		behaviours.add(new AttackBehaviour());
 		behaviours.add(new WanderBehaviour());
 		addCapability(Status.SPAWN_UNDEAD);
+		addCapability(Status.UNARMED);
 	}
 
 	/**
@@ -41,15 +39,6 @@ public class Undead extends Enemies {
 	 * @return list of actions
 	 * @see Status#HOSTILE_TO_ENEMY
 	 */
-
-//	@Override
-//	public Actions getAllowableActions(Actor otherActor, String direction, GameMap map) {
-//		Actions actions = super.getAllowableActions(otherActor, direction, map);
-//		// only add follow behaviour once
-//
-//		// it can be attacked only by the HOSTILE opponent, and this action will not attack the HOSTILE enemy back.
-//		return actions;
-//	}
 
 	/**
 	 * Figure out what to do next.
@@ -81,13 +70,7 @@ public class Undead extends Enemies {
 
 	@Override
 	public void resetInstance(GameMap map, Status status, String direction) {
-		switch (status) {
-			case REST -> {
-				behaviours.removeIf(behaviour -> behaviour instanceof FollowBehaviour);
-				followBehaviourAdded = false;
-			}
-			case SOFT_RESET -> map.removeActor(this);
-		}
+		map.removeActor(this);
 	}
 
 	@Override

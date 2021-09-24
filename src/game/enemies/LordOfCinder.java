@@ -1,6 +1,7 @@
 package game.enemies;
 
 import edu.monash.fit2099.engine.*;
+import game.enums.Status;
 
 /**
  * The boss of Design o' Souls
@@ -25,5 +26,9 @@ public class LordOfCinder extends Enemies {
     @Override
     public Action playTurn(Actions actions, Action lastAction, GameMap map, Display display) {
         return new DoNothingAction();
+    }
+
+    @Override
+    public void resetInstance(GameMap map, Status status, String direction) {
     }
 }

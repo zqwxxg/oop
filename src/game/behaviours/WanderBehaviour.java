@@ -44,16 +44,7 @@ public class WanderBehaviour extends Action implements Behaviour {
 
 	@Override
 	public String execute(Actor actor, GameMap map) {
-		Action action = getAction(actor, map);
-		action.execute(actor, map);
-
-		// return the line by chance, to decrease unnecessary lines in display
-		if (random.nextInt(4)==0) {
-			return menuDescription(actor);
-		}
-		else {
-			return null;
-		}
+		return menuDescription(actor);
 	}
 
 	@Override

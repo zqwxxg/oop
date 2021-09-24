@@ -1,8 +1,12 @@
-package game;
+package game.weapons;
 
+import edu.monash.fit2099.engine.Actor;
+import edu.monash.fit2099.engine.DropItemAction;
 import edu.monash.fit2099.engine.WeaponItem;
 
 public class MeleeWeapon extends WeaponItem {
+
+    protected int price;
     /**
      * Constructor.
      *
@@ -12,9 +16,17 @@ public class MeleeWeapon extends WeaponItem {
      * @param verb        verb to use for this weapon, e.g. "hits", "zaps"
      * @param hitRate     the probability/chance to hit the target.
      */
-    public MeleeWeapon(String name, char displayChar, int damage, String verb, int hitRate) {
+    public MeleeWeapon(String name, char displayChar, int damage, String verb, int hitRate, int price) {
         super(name, displayChar, damage, verb, hitRate);
+        this.price = price;
     }
 
     //TODO: please figure out how to disable dropping item action.
+
+    public int getPrice(){return price;}
+
+    @Override
+    public DropItemAction getDropAction(Actor actor) {
+        return null;
+    }
 }

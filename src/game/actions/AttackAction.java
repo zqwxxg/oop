@@ -1,6 +1,5 @@
 package game.actions;
 
-import java.nio.file.StandardCopyOption;
 import java.util.Random;
 
 import edu.monash.fit2099.engine.Action;
@@ -70,24 +69,24 @@ public class AttackAction extends Action {
 				result += System.lineSeparator() + resetAction.execute(actor, map);
 			}
 			else {
-				((Enemies) target).transferSouls((Player)actor);
-				map.removeActor(target);
-				result += System.lineSeparator() + target + " is killed.";
+				((Enemies) target).resetInstance(map, Status.ENEMIES_KILLED, null);
+				if (map.contains(target)) {
+					result += System.lineSeparator() + target + " is revived.";
+				} else {
+					((Enemies) target).transferSouls((Player)actor);
+					result += System.lineSeparator() + target + " is killed.";
+				}
 			}
 		}
 		return result;
 	}
 
-	@Override
 	public String menuDescription(Actor actor) {
+		// only returns menu description when player attacks enemies
 		String result = actor + " attacks " + target;
-		if (target instanceof Player) {
-			Player otherActor = (Player) target;
-			result += " (" + otherActor.getHitPoints() + "/" + otherActor.getMaxHitPoints() + ")";
-		}
-		else if (target instanceof Enemies){
-			Enemies otherActor = (Enemies) target;
-			result += " (" + otherActor.getHitPoints() + "/" + otherActor.getMaxHitPoints() + ")";
+		result += " (" + ((Enemies)target).getHitPoints() + "/" + ((Enemies)target).getMaxHitPoints() + ")";
+		if (!target.hasCapability(Status.UNARMED)) {
+			result += " holding " + target.getWeapon();
 		}
 		result += " at " + direction;
 		return result;

@@ -10,7 +10,7 @@ import java.util.Random;
 
 public class Cemetery extends Ground {
 
-    private final Random random = new Random();
+    private Random random = new Random();
 
     public Cemetery() {
         super('C');
@@ -30,7 +30,7 @@ public class Cemetery extends Ground {
 
         // if the test passed and there is no undead spawned earlier occupying this place, then spawn undead
         if (pass && !location.containsAnActor()) {
-            location.addActor(new Undead("Undead"));
+            location.addActor(new Undead());
         }
     }
 }

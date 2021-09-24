@@ -59,12 +59,6 @@ public abstract class Enemies extends Actor implements Soul, Resettable{
         return actions;
     }
 
-    @Override
-    public void resetInstance(GameMap map, Status status, String direction) {
-        map.moveActor(this, initialPosition);
-        heal(super.maxHitPoints);
-        behaviours.removeIf(behaviour -> behaviour instanceof FollowBehaviour);
-    }
 
     @Override
     public boolean isExist(GameMap map) {
@@ -87,17 +81,5 @@ public abstract class Enemies extends Actor implements Soul, Resettable{
             return false;
         }
     }
-
-    @Override
-    public boolean subtractSouls(int souls) {
-        if (souls >= 0) {
-            soulCount -= souls;
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
-
 
 }

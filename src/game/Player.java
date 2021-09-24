@@ -7,6 +7,8 @@ import game.interfaces.Resettable;
 import game.interfaces.Soul;
 import game.items.EstusFlask;
 import game.items.Token;
+import game.weapons.Broadsword;
+import game.weapons.GiantAxe;
 
 /**
  * Class representing the Player.
@@ -34,6 +36,7 @@ public class Player extends Actor implements Soul, Resettable {
 		this.addCapability(Status.ENTER_FIRELINK_SHRINE);
 		registerInstance();
 		inventory.add(new EstusFlask("Estus Flask", 'e', false));
+		inventory.add(new Broadsword());
 	}
 
 	public void setLastBonfire(Location lastBonfire) {
@@ -49,7 +52,7 @@ public class Player extends Actor implements Soul, Resettable {
 		if (lastAction.getNextAction() != null)
 			return lastAction.getNextAction();
 
-		display.println("Unkindled (" + hitPoints + "/" + maxHitPoints + "), " + soulCount + " souls");
+		display.println("Unkindled (" + hitPoints + "/" + maxHitPoints + "), holding " + getWeapon() + ", " + soulCount + " souls");
 		actions.add(new drinkEstusFlaskAction());
 		// return/print the console menu
 		return menu.showMenu(this, actions, display);
@@ -75,18 +78,19 @@ public class Player extends Actor implements Soul, Resettable {
 
 	@Override
 	public boolean subtractSouls(int souls) {
-		if (souls >= 0) {
+		if (soulCount >= souls) {
 			soulCount -= souls;
 			return true;
 		}
 		else {
 			return false;
 		}
+
 	}
 
 	@Override
 	public void resetInstance(GameMap map,Status status, String direction) {
-		this.heal(super.maxHitPoints);
+		hitPoints = maxHitPoints;
 		for (Item item: getInventory()) {
 			if (item.hasCapability(Abilities.ESTUS_FLASK)) {
 				((EstusFlask) item).resetChargeCount();
