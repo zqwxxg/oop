@@ -1,23 +1,24 @@
 package game;
 
 import edu.monash.fit2099.engine.*;
+import game.actions.BuyBroadswordAction;
+import game.actions.BuyGiantAxeAction;
 
-import java.util.ArrayList;
+public class Vendor extends Actor {
 
-public class Vendor {
-    private ArrayList<WeaponItem> weaponsForSale = new ArrayList<>();
-    private static final String VENDOR_NAME = "Fire Keeper";
-
-    public void addWeaponsForSale(){
-        weaponsForSale.add(new Broadsword());
-        weaponsForSale.add(new GiantAxe());
+    public Vendor(){
+        super("Fire Keeper", 'F', 0);
     }
 
-    public String buyWeapon(Actor actor, GameMap map, WeaponItem weapon){
-        if(weaponsForSale.contains(weapon)){
-            BuyWeaponAction buyWeaponAction = new BuyWeaponAction(weapon);
-            return buyWeaponAction.execute(actor, map);
-        }
-        return "We do not sell this weapon.";
+    @Override
+    public Actions getAllowableActions(Actor otherActor, String direction, GameMap map) {
+        Actions actions = super.getAllowableActions(otherActor, direction, map);
+        actions.add(new BuyBroadswordAction());
+        actions.add(new BuyGiantAxeAction());
+        return actions;
     }
+
+    @Override
+    public Action playTurn(Actions actions, Action lastAction, GameMap map, Display display) {return new DoNothingAction();}
+
 }

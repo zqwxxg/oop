@@ -8,6 +8,12 @@ import edu.monash.fit2099.engine.Display;
 import edu.monash.fit2099.engine.FancyGroundFactory;
 import edu.monash.fit2099.engine.GameMap;
 import edu.monash.fit2099.engine.World;
+import game.enemies.LordOfCinder;
+import game.enemies.Undead;
+import game.grounds.Dirt;
+import game.grounds.Floor;
+import game.grounds.Valley;
+import game.grounds.Wall;
 
 /**
  * The main class for the Jurassic World game.
@@ -60,7 +66,9 @@ public class Application {
 			// Place a Hollow in the the map
 			// FIXME: the Undead should be generated from the Cemetery
 			gameMap.at(32, 7).addActor(new Undead("Undead"));
-			world.run();
 
+			gameMap.at(37,11).addActor(new Vendor());
+
+			world.run();
 	}
 }

@@ -1,7 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd94943e-3b68-472f-8520-29ba19a407bd" name="Default Changelist" comment="" />
+    <list default="true" id="adc69f7b-19aa-4769-9437-b9de151b660f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/game/actions/BuyBroadswordAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/game/weapons/activeActions/WindSlash.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/edu/monash/fit2099/demo/mars/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/edu/monash/fit2099/demo/mars/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/AttackAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/Broadsword.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/BroadswordNormalAttack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/Charge.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/Dirt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/Floor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/FollowBehaviour.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/GameWeaponItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/LordOfCinder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/MeleeWeapon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/PortableItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/ResetManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/ResetManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/StormRuler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/StormRulerNormalAttack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/SwapWeaponAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/Sword.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/Undead.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/Valley.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/Wall.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/WanderBehaviour.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/WindSlash.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/enums/Abilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/enums/Abilities.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/enums/Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/enums/Status.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/interfaces/Resettable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/interfaces/Resettable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/monash/fit2099/demo/mars/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/monash/fit2099/demo/mars/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/AttackAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/AttackAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Axe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/Axe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Broadsword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/Broadsword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/BroadswordNormalAttack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/BuyWeaponAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Charge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/activeActions/Charge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Dirt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/grounds/Dirt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Floor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/grounds/Floor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/FollowBehaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/behaviours/FollowBehaviour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/GameWeaponItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/items/GameWeaponItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/GiantAxe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/GiantAxe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/LordOfCinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enemies/LordOfCinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/MeleeWeapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/MeleeWeapon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/PortableItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/items/PortableItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/ResetManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/ResetManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/StormRuler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/StormRuler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/StormRulerNormalAttack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/SwapWeaponAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/SwapWeaponAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Sword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/Sword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Undead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enemies/Undead.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Valley.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/grounds/Valley.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Vendor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Vendor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/grounds/Wall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/WanderBehaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/behaviours/WanderBehaviour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/WindSlash.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/enums/Abilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enums/Abilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/enums/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enums/Status.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/interfaces/Resettable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/interfaces/Resettable.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,15 +94,19 @@
       </list>
     </option>
   </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="Ziqi" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1xsldxudAB5FADPaHeia2zuKpzQ" />
+  <component name="ProjectId" id="1yYI4XQSlW3KMBkNNqU04iZeMfR" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="OverrideImplement.combined" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -32,7 +116,7 @@
       <module name="project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="game.*" />
+          <option name="PATTERN" value="game.items.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -49,42 +133,92 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bd94943e-3b68-472f-8520-29ba19a407bd" name="Default Changelist" comment="" />
-      <created>1631151771428</created>
+      <changelist id="adc69f7b-19aa-4769-9437-b9de151b660f" name="Default Changelist" comment="" />
+      <created>1632421905704</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1631151771428</updated>
+      <updated>1632421905704</updated>
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="779" y="38" key="#com.intellij.ide.util.MemberChooser" timestamp="1632414802640">
+    <state x="446" y="47" key="#com.intellij.ide.util.MemberChooser" timestamp="1632503636191">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="779" y="38" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1632414802640" />
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1631151805219">
+    <state x="446" y="47" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1632503636191" />
+    <state x="424" y="235" width="432" height="216" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1632493931002">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1631151805219" />
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1632403639819">
+    <state x="424" y="235" width="432" height="216" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1632493931002" />
+    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1632500782069">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1632403639819" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1632403639819">
+    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1632500782069" />
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1632421928505">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1632403639819" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1632403639818">
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1632421928505" />
+    <state width="1237" height="505" key="GridCell.Tab.0.bottom" timestamp="1632505400845">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1632403639818" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1632403639819">
+    <state width="1237" height="505" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1632505400845" />
+    <state width="1237" height="505" key="GridCell.Tab.0.center" timestamp="1632505400845">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1632403639819" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1632331433643">
+    <state width="1237" height="505" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1632505400845" />
+    <state width="1237" height="505" key="GridCell.Tab.0.left" timestamp="1632505400845">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1632331433643" />
+    <state width="1237" height="505" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1632505400845" />
+    <state width="1237" height="505" key="GridCell.Tab.0.right" timestamp="1632505400845">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="505" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1632505400845" />
+    <state width="1237" height="269" key="GridCell.Tab.1.bottom" timestamp="1632498653919">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="269" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1632498653919" />
+    <state width="1237" height="269" key="GridCell.Tab.1.center" timestamp="1632498653919">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="269" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1632498653919" />
+    <state width="1237" height="269" key="GridCell.Tab.1.left" timestamp="1632498653919">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="269" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1632498653919" />
+    <state width="1237" height="269" key="GridCell.Tab.1.right" timestamp="1632498653919">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="269" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1632498653919" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1632425072340">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1632425072340" />
+    <state x="189" y="52" width="902" height="628" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1632497473175">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="189" y="52" width="902" height="628" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1280.680@0.0.1280.680" timestamp="1632497473175" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
