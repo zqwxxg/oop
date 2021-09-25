@@ -10,7 +10,9 @@ import edu.monash.fit2099.engine.Item;
 import edu.monash.fit2099.engine.Weapon;
 import game.Player;
 import game.enemies.Enemies;
+import game.enemies.YhormTheGiant;
 import game.enums.Status;
+import game.weapons.YhormsGreatMachete;
 
 /**
  * Special Action for attacking other Actors.
@@ -50,6 +52,9 @@ public class AttackAction extends Action {
 		if (!(rand.nextInt(100) <= weapon.chanceToHit())) {
 			return actor + " misses " + target + ".";
 		}
+		if (actor.getClass() == new YhormTheGiant().getClass() && ((YhormTheGiant)actor).isEnraged()){
+			((YhormTheGiant)actor).getWeapon().getActiveSkill(target, direction).execute(actor, map);
+		}
 
 		int damage = weapon.damage();
 		String result = actor + " " + weapon.verb() + " " + target + " for " + damage + " damage.";
@@ -67,6 +72,11 @@ public class AttackAction extends Action {
 				// if player is killed by enemies, no need to modify new location of token
 				Action resetAction = new SoftResetAction(null);
 				result += System.lineSeparator() + resetAction.execute(actor, map);
+			}
+			else if (target.getClass() == new YhormTheGiant().getClass()){
+				((YhormTheGiant) target).killed(map);
+				result += System.lineSeparator() + target + " HAS FALLEN.";
+				((Enemies) target).transferSouls((Player)actor);
 			}
 			else {
 				((Enemies) target).resetInstance(map, Status.ENEMIES_KILLED, null);
