@@ -29,4 +29,16 @@ public class StormRuler extends Sword{
         this.hitRate = 100;
     }
 
+    public void addWindSlash(){
+        if(charge.getIsFullyCharge()){
+            allowableActions.remove(charge);
+            allowableActions.add(windSlash);}
+            charge = new Charge(this);
+    }
+
+    public void addCharge(){
+        allowableActions.remove(windSlash);
+        allowableActions.add(charge);
+        windSlash = new WindSlash(this);}
+
 }

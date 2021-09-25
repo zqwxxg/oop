@@ -10,6 +10,7 @@ import game.weapons.YhormsGreatMachete;
 import game.weapons.activeActions.BurnGround;
 
 public class YhormTheGiant extends LordOfCinder{
+    private boolean isStunned;
     /**
      * Constructor.
      *
@@ -20,8 +21,16 @@ public class YhormTheGiant extends LordOfCinder{
         behaviours.add(new AttackBehaviour());
     }
 
+    public void setIsStunned(){
+        isStunned = true;
+    }
+
     @Override
     public Action playTurn(Actions actions, Action lastAction, GameMap map, Display display) {
+        if(isStunned){
+            isStunned = false;
+            return new DoNothingAction();
+        }
         for (Behaviour behaviour : behaviours) {
             Weapon weapon = this.getWeapon();
             Action action = behaviour.getAction(this, map);

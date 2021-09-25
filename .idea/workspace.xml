@@ -21,19 +21,19 @@
   <component name="ChangeListManager">
     <list default="true" id="adc69f7b-19aa-4769-9437-b9de151b660f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/Player$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Player$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/Player$drinkEstusFlaskAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Player$drinkEstusFlaskAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Player.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project/game/actions/AttackAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/actions/AttackAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/actions/BuyBroadswordAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/actions/BuyBroadswordAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/actions/BuyGiantAxeAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/actions/BuyGiantAxeAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/enemies/Skeleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/enemies/Skeleton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/enemies/Undead.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/enemies/Undead.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/enums/Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/enums/Status.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/enemies/YhormTheGiant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/enemies/YhormTheGiant.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/StormRuler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/StormRuler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/actions/AttackAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/AttackAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/enemies/Skeleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enemies/Skeleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/enemies/Undead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enemies/Undead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/enums/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enums/Status.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/activeActions/Charge.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/activeActions/Charge.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/activeActions/WindSlash.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/activeActions/WindSlash.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/enemies/YhormTheGiant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enemies/YhormTheGiant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/weapons/StormRuler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/StormRuler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/weapons/activeActions/Charge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/activeActions/Charge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/weapons/activeActions/WindSlash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/activeActions/WindSlash.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632571458408</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added StormRuler passive action (Dullness)">
+      <created>1632573050557</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1632573050557</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -150,7 +157,8 @@
     <MESSAGE value="vendor and broadsword done" />
     <MESSAGE value="modified storm ruler" />
     <MESSAGE value="vendor increase max HP added" />
-    <option name="LAST_COMMIT_MESSAGE" value="vendor increase max HP added" />
+    <MESSAGE value="added StormRuler passive action (Dullness)" />
+    <option name="LAST_COMMIT_MESSAGE" value="added StormRuler passive action (Dullness)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="501" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1632568702613">
@@ -169,22 +177,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1632421928505" />
-    <state width="1237" height="485" key="GridCell.Tab.0.bottom" timestamp="1632572920872">
+    <state width="1237" height="499" key="GridCell.Tab.0.bottom" timestamp="1632579945255">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="485" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1632572920872" />
-    <state width="1237" height="485" key="GridCell.Tab.0.center" timestamp="1632572920872">
+    <state width="1237" height="499" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1632579945255" />
+    <state width="1237" height="499" key="GridCell.Tab.0.center" timestamp="1632579945255">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="485" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1632572920872" />
-    <state width="1237" height="485" key="GridCell.Tab.0.left" timestamp="1632572920872">
+    <state width="1237" height="499" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1632579945255" />
+    <state width="1237" height="499" key="GridCell.Tab.0.left" timestamp="1632579945254">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="485" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1632572920872" />
-    <state width="1237" height="485" key="GridCell.Tab.0.right" timestamp="1632572920872">
+    <state width="1237" height="499" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1632579945254" />
+    <state width="1237" height="499" key="GridCell.Tab.0.right" timestamp="1632579945255">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="485" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1632572920872" />
+    <state width="1237" height="499" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1632579945255" />
     <state width="1237" height="463" key="GridCell.Tab.1.bottom" timestamp="1632565879198">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -201,10 +209,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1237" height="463" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1632565879198" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1632571529297">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1632573064287">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1632571529297" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1632573064287" />
     <state x="189" y="52" width="902" height="628" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1632497473175">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

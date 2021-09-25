@@ -22,17 +22,21 @@ public class Charge extends WeaponAction {
     public String execute(Actor actor, GameMap map) {
         menuDescription(actor);
         String ret = "";
-        if(currentCharge < Charge.MAX_CHARGE){
+        if(currentCharge==2){
+            currentCharge++;
+            isFullyCharge = true;
+            ((StormRuler)weapon).addWindSlash();
+            ret += "Storm Ruler is fully charged ("+ currentCharge + "/3)";
+        }else if(currentCharge < Charge.MAX_CHARGE){
             currentCharge++;
             ret += "Storm Ruler is charging (" + currentCharge + "/3)";
         }else if(currentCharge == Charge.MAX_CHARGE){
             ret += "Storm Ruler is fully charged ("+ currentCharge + "/3)";
-            isFullyCharge = true;
         }
         return ret;
     }
 
     public String menuDescription(Actor actor) {
-        return "Charge Storm Ruler";
+        return actor + " charges " + weapon.toString();
     }
 }
