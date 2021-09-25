@@ -1,17 +1,32 @@
 package game.grounds;
 
-import edu.monash.fit2099.engine.Actor;
-import edu.monash.fit2099.engine.Ground;
-import edu.monash.fit2099.engine.Location;
+import edu.monash.fit2099.engine.*;
 import game.enemies.Undead;
 import game.enums.Status;
 
 import java.util.Random;
 
+/**
+ * Class representing a cemetery
+ *
+ * @see edu.monash.fit2099.engine
+ * @see Undead
+ * @see Status
+ * @see Random
+ */
+
 public class Cemetery extends Ground {
 
+    /**
+     * A random number generator
+     */
     private Random random = new Random();
 
+    /**
+     * Constructor
+     *
+     * All cemeteries are displayed as 'C'
+     */
     public Cemetery() {
         super('C');
     }

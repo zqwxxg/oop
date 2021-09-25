@@ -6,7 +6,9 @@ import edu.monash.fit2099.engine.GameMap;
 import game.ResetManager;
 import game.enums.Status;
 
-
+/**
+ *
+ */
 public class RestAction extends Action {
 
     protected String direction;

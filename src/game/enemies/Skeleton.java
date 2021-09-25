@@ -1,7 +1,6 @@
 package game.enemies;
 
 import edu.monash.fit2099.engine.*;
-import game.Player;
 import game.behaviours.AttackBehaviour;
 import game.behaviours.FollowBehaviour;
 import game.behaviours.WanderBehaviour;
@@ -12,13 +11,39 @@ import game.weapons.GiantAxe;
 
 import java.util.Random;
 
+/**
+ * Class representing a skeleton
+ *
+ * @see edu.monash.fit2099.engine
+ * @see WanderBehaviour
+ * @see AttackBehaviour
+ * @see FollowBehaviour
+ * @see WanderBehaviour
+ * @see Broadsword
+ * @see GiantAxe
+ * @see Status
+ */
+
 public class Skeleton extends Enemies {
 
+    /**
+     * A random number generator
+     */
     private Random random = new Random();
+
+    /**
+     * The state that keeps track if skeleton is resurrectable
+     */
     private boolean canRevive = true;
 
+    /**
+     * Constructor
+     *
+     * All Skeletons are represented by an 'S' and have 100 hit points, 250 souls.
+     */
     public Skeleton() {
         super("Skeleton", 'S', 100, 250);
+        // skeleton can hold either broadsword or giant axe
         WeaponItem[] weaponList = {new Broadsword(), new GiantAxe()};
         inventory.add(weaponList[random.nextInt(weaponList.length)]);
         behaviours.add(new AttackBehaviour());
@@ -44,19 +69,22 @@ public class Skeleton extends Enemies {
 
     @Override
     public void resetInstance(GameMap map, Status status, String direction) {
+        // if skeleton is killed by player, it has 50% success rate to resurrect itself
         if (status == Status.ENEMIES_KILLED) {
             if (random.nextInt(2) == 0 && canRevive) {
                 hitPoints = maxHitPoints;
+                // can only revive once
                 canRevive = false;
             } else {
                 map.removeActor(this);
             }
+            // else skeleton is resetted if player rests or dies
         } else {
             hitPoints = maxHitPoints;
             map.moveActor(this, initialPosition);
+            // remove follow behaviour from behaviours list
             behaviours.removeIf(behaviour -> behaviour instanceof FollowBehaviour);
             followBehaviourAdded = false;
         }
     }
-
 }

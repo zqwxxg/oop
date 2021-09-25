@@ -66,8 +66,7 @@ public class AttackAction extends Action {
 				dropActions.add(item.getDropAction(actor));
 			for (Action drop : dropActions)
 				drop.execute(target, map);
-			// remove actor
-			//TODO: In A1 scenario, you must not remove a Player from the game yet. What to do, then?
+			// if the dead target can trigger soft reset, means the target is player
 			if (target.hasCapability(Status.SOFT_RESET)) {
 				// if player is killed by enemies, no need to modify new location of token
 				Action resetAction = new SoftResetAction(null);
@@ -80,6 +79,7 @@ public class AttackAction extends Action {
 			}
 			else {
 				((Enemies) target).resetInstance(map, Status.ENEMIES_KILLED, null);
+				// checks if the dead target is revived
 				if (map.contains(target)) {
 					result += System.lineSeparator() + target + " is revived.";
 				} else {
@@ -95,6 +95,7 @@ public class AttackAction extends Action {
 		// only returns menu description when player attacks enemies
 		String result = actor + " attacks " + target;
 		result += " (" + ((Enemies)target).getHitPoints() + "/" + ((Enemies)target).getMaxHitPoints() + ")";
+		// if the enemy is unarmed, no need to display its weapon
 		if (!target.hasCapability(Status.UNARMED)) {
 			result += " holding " + target.getWeapon();
 		}

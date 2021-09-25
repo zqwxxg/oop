@@ -13,6 +13,7 @@ import java.util.List;
 
 /**
  * Class representing the Player.
+ *
  * @see edu.monash.fit2099.engine
  * @see Abilities
  * @see Status
@@ -21,6 +22,7 @@ import java.util.List;
  * @see EstusFlask
  * @see Token
  * @see Broadsword
+ * @see List
  */
 public class Player extends Actor implements Soul, Resettable {
 
@@ -57,7 +59,7 @@ public class Player extends Actor implements Soul, Resettable {
 		this.addCapability(Status.HOSTILE_TO_ENEMY);
 		this.addCapability(Status.REST);
 		this.addCapability(Status.SOFT_RESET);
-		this.addCapability(Status.ENTER_FIRELINK_SHRINE);
+		this.addCapability(Status.ENTER_FLOOR);
 		registerInstance();
 		inventory.add(new EstusFlask("Estus Flask", 'e', false));
 		inventory.add(new Broadsword());
