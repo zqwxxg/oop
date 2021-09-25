@@ -53,6 +53,7 @@ public class AttackAction extends Action {
 			return actor + " misses " + target + ".";
 		}
 		if (actor.getClass() == new YhormTheGiant().getClass() && ((YhormTheGiant)actor).isEnraged()){
+			System.out.println("TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST");
 			((YhormTheGiant)actor).getWeapon().getActiveSkill(target, direction).execute(actor, map);
 		}
 
