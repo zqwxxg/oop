@@ -39,7 +39,7 @@ public class Player extends Actor implements Soul, Resettable {
 		this.addCapability(Status.ENTER_FIRELINK_SHRINE);
 		registerInstance();
 		inventory.add(new EstusFlask("Estus Flask", 'e', false));
-		inventory.add(new StormRuler());
+		inventory.add(new Broadsword());
 	}
 
 	public void setLastBonfire(Location lastBonfire) {
