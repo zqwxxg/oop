@@ -7,6 +7,11 @@ import game.weapons.Broadsword;
 
 import java.util.List;
 
+/**
+ * class to buy Broadsword
+ *
+ * @see edu.monash.fit2099.engine.Action
+ */
 public class BuyBroadswordAction extends Action {
     private MeleeWeapon weapon = new Broadsword();
 

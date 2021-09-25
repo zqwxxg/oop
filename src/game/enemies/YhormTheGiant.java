@@ -10,10 +10,15 @@ import game.weapons.YhormsGreatMachete;
 import game.weapons.activeActions.BurnGround;
 
 public class YhormTheGiant extends LordOfCinder{
-    private boolean isStunned;
     /**
-     * Constructor.
+     * return true if Yhorm is stunned (when performing Wind Slash Action)
+     */
+    private boolean isStunned;
+
+    /**
+     * Constructor for YhormTheGiant class
      *
+     * All Yhorm the Giant are represented by an 'Y' and have 500 hit points, 5000 souls.
      */
     public YhormTheGiant() {
         super("Yhorm the Giant", 'y', 500, 5000);
@@ -21,6 +26,9 @@ public class YhormTheGiant extends LordOfCinder{
         behaviours.add(new AttackBehaviour());
     }
 
+    /**
+     * setter for isStunned attribute
+     */
     public void setIsStunned(){
         isStunned = true;
     }
@@ -28,8 +36,8 @@ public class YhormTheGiant extends LordOfCinder{
     @Override
     public Action playTurn(Actions actions, Action lastAction, GameMap map, Display display) {
         if(isStunned){
-            isStunned = false;
-            return new DoNothingAction();
+            isStunned = false; //set isStunned to false so Yhorm is back to normal and can perform other actions
+            return new DoNothingAction(); //do nothing when Yhorm is stunned
         }
         for (Behaviour behaviour : behaviours) {
             Weapon weapon = this.getWeapon();
@@ -44,6 +52,9 @@ public class YhormTheGiant extends LordOfCinder{
         return new DoNothingAction();
     }
 
+    /**
+     * @return true if Yhorm is in ember form
+     */
     public boolean isEnraged() {
         return getHitPoints() < (getMaxHitPoints()/2);
     }

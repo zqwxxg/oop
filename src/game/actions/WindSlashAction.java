@@ -6,8 +6,16 @@ import game.enemies.Enemies;
 import game.enums.Status;
 import game.weapons.StormRuler;
 
+/**
+ * class to perform Wind Slash Action
+ *
+ * @see game.actions.AttackAction
+ */
 public class WindSlashAction extends AttackAction{
 
+    /**
+     * the verb when performing Wind Slash
+     */
     private String verb = "stuns";
 
     /**
@@ -26,7 +34,7 @@ public class WindSlashAction extends AttackAction{
         Weapon weapon = actor.getWeapon();
         int damage = weapon.damage();
 
-        String result = actor + verb + " and " + actor.getWeapon().verb() + target + " for " + damage + " damage.";
+        String result = actor + " " + verb + " and " + actor.getWeapon().verb() + " " + target + " for " + damage + " damage.";
         target.hurt(damage);
         if (!target.isConscious()) {
             Actions dropActions = new Actions();

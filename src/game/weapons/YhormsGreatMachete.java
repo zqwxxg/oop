@@ -8,12 +8,19 @@ import game.enemies.YhormTheGiant;
 import game.weapons.activeActions.BurnGround;
 import game.weapons.activeActions.SpinAttack;
 
+/**
+ * Yhorm's Great Machete class
+ *
+ * @see edu.monash.fit2099.engine.WeaponItem
+ * @see game.weapons.Axe
+ */
 public class YhormsGreatMachete extends MeleeWeapon{
 
     boolean emberFormBool;
     /**
-     * Constructor.
+     * Constructor for Yhorm's Great Machete class
      *
+     * All Yhorm's Great Machete are represented by '(', can cause 95 damage, has 60 hit rate 
      */
     public YhormsGreatMachete() {
         super("yhorm's_Great_Machete", '(', 95, "slashes", 60, -1);

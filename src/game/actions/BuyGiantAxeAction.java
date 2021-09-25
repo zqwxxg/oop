@@ -7,6 +7,11 @@ import game.weapons.GiantAxe;
 
 import java.util.List;
 
+/**
+ * class to buy Giant Axe
+ *
+ * @see edu.monash.fit2099.engine.Action
+ */
 public class BuyGiantAxeAction extends Action {
     private MeleeWeapon weapon = new GiantAxe();
 

@@ -7,8 +7,17 @@ import game.enemies.YhormTheGiant;
 import game.enums.Status;
 import game.weapons.StormRuler;
 
+/**
+ * Active Action for weapon Storm Ruler
+ *
+ * @see edu.monash.fit2099.engine.WeaponAction
+ */
 public class WindSlash extends WeaponAction {
 
+    /**
+     * Constructor for WindSlash class
+     * @param stormRuler the weapon that can perform this action
+     */
     public WindSlash(StormRuler stormRuler){super(stormRuler);};
 
     @Override
