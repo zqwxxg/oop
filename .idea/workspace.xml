@@ -26,34 +26,14 @@
       <change beforePath="$PROJECT_DIR$/out/production/project/game/Player$drinkEstusFlaskAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Player$drinkEstusFlaskAction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project/game/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Player.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project/game/Vendor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Vendor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/actions/AttackAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/actions/AttackAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/behaviours/WanderBehaviour.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/behaviours/WanderBehaviour.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/enemies/LordOfCinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/enemies/LordOfCinder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/enemies/Undead.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/enemies/Undead.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/enums/Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/enums/Status.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/items/Token.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/items/Token.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/Axe.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/Axe.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/Broadsword.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/Broadsword.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/GiantAxe.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/GiantAxe.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/MeleeWeapon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/MeleeWeapon.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/StormRuler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/StormRuler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/Vendor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Vendor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/actions/AttackAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/AttackAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/behaviours/WanderBehaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/behaviours/WanderBehaviour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/enemies/LordOfCinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enemies/LordOfCinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/enemies/Undead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enemies/Undead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/enums/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enums/Status.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/items/EstusFlask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/items/EstusFlask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/items/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/items/Token.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/weapons/Axe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/Axe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/weapons/Broadsword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/Broadsword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/weapons/GiantAxe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/GiantAxe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/weapons/MeleeWeapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/MeleeWeapon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/actions/BuyBroadswordAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/BuyBroadswordAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/actions/BuyGiantAxeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/BuyGiantAxeAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/weapons/StormRuler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/StormRuler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/weapons/activeActions/Charge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/activeActions/Charge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/weapons/activeActions/SpinAttack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/activeActions/SpinAttack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/weapons/activeActions/WindSlash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/activeActions/WindSlash.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632505865532</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="modified storm ruler">
+      <created>1632554985602</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1632554985602</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,13 +141,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="vendor and broadsword done" />
-    <option name="LAST_COMMIT_MESSAGE" value="vendor and broadsword done" />
+    <MESSAGE value="modified storm ruler" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified storm ruler" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="501" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1632553347806">
+    <state x="501" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1632568702613">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="501" y="46" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1632553347806" />
+    <state x="501" y="46" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1632568702613" />
     <state x="424" y="235" width="432" height="216" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1632493931002">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -173,42 +161,42 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1632421928505" />
-    <state width="1237" height="466" key="GridCell.Tab.0.bottom" timestamp="1632554626755">
+    <state width="1237" height="485" key="GridCell.Tab.0.bottom" timestamp="1632571258736">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="466" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1632554626755" />
-    <state width="1237" height="466" key="GridCell.Tab.0.center" timestamp="1632554626753">
+    <state width="1237" height="485" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1632571258736" />
+    <state width="1237" height="485" key="GridCell.Tab.0.center" timestamp="1632571258736">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="466" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1632554626753" />
-    <state width="1237" height="466" key="GridCell.Tab.0.left" timestamp="1632554626753">
+    <state width="1237" height="485" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1632571258736" />
+    <state width="1237" height="485" key="GridCell.Tab.0.left" timestamp="1632571258736">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="466" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1632554626753" />
-    <state width="1237" height="466" key="GridCell.Tab.0.right" timestamp="1632554626753">
+    <state width="1237" height="485" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1632571258736" />
+    <state width="1237" height="485" key="GridCell.Tab.0.right" timestamp="1632571258736">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="466" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1632554626753" />
-    <state width="1237" height="213" key="GridCell.Tab.1.bottom" timestamp="1632551855451">
+    <state width="1237" height="485" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1632571258736" />
+    <state width="1237" height="463" key="GridCell.Tab.1.bottom" timestamp="1632565879198">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="213" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1632551855451" />
-    <state width="1237" height="213" key="GridCell.Tab.1.center" timestamp="1632551855450">
+    <state width="1237" height="463" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1632565879198" />
+    <state width="1237" height="463" key="GridCell.Tab.1.center" timestamp="1632565879198">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="213" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1632551855450" />
-    <state width="1237" height="213" key="GridCell.Tab.1.left" timestamp="1632551855450">
+    <state width="1237" height="463" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1632565879198" />
+    <state width="1237" height="463" key="GridCell.Tab.1.left" timestamp="1632565879198">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="213" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1632551855450" />
-    <state width="1237" height="213" key="GridCell.Tab.1.right" timestamp="1632551855450">
+    <state width="1237" height="463" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1632565879198" />
+    <state width="1237" height="463" key="GridCell.Tab.1.right" timestamp="1632565879198">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="213" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1632551855450" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1632505890876">
+    <state width="1237" height="463" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1632565879198" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1632555007681">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1632505890876" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1632555007681" />
     <state x="189" y="52" width="902" height="628" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1632497473175">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

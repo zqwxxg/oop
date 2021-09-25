@@ -3,6 +3,7 @@ package game;
 import edu.monash.fit2099.engine.*;
 import game.actions.BuyBroadswordAction;
 import game.actions.BuyGiantAxeAction;
+import game.actions.IncreaseMaxHpAction;
 import game.enums.Status;
 
 public class Vendor extends Actor {
@@ -17,6 +18,7 @@ public class Vendor extends Actor {
         Actions actions = super.getAllowableActions(otherActor, direction, map);
         actions.add(new BuyBroadswordAction());
         actions.add(new BuyGiantAxeAction());
+        actions.add(new IncreaseMaxHpAction());
         return actions;
     }
 

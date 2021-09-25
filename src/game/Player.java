@@ -8,7 +8,6 @@ import game.interfaces.Soul;
 import game.items.EstusFlask;
 import game.items.Token;
 import game.weapons.Broadsword;
-import game.weapons.GiantAxe;
 import game.weapons.StormRuler;
 
 import java.util.List;
@@ -39,7 +38,7 @@ public class Player extends Actor implements Soul, Resettable {
 		this.addCapability(Status.ENTER_FIRELINK_SHRINE);
 		registerInstance();
 		inventory.add(new EstusFlask("Estus Flask", 'e', false));
-		inventory.add(new StormRuler());
+		inventory.add(new Broadsword());
 	}
 
 	public void setLastBonfire(Location lastBonfire) {
@@ -197,6 +196,9 @@ public class Player extends Actor implements Soul, Resettable {
 		}
 	}
 
+	public void increaseMaxHitPoints(int points){
+		maxHitPoints += points;
+	}
 
 	public int getMaxHitPoints(){
 		return maxHitPoints;

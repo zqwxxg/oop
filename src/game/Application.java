@@ -64,6 +64,7 @@ public class Application {
 
 		//Place Yhorm the Giant/boss in the map
 		YhormTheGiant Yhorm = new YhormTheGiant();
+//		gameMap.at(38, 10).addActor(Yhorm);
 		gameMap.at(6, 25).addActor(Yhorm);
 		Yhorm.setInitialPosition(gameMap.at(6, 25));
 

@@ -1,7 +1,6 @@
 package game.weapons;
 
 import edu.monash.fit2099.engine.Actor;
-import edu.monash.fit2099.engine.Location;
 import edu.monash.fit2099.engine.WeaponAction;
 import game.weapons.activeActions.Charge;
 import game.weapons.activeActions.WindSlash;
@@ -24,4 +23,10 @@ public class StormRuler extends Sword{
         }else
             {return charge;}
     }
+
+    public void changeToWindSlash(){
+        this.damage *= 2;
+        this.hitRate = 100;
+    }
+
 }
