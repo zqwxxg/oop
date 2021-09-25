@@ -38,7 +38,11 @@ public class YhormsGreatMachete extends MeleeWeapon{
     }
 
     public WeaponAction getActiveSkill(Actor target, String direction) {
-        return new BurnGround(this);
+        if (emberFormBool) {
+            return new BurnGround(this);
+        }else{
+            return null;
+        }
     }
 
     public boolean getEmberFormBool(){

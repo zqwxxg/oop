@@ -11,6 +11,7 @@ public class Vendor extends Actor {
     public Vendor(){
         super("Fire Keeper", 'F', 0);
         addCapability(Status.UNATTACKABLE);
+        addCapability(Status.ENTER_FLOOR);
     }
 
     @Override
