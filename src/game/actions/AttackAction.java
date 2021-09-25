@@ -11,6 +11,7 @@ import edu.monash.fit2099.engine.Weapon;
 import game.Player;
 import game.enemies.Enemies;
 import game.enums.Status;
+import game.weapons.StormRuler;
 
 /**
  * Special Action for attacking other Actors.
@@ -50,8 +51,12 @@ public class AttackAction extends Action {
 		if (!(rand.nextInt(100) <= weapon.chanceToHit())) {
 			return actor + " misses " + target + ".";
 		}
-
 		int damage = weapon.damage();
+
+		//Storm Ruler passive action (dullness)
+		if (target.hasCapability(Status.NOT_WEAK_TO_STORM_RULER) && (weapon.getClass()==StormRuler.class)){
+			damage /= 2;}
+
 		String result = actor + " " + weapon.verb() + " " + target + " for " + damage + " damage.";
 		target.hurt(damage);
 		if (!target.isConscious()) {

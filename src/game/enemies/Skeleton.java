@@ -24,6 +24,7 @@ public class Skeleton extends Enemies {
         behaviours.add(new AttackBehaviour());
         behaviours.add(new WanderBehaviour());
         addCapability(Status.RESURRECTABLE);
+        addCapability(Status.NOT_WEAK_TO_STORM_RULER);
     }
 
     @Override
