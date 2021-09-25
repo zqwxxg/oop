@@ -54,8 +54,7 @@ public class AttackAction extends Action {
 		}
 
 		if (actor.getClass() == new YhormTheGiant().getClass() && ((YhormTheGiant)actor).isEnraged()){
-			System.out.println("TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST");
-			((YhormTheGiant)actor).getWeapon().getActiveSkill(target, direction).execute(actor, map);
+			actor.getWeapon().getActiveSkill(target, direction).execute(actor, map);
 		}
 
 		int damage = weapon.damage();
@@ -102,6 +101,7 @@ public class AttackAction extends Action {
 		// only returns menu description when player attacks enemies
 		String result = actor + " attacks " + target;
 		result += " (" + ((Enemies)target).getHitPoints() + "/" + ((Enemies)target).getMaxHitPoints() + ")";
+		// if the enemy is unarmed, no need to show its weapon
 		if (!target.hasCapability(Status.UNARMED)) {
 			result += " holding " + target.getWeapon();
 		}

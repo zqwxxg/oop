@@ -19,7 +19,10 @@ import java.util.ArrayList;
 /**
  * Class representing the enemy
  *
- * @see edu.monash.fit2099.engine
+ * @see Actions
+ * @see Actor
+ * @see GameMap
+ * @see Location
  * @see UndeadDieAction
  * @see AttackAction
  * @see Behaviour

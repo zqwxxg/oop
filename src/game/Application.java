@@ -11,6 +11,7 @@ import game.enemies.LordOfCinder;
 import game.enemies.Skeleton;
 import game.enemies.YhormTheGiant;
 import game.grounds.*;
+import game.weapons.StormRuler;
 
 /**
  * The main class for the Jurassic World game.
@@ -86,10 +87,10 @@ public class Application {
 		world.addGameMap(gameMap);
 
 		Player player = new Player("Unkindled (Player)", '@', 100);
-//		world.addPlayer(player, gameMap.at(38, 12));
+		world.addPlayer(player, gameMap.at(38, 12));
 		player.setLastBonfire(gameMap.at(38, 11));
 
-		world.addPlayer(player, gameMap.at(6, 20));
+//		world.addPlayer(player, gameMap.at(6, 20));
 
 //		 Place Yhorm the Giant/boss in the map
 		YhormTheGiant Yhorm = new YhormTheGiant();
@@ -113,6 +114,9 @@ public class Application {
 		Skeleton skeleton4 = new Skeleton();
 		gameMap.at(22,12).addActor(skeleton4);
 		skeleton4.setInitialPosition(gameMap.at(22,12));
+
+		StormRuler stormRuler = new StormRuler();
+		gameMap.at(7,25).addItem(stormRuler);
 
 		world.run();
 
