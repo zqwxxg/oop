@@ -86,7 +86,7 @@ public class Application {
 		GameMap gameMap = new GameMap(groundFactory, map);
 		world.addGameMap(gameMap);
 
-		Player player = new Player("Unkindled (Player)", '@', 1000);
+		Player player = new Player("Unkindled (Player)", '@', 100);
 		world.addPlayer(player, gameMap.at(38, 12));
 		player.setLastBonfire(gameMap.at(38, 11));
 
