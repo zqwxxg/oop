@@ -21,7 +21,7 @@ public class YhormTheGiant extends LordOfCinder{
      * All Yhorm the Giant are represented by an 'Y' and have 500 hit points, 5000 souls.
      */
     public YhormTheGiant() {
-        super("Yhorm the Giant", 'y', 500, 5000);
+        super("Yhorm the Giant", 'y', 100, 5000);
         inventory.add(new YhormsGreatMachete());
         behaviours.add(new AttackBehaviour());
     }

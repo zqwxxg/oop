@@ -21,103 +21,24 @@
   <component name="ChangeListManager">
     <list default="true" id="8a3fc560-538b-4886-94e6-e99a22878872" name="Default Changelist" comment="added java doc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/allclasses-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/allpackages-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/constant-values.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/deprecated-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/Action.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/Action.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/Actions.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/Actions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/Actor.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/Actor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/ActorLocations.ActorIterator.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/ActorLocations.ActorIterator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/ActorLocations.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/ActorLocations.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/Capabilities.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/Capabilities.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/Capable.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/Capable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/Display.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/Display.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/DoNothingAction.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/DoNothingAction.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/DropItemAction.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/DropItemAction.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/Exit.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/Exit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/FancyGroundFactory.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/FancyGroundFactory.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/GameMap.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/GameMap.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/Ground.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/Ground.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/GroundFactory.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/GroundFactory.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/IntrinsicWeapon.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/IntrinsicWeapon.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/Item.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/Item.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/Location.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/Location.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/Menu.SortHotkeysFirst.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/Menu.SortHotkeysFirst.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/Menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/Menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/MoveActorAction.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/MoveActorAction.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/NumberRange.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/NumberRange.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/PickUpItemAction.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/PickUpItemAction.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/Printable.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/Printable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/Weapon.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/Weapon.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/WeaponAction.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/WeaponAction.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/WeaponItem.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/WeaponItem.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/World.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/World.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/addons/DesignOSoulsAddOn.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/addons/DesignOSoulsAddOn.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/addons/MarsAddOn.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/addons/MarsAddOn.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/addons/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/addons/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/addons/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/addons/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/edu/monash/fit2099/engine/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/element-list" beforeDir="false" afterPath="$PROJECT_DIR$/docs/element-list" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/game/Player.drinkEstusFlaskAction.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/game/Player.drinkEstusFlaskAction.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/game/Player.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/game/Player.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/game/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/game/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/game/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/game/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-11.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-13.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-14.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-15.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-15.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-16.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-16.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-17.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-17.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-18.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-18.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-19.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-19.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-20.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-20.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-21.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-21.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-8.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index-files/index-9.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/member-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/member-search-index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/overview-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/package-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/package-search-index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/type-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/type-search-index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project/game/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/Charge.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/Player$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Player$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/Player$drinkEstusFlaskAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Player$drinkEstusFlaskAction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project/game/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/ResetManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/ResetManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/Vendor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Vendor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/actions/AttackAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/actions/AttackAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/actions/BuyBroadswordAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/actions/BuyBroadswordAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/actions/BuyGiantAxeAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/actions/BuyGiantAxeAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/actions/IncreaseMaxHpAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/actions/IncreaseMaxHpAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/YhormsGreatMachete.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/YhormsGreatMachete.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/actions/RestAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/actions/RestAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/actions/SoftResetAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/actions/SoftResetAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/actions/UndeadDieAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/actions/UndeadDieAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/behaviours/AttackBehaviour.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/behaviours/AttackBehaviour.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/behaviours/FollowBehaviour.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/behaviours/FollowBehaviour.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/enemies/Enemies.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/enemies/Enemies.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/enemies/LordOfCinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/enemies/LordOfCinder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/enemies/YhormTheGiant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/enemies/YhormTheGiant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/interfaces/Resettable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/interfaces/Resettable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/MeleeWeapon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/MeleeWeapon.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/activeActions/SpinAttack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/activeActions/SpinAttack.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/actions/AttackAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/AttackAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/actions/BuyBroadswordAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/BuyBroadswordAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/actions/BuyGiantAxeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/BuyGiantAxeAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/actions/IncreaseMaxHpAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/IncreaseMaxHpAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/actions/RestAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/RestAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/actions/SoftResetAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/SoftResetAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/actions/UndeadDieAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/UndeadDieAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/behaviours/AttackBehaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/behaviours/AttackBehaviour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/behaviours/FollowBehaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/behaviours/FollowBehaviour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/enemies/Enemies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enemies/Enemies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/interfaces/Resettable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/interfaces/Resettable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/weapons/MeleeWeapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/MeleeWeapon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/weapons/YhormsGreatMachete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/YhormsGreatMachete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/weapons/activeActions/SpinAttack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/activeActions/SpinAttack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/enemies/LordOfCinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enemies/LordOfCinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/enemies/YhormTheGiant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enemies/YhormTheGiant.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632586852752</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added javadoc">
+      <created>1632604607070</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1632604607070</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -263,7 +191,8 @@
     <MESSAGE value="added StormRuler passive action (Dullness)" />
     <MESSAGE value="Finish implementing StormRuler and modified some code in YhormTheGiant" />
     <MESSAGE value="merged with the codes from Ziqi branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="merged with the codes from Ziqi branch" />
+    <MESSAGE value="added javadoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="added javadoc" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">

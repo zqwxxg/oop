@@ -86,7 +86,7 @@ public class Application {
 		GameMap gameMap = new GameMap(groundFactory, map);
 		world.addGameMap(gameMap);
 
-		Player player = new Player("Unkindled (Player)", '@', 100);
+		Player player = new Player("Unkindled (Player)", '@', 1000);
 		world.addPlayer(player, gameMap.at(38, 12));
 		player.setLastBonfire(gameMap.at(38, 11));
 
@@ -114,6 +114,10 @@ public class Application {
 		Skeleton skeleton4 = new Skeleton();
 		gameMap.at(22,12).addActor(skeleton4);
 		skeleton4.setInitialPosition(gameMap.at(22,12));
+
+		Skeleton skeleton5 = new Skeleton();
+		gameMap.at(30,17).addActor(skeleton5);
+		skeleton5.setInitialPosition(gameMap.at(30,17));
 
 		StormRuler stormRuler = new StormRuler();
 		gameMap.at(7,25).addItem(stormRuler);
