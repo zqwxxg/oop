@@ -12,7 +12,6 @@ import game.Player;
 import game.enemies.Enemies;
 import game.enemies.YhormTheGiant;
 import game.enums.Status;
-import game.weapons.YhormsGreatMachete;
 
 /**
  * Special Action for attacking other Actors.
@@ -53,8 +52,7 @@ public class AttackAction extends Action {
 			return actor + " misses " + target + ".";
 		}
 		if (actor.getClass() == new YhormTheGiant().getClass() && ((YhormTheGiant)actor).isEnraged()){
-			System.out.println("TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST");
-			((YhormTheGiant)actor).getWeapon().getActiveSkill(target, direction).execute(actor, map);
+			actor.getWeapon().getActiveSkill(target, direction).execute(actor, map);
 		}
 
 		int damage = weapon.damage();

@@ -7,7 +7,7 @@ import game.ResetManager;
 import game.enums.Status;
 
 /**
- *
+ * Class representing
  */
 public class RestAction extends Action {
 
