@@ -9,6 +9,7 @@ import edu.monash.fit2099.engine.GameMap;
 import edu.monash.fit2099.engine.World;
 import game.enemies.LordOfCinder;
 import game.enemies.Skeleton;
+import game.enemies.YhormTheGiant;
 import game.grounds.*;
 
 /**
@@ -134,9 +135,9 @@ public class Application {
 		player.setLastBonfire(gameMap.at(38, 11));
 
 //		 Place Yhorm the Giant/boss in the map
-		LordOfCinder lordOfCinder = new LordOfCinder("Yhorm the Giant", 'Y', 500, 5000);
-		gameMap.at(6, 25).addActor(lordOfCinder);
-		lordOfCinder.setInitialPosition(gameMap.at(6, 25));
+		YhormTheGiant Yhorm = new YhormTheGiant();
+		gameMap.at(6, 25).addActor(Yhorm);
+		Yhorm.setInitialPosition(gameMap.at(6, 25));
 
 		gameMap.at(37,11).addActor(new Vendor());
 

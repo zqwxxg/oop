@@ -45,6 +45,8 @@ public abstract class Enemies extends Actor implements Soul, Resettable{
         this.initialPosition = initialPosition;
     }
 
+    public Location getInitialPosition(){return initialPosition;}
+
     @Override
     public Actions getAllowableActions(Actor otherActor, String direction, GameMap map) {
         Actions actions = new Actions();

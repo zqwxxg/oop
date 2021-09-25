@@ -8,7 +8,7 @@ import game.enums.Status;
  * FIXME: This boss is Boring. It does nothing. You need to implement features here.
  * TODO: Could it be an abstract class? If so, why and how?
  */
-public class LordOfCinder extends Enemies {
+public abstract class LordOfCinder extends Enemies {
     /**
      * Constructor.
      */
