@@ -19,26 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a3fc560-538b-4886-94e6-e99a22878872" name="Default Changelist" comment="added java doc">
+    <list default="true" id="c359be1d-12dd-45aa-bf87-58617a76d0e9" name="Default Changelist" comment="committed some classes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project/game/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/Player$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Player$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/Player$drinkEstusFlaskAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Player$drinkEstusFlaskAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/actions/RestAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/actions/RestAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/actions/SoftResetAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/actions/SoftResetAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/actions/UndeadDieAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/actions/UndeadDieAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/behaviours/AttackBehaviour.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/behaviours/AttackBehaviour.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/behaviours/FollowBehaviour.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/behaviours/FollowBehaviour.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/enemies/Enemies.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/enemies/Enemies.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/enemies/LordOfCinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/enemies/LordOfCinder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project/game/enemies/YhormTheGiant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/enemies/YhormTheGiant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/interfaces/Resettable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/interfaces/Resettable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/MeleeWeapon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/MeleeWeapon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/activeActions/SpinAttack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/activeActions/SpinAttack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/grounds/Fire.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/grounds/Fire.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/enemies/LordOfCinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enemies/LordOfCinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/actions/AttackAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/AttackAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/enemies/YhormTheGiant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enemies/YhormTheGiant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/grounds/Fire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/grounds/Fire.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,6 +183,24 @@
     <MESSAGE value="added javadoc" />
     <option name="LAST_COMMIT_MESSAGE" value="added javadoc" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1877" height="103" key="GridCell.Tab.0.bottom" timestamp="1632608915786">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="103" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632608915786" />
+    <state width="1877" height="103" key="GridCell.Tab.0.center" timestamp="1632608915786">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="103" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632608915786" />
+    <state width="1877" height="103" key="GridCell.Tab.0.left" timestamp="1632608915786">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="103" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632608915786" />
+    <state width="1877" height="103" key="GridCell.Tab.0.right" timestamp="1632608915786">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="103" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632608915786" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

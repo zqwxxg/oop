@@ -13,6 +13,7 @@ import game.enemies.Enemies;
 import game.enemies.YhormTheGiant;
 import game.enums.Status;
 import game.weapons.StormRuler;
+import game.weapons.YhormsGreatMachete;
 
 /**
  * Special Action for attacking other Actors.
@@ -53,8 +54,12 @@ public class AttackAction extends Action {
 			return actor + " misses " + target + ".";
 		}
 
-		if (actor.getClass() == new YhormTheGiant().getClass() && ((YhormTheGiant)actor).isEnraged()){
+		if (actor.getClass() == new YhormTheGiant().getClass() && ((YhormTheGiant)actor).isEnraged() && rand.nextInt(2) < 1){
 			actor.getWeapon().getActiveSkill(target, direction).execute(actor, map);
+		}
+
+		if (target.getClass() == new YhormTheGiant().getClass()){
+			((YhormsGreatMachete)((YhormTheGiant)target).getWeapon()).rageModeTest((YhormTheGiant)target);
 		}
 
 		int damage = weapon.damage();
