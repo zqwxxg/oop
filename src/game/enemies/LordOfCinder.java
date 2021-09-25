@@ -32,3 +32,4 @@ public abstract class LordOfCinder extends Enemies {
     public void resetInstance(GameMap map, Status status, String direction) {
     }
 }
+

@@ -5,8 +5,17 @@ import game.actions.AttackAction;
 import game.enums.Status;
 import game.weapons.GiantAxe;
 
+/**
+ * Active Action for weapon Giant Axe
+ *
+ * @see edu.monash.fit2099.engine.WeaponAction
+ */
 public class SpinAttack extends WeaponAction {
 
+    /**
+     * Constructor for SpinAttack class
+     * @param giantAxe the weapon that can perform this action
+     */
     public SpinAttack(WeaponItem giantAxe) {
         super(giantAxe);
     }

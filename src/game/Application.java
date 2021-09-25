@@ -23,7 +23,7 @@ public class Application {
 		World world = new World(new Display());
 
 		FancyGroundFactory groundFactory = new FancyGroundFactory(new Dirt(), new Wall(), new Floor(), new Valley(),
-				  				           new Bonfire(), new Cemetery());
+				new Bonfire(), new Cemetery());
 
 		List<String> map = Arrays.asList(
 				"..++++++..+++...........................++++......+++.................+++.......",
@@ -115,7 +115,6 @@ public class Application {
 		skeleton4.setInitialPosition(gameMap.at(22,12));
 
 		world.run();
-
 
 	}
 }

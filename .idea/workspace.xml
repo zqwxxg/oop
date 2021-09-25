@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="adc69f7b-19aa-4769-9437-b9de151b660f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/GameWeaponItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/GameWeaponItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/Player$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Player$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/Player$drinkEstusFlaskAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Player$drinkEstusFlaskAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/actions/BuyBroadswordAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/actions/BuyBroadswordAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/actions/BuyGiantAxeAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/actions/BuyGiantAxeAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/actions/IncreaseMaxHpAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/actions/IncreaseMaxHpAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/actions/WindSlashAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/actions/WindSlashAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/enemies/YhormTheGiant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/enemies/YhormTheGiant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/enums/Capabilities.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/items/GameWeaponItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/Axe.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/Axe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/Broadsword.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/Broadsword.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/GiantAxe.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/GiantAxe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/StormRuler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/StormRuler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/Sword.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/Sword.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/YhormsGreatMachete.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/YhormsGreatMachete.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/activeActions/BurnGround.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/activeActions/BurnGround.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/activeActions/Charge.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/activeActions/Charge.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/activeActions/SpinAttack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/activeActions/SpinAttack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/activeActions/WindSlash.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/activeActions/WindSlash.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/actions/BuyBroadswordAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/BuyBroadswordAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/actions/BuyGiantAxeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/BuyGiantAxeAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/actions/IncreaseMaxHpAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/IncreaseMaxHpAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/actions/WindSlashAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/WindSlashAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/enemies/YhormTheGiant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enemies/YhormTheGiant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/weapons/Axe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/Axe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/weapons/Broadsword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/Broadsword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/weapons/GiantAxe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/GiantAxe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/weapons/StormRuler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/StormRuler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/weapons/Sword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/Sword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/weapons/YhormsGreatMachete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/YhormsGreatMachete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/weapons/activeActions/BurnGround.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/activeActions/BurnGround.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/weapons/activeActions/Charge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/activeActions/Charge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/weapons/activeActions/SpinAttack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/activeActions/SpinAttack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/weapons/activeActions/WindSlash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/activeActions/WindSlash.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="Ziqi" />
+  </component>
+  <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/ZhiEn" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1yYI4XQSlW3KMBkNNqU04iZeMfR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="OverrideImplement.combined" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="game" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="game.Application" />
+      <module name="project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="adc69f7b-19aa-4769-9437-b9de151b660f" name="Default Changelist" comment="" />
+      <created>1632421905704</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1632421905704</updated>
+    </task>
+    <task id="LOCAL-00001" summary="vendor and broadsword done">
+      <created>1632505865532</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1632505865532</updated>
+    </task>
+    <task id="LOCAL-00002" summary="modified storm ruler">
+      <created>1632554985602</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1632554985602</updated>
+    </task>
+    <task id="LOCAL-00003" summary="vendor increase max HP added">
+      <created>1632571458408</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1632571458408</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added StormRuler passive action (Dullness)">
+      <created>1632573050557</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1632573050557</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Finish implementing StormRuler and modified some code in YhormTheGiant">
+      <created>1632580080346</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1632580080346</updated>
+    </task>
+    <task id="LOCAL-00006" summary="merged with the codes from Ziqi branch">
+      <created>1632586852752</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1632586852752</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="vendor and broadsword done" />
+    <MESSAGE value="modified storm ruler" />
+    <MESSAGE value="vendor increase max HP added" />
+    <MESSAGE value="added StormRuler passive action (Dullness)" />
+    <MESSAGE value="Finish implementing StormRuler and modified some code in YhormTheGiant" />
+    <MESSAGE value="merged with the codes from Ziqi branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="merged with the codes from Ziqi branch" />
+    <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="501" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1632568702613">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="501" y="46" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1632568702613" />
+    <state x="424" y="235" width="432" height="216" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1632586570698">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="424" y="235" width="432" height="216" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1632586570698" />
+    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1632500782069">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1632500782069" />
+    <state x="121" y="51" key="DiffContextDialog" timestamp="1632584721306">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="121" y="51" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1632584721306" />
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1632421928505">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1632421928505" />
+    <state width="1237" height="499" key="GridCell.Tab.0.bottom" timestamp="1632589678117">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="499" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1632589678117" />
+    <state width="1237" height="499" key="GridCell.Tab.0.center" timestamp="1632589678116">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="499" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1632589678116" />
+    <state width="1237" height="499" key="GridCell.Tab.0.left" timestamp="1632589678116">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="499" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1632589678116" />
+    <state width="1237" height="499" key="GridCell.Tab.0.right" timestamp="1632589678117">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="499" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1632589678117" />
+    <state width="1237" height="463" key="GridCell.Tab.1.bottom" timestamp="1632565879198">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="463" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1632565879198" />
+    <state width="1237" height="463" key="GridCell.Tab.1.center" timestamp="1632565879198">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="463" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1632565879198" />
+    <state width="1237" height="463" key="GridCell.Tab.1.left" timestamp="1632565879198">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="463" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1632565879198" />
+    <state width="1237" height="463" key="GridCell.Tab.1.right" timestamp="1632565879198">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="463" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1632565879198" />
+    <state x="190" y="51" key="MergeDialog" timestamp="1632585409790">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="190" y="51" key="MergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1632585409790" />
+    <state x="378" y="102" key="MultipleFileMergeDialog" timestamp="1632585422059">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="378" y="102" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1632585422059" />
+    <state x="207" y="43" key="RollbackChangesDialog" timestamp="1632587773590">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="207" y="43" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1632587773590" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1632586891668">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1632586891668" />
+    <state x="189" y="52" width="902" height="628" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1632497473175">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="189" y="52" width="902" height="628" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1280.680@0.0.1280.680" timestamp="1632497473175" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

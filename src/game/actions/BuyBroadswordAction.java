@@ -7,6 +7,11 @@ import game.weapons.Broadsword;
 
 import java.util.List;
 
+/**
+ * class to buy Broadsword
+ *
+ * @see edu.monash.fit2099.engine.Action
+ */
 public class BuyBroadswordAction extends Action {
     private MeleeWeapon weapon = new Broadsword();
 
@@ -25,6 +30,7 @@ public class BuyBroadswordAction extends Action {
                 }
             }
             actor.addItemToInventory(new Broadsword());
+            player.subtractSouls(weapon.getPrice());
             ret +=  weapon.toString() + " has been successfully bought by " + actor.toString();
         }else{
             ret += "Not enough souls to buy " + weapon.toString();
@@ -34,7 +40,7 @@ public class BuyBroadswordAction extends Action {
 
     @Override
     public String menuDescription(Actor actor) {
-        return "Weapon for sale: " + weapon.toString() + " cost: " + weapon.getPrice();
+        return actor.toString() + " buys " + weapon.toString() + " (" + weapon.getPrice() + " souls)";
     }
 
 }

@@ -13,5 +13,6 @@ public enum Status {
     UNATTACKABLE,     // to be unattackable by other actors
     UNARMED,          // to represent if an actor is not carrying any weapon
     RESURRECTABLE,    // to revive
-    ENEMIES_KILLED    // to represent if an enemy is killed
+    ENEMIES_KILLED,   // to represent if an enemy is killed
+    NOT_WEAK_TO_STORM_RULER // to represent if an enemy is weak to Storm Ruler
 }

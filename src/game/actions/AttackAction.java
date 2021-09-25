@@ -12,6 +12,7 @@ import game.Player;
 import game.enemies.Enemies;
 import game.enemies.YhormTheGiant;
 import game.enums.Status;
+import game.weapons.StormRuler;
 
 /**
  * Special Action for attacking other Actors.
@@ -35,7 +36,7 @@ public class AttackAction extends Action {
 
 	/**
 	 * Constructor.
-	 * 
+	 *
 	 * @param target the Actor to attack
 	 */
 	public AttackAction(Actor target, String direction) {
@@ -51,11 +52,18 @@ public class AttackAction extends Action {
 		if (!(rand.nextInt(100) <= weapon.chanceToHit())) {
 			return actor + " misses " + target + ".";
 		}
+
 		if (actor.getClass() == new YhormTheGiant().getClass() && ((YhormTheGiant)actor).isEnraged()){
-			actor.getWeapon().getActiveSkill(target, direction).execute(actor, map);
+			System.out.println("TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST");
+			((YhormTheGiant)actor).getWeapon().getActiveSkill(target, direction).execute(actor, map);
 		}
 
 		int damage = weapon.damage();
+
+		//Storm Ruler passive action (dullness)
+		if (target.hasCapability(Status.NOT_WEAK_TO_STORM_RULER) && (weapon.getClass()==StormRuler.class)){
+			damage /= 2;}
+
 		String result = actor + " " + weapon.verb() + " " + target + " for " + damage + " damage.";
 		target.hurt(damage);
 		if (!target.isConscious()) {
@@ -94,7 +102,6 @@ public class AttackAction extends Action {
 		// only returns menu description when player attacks enemies
 		String result = actor + " attacks " + target;
 		result += " (" + ((Enemies)target).getHitPoints() + "/" + ((Enemies)target).getMaxHitPoints() + ")";
-		// if the enemy is unarmed, no need to display its weapon
 		if (!target.hasCapability(Status.UNARMED)) {
 			result += " holding " + target.getWeapon();
 		}

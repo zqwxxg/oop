@@ -7,6 +7,11 @@ import game.weapons.GiantAxe;
 
 import java.util.List;
 
+/**
+ * class to buy Giant Axe
+ *
+ * @see edu.monash.fit2099.engine.Action
+ */
 public class BuyGiantAxeAction extends Action {
     private MeleeWeapon weapon = new GiantAxe();
 
@@ -25,6 +30,7 @@ public class BuyGiantAxeAction extends Action {
                 }
             }
             actor.addItemToInventory(new GiantAxe());
+            player.subtractSouls(weapon.getPrice());
             ret +=  weapon.toString() + " has been successfully bought by " + actor.toString();
         }else{
             ret += "Not enough souls to buy " + weapon.toString();
@@ -34,7 +40,7 @@ public class BuyGiantAxeAction extends Action {
 
     @Override
     public String menuDescription(Actor actor) {
-        return "Weapon for sale: " + weapon.toString() + " cost: " + weapon.getPrice();
+        return actor.toString() + " buys " + weapon.toString() + " (" + weapon.getPrice() + " souls)";
     }
 
 }

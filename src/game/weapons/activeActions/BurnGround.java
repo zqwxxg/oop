@@ -7,8 +7,17 @@ import game.grounds.Dirt;
 import game.grounds.Fire;
 import game.weapons.GiantAxe;
 
+/**
+ * Active Action for weapon Yhorm's Great Machete
+ *
+ * @see edu.monash.fit2099.engine.WeaponAction
+ */
 public class BurnGround extends WeaponAction {
 
+    /**
+     * Constructor for BurnGround class
+     * @param yhormsGreatMachete the weapon that can perform this action
+     */
     public BurnGround(WeaponItem yhormsGreatMachete){super(yhormsGreatMachete);}
 
     @Override
