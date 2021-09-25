@@ -1,8 +1,11 @@
 package game.weapons.activeActions;
 
 import edu.monash.fit2099.engine.*;
+import game.actions.AttackAction;
+import game.enums.Status;
 import game.grounds.Dirt;
 import game.grounds.Fire;
+import game.weapons.GiantAxe;
 
 public class BurnGround extends WeaponAction {
 

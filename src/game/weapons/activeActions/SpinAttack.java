@@ -28,9 +28,9 @@ public class SpinAttack extends WeaponAction {
                         result += System.lineSeparator();
                     }
                     result += action.execute(actor, map);
+                    }
                 }
             }
-        }
         // change back the damage and hit rate for normal attack
         ((GiantAxe)weapon).changeToNormalAttack();
         if (result.equals("")) {

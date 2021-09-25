@@ -1,26 +1,41 @@
 package game.enemies;
 
-
 import edu.monash.fit2099.engine.*;
 import game.actions.UndeadDieAction;
 import game.behaviours.AttackBehaviour;
 import game.behaviours.WanderBehaviour;
 import game.enums.Status;
 import game.interfaces.Behaviour;
+
 import java.util.Random;
 
 /**
  * An undead minion.
+ *
+ * @see edu.monash.fit2099.engine
+ * @see UndeadDieAction
+ * @see Behaviour
+ * @see AttackBehaviour
+ * @see WanderBehaviour
+ * @see Status
+ * @see Random
  */
 public class Undead extends Enemies {
 
+	/**
+	 * A random number generator
+	 */
 	private Random random = new Random();
-	private final String[] ATTACK_PROMPT = {"thwacks", "punches"};
-
 
 	/**
+	 * List of verbs that describes the attack of undead
+	 */
+	private static final String[] ATTACK_PROMPT = {"thwacks", "punches"};
+
+	/** 
 	 * Constructor.
-	 * All Undeads are represented by an 'u' and have 30 hit points.
+	 *
+	 * All Undeads are represented by an 'u' and have 50 hit points, 50 souls.
 	 */
 	public Undead() {
 		super("Undead", 'u', 50, 50);
@@ -28,24 +43,8 @@ public class Undead extends Enemies {
 		behaviours.add(new WanderBehaviour());
 		addCapability(Status.SPAWN_UNDEAD);
 		addCapability(Status.UNARMED);
-		addCapability(Status.NOT_WEAK_TO_STORM_RULER);
 	}
 
-	/**
-	 * At the moment, we only make it can be attacked by enemy that has HOSTILE capability
-	 * You can do something else with this method.
-	 * @param otherActor the Actor that might be performing attack
-	 * @param direction  String representing the direction of the other Actor
-	 * @param map        current GameMap
-	 * @return list of actions
-	 * @see Status#HOSTILE_TO_ENEMY
-	 */
-
-	/**
-	 * Figure out what to do next.
-	 * FIXME: An Undead wanders around at random and it cannot attack anyone. Also, figure out how to spawn this creature.
-	 * @see edu.monash.fit2099.engine.Actor#playTurn(Actions, Action, GameMap, Display)
-	 */
 	@Override
 	public Action playTurn(Actions actions, Action lastAction, GameMap map, Display display) {
 		// loop through all behaviours
@@ -75,18 +74,10 @@ public class Undead extends Enemies {
 	}
 
 	@Override
-	public Weapon getWeapon() {
-		for (Item item : inventory) {
-			if (item.asWeapon() != null)
-				return item.asWeapon();
-		}
-		return getIntrinsicWeapon();
-	}
-
-	@Override
 	public IntrinsicWeapon getIntrinsicWeapon() {
+		// undead has 20 base attack hit points
+		// randomly choose a verb from ATTACK_PROMPT
 		return new IntrinsicWeapon(20, ATTACK_PROMPT[random.nextInt(ATTACK_PROMPT.length)]);
 	}
 }
-
 

@@ -1,6 +1,7 @@
 package game.behaviours;
 
 import edu.monash.fit2099.engine.*;
+import game.enums.Status;
 import game.interfaces.Behaviour;
 
 /**
@@ -9,11 +10,13 @@ import game.interfaces.Behaviour;
  */
 public class FollowBehaviour implements Behaviour {
 
+
 	private Actor target;
+
 
 	/**
 	 * Constructor.
-	 * 
+	 *
 	 * @param subject the Actor to follow
 	 */
 	public FollowBehaviour(Actor subject) {
@@ -24,7 +27,7 @@ public class FollowBehaviour implements Behaviour {
 	public Action getAction(Actor actor, GameMap map) {
 		if(!map.contains(target) || !map.contains(actor))
 			return null;
-		
+
 		Location here = map.locationOf(actor);
 		Location there = map.locationOf(target);
 
@@ -38,9 +41,9 @@ public class FollowBehaviour implements Behaviour {
 				}
 			}
 		}
-
 		return null;
 	}
+
 
 	/**
 	 * Compute the Manhattan distance between two locations.
