@@ -1,5 +1,6 @@
 package game.weapons.activeActions;
 
+import edu.monash.fit2099.engine.Actions;
 import edu.monash.fit2099.engine.Actor;
 import edu.monash.fit2099.engine.GameMap;
 import edu.monash.fit2099.engine.WeaponAction;

@@ -9,16 +9,7 @@ public class WindSlash extends WeaponAction {
 
     @Override
     public String execute(Actor actor, GameMap map) {
-        menuDescription(actor);
-        int damage = weapon.damage()*2;
-        int hitRate = weapon.chanceToHit();
-        hitRate = 100;
         return "";
-//
-//        String result = "";
-//        if(charge.getIsFullyCharge()){
-//            result += actor + " stuns " + target + " for " + damage + " damage.";
-//        }
     }
 
     @Override

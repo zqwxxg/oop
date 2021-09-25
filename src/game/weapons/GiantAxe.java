@@ -1,20 +1,29 @@
 package game.weapons;
 
-import edu.monash.fit2099.engine.Action;
+import edu.monash.fit2099.engine.Actor;
+import edu.monash.fit2099.engine.WeaponAction;
 import game.weapons.activeActions.SpinAttack;
 
-import java.util.List;
-
 public class GiantAxe extends Axe {
+    public GiantAxe() {
+        super("Giant Axe", 'P', 50, "strikes", 80, 1000);
+        allowableActions.add(new SpinAttack(this));
+    }
 
-    public GiantAxe(){
-        super("Giant Axe", 'P', 50, "hack", 80, 1000);
+    public void changeToSpinAttack() {
+        verb = "spin-attacks";
+        damage = 25;
+        hitRate = 100;
+    }
+
+    public void changeToNormalAttack() {
+        verb = "strikes";
+        damage = 50;
+        hitRate = 100;
     }
 
     @Override
-    public List<Action> getAllowableActions() {
-        List<Action> actions = super.getAllowableActions();
-        actions.add(new SpinAttack(this));
-        return actions;
+    public WeaponAction getActiveSkill(Actor target, String direction) {
+        return new SpinAttack(this);
     }
 }

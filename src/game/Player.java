@@ -8,6 +8,10 @@ import game.interfaces.Soul;
 import game.items.EstusFlask;
 import game.items.Token;
 import game.weapons.Broadsword;
+import game.weapons.GiantAxe;
+import game.weapons.StormRuler;
+
+import java.util.List;
 
 /**
  * Class representing the Player.
@@ -35,7 +39,7 @@ public class Player extends Actor implements Soul, Resettable {
 		this.addCapability(Status.ENTER_FIRELINK_SHRINE);
 		registerInstance();
 		inventory.add(new EstusFlask("Estus Flask", 'e', false));
-		inventory.add(new Broadsword());
+		inventory.add(new StormRuler());
 	}
 
 	public void setLastBonfire(Location lastBonfire) {
@@ -51,7 +55,7 @@ public class Player extends Actor implements Soul, Resettable {
 		if (lastAction.getNextAction() != null)
 			return lastAction.getNextAction();
 
-		display.println("Unkindled (" + hitPoints + "/" + maxHitPoints + "), holding " +getWeapon()+ "," +  soulCount + " souls");
+		display.println("Unkindled (" + hitPoints + "/" + maxHitPoints + "), holding " + getWeapon() + ", " + soulCount + " souls");
 		actions.add(new drinkEstusFlaskAction());
 		// return/print the console menu
 		return menu.showMenu(this, actions, display);
@@ -84,11 +88,12 @@ public class Player extends Actor implements Soul, Resettable {
 		else {
 			return false;
 		}
+
 	}
 
 	@Override
 	public void resetInstance(GameMap map,Status status, String direction) {
-		this.heal(super.maxHitPoints);
+		hitPoints = maxHitPoints;
 		for (Item item: getInventory()) {
 			if (item.hasCapability(Abilities.ESTUS_FLASK)) {
 				((EstusFlask) item).resetChargeCount();
@@ -156,24 +161,23 @@ public class Player extends Actor implements Soul, Resettable {
 	}
 
 	private class drinkEstusFlaskAction extends Action{
-		EstusFlask est = new EstusFlask("dummyFlask",'d', false);
+		EstusFlask est =new EstusFlask("Estus Flask", 'e', false);
 		@Override
 		public String execute(Actor actor, GameMap map) {
 
-			for (int counter = 0; counter < inventory.size(); counter++){
-				if (inventory.get(counter).getClass() == est.getClass()) {
+			List<Item> tempList = getInventory();
+			for (int counter = 0; counter < tempList.size(); counter++){
+				if (tempList.get(counter).hasCapability(Abilities.ESTUS_FLASK)){
 					est = (EstusFlask) inventory.get(counter);
 					break;
 				}
+
+
 			}
 			if (est.getChargeCount() <= 0){
 				return "no charges remaining";
 			} else {
-
-				setHitPoints(getHitPoints() + (getMaxHitPoints()/100)*40);
-				if (getHitPoints() > getMaxHitPoints()){
-					setHitPoints(getMaxHitPoints());
-				}
+				heal((getMaxHitPoints()/100)*40);
 				est.setChargeCount(est.getChargeCount() - 1);
 				return "Drank Estus Flask " + est.getChargeCount()+ " charges remaining";
 			}
@@ -182,8 +186,9 @@ public class Player extends Actor implements Soul, Resettable {
 
 		@Override
 		public String menuDescription(Actor actor) {
-			for (int counter = 0; counter < inventory.size(); counter++){
-				if (inventory.get(counter).getClass() == est.getClass()) {
+			List<Item> tempList = getInventory();
+			for (int counter = 0; counter < tempList.size(); counter++){
+				if (tempList.get(counter).hasCapability(Abilities.ESTUS_FLASK)) {
 					est = (EstusFlask) inventory.get(counter);
 					break;
 				}
@@ -191,6 +196,7 @@ public class Player extends Actor implements Soul, Resettable {
 			return "Drink from Estus Flask " + est.getChargeCount() + " charges remaining";
 		}
 	}
+
 
 	public int getMaxHitPoints(){
 		return maxHitPoints;
@@ -205,7 +211,5 @@ public class Player extends Actor implements Soul, Resettable {
 			this.hitPoints = hitPoints;
 		}
 	}
-
-
 
 }

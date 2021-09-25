@@ -3,11 +3,13 @@ package game;
 import edu.monash.fit2099.engine.*;
 import game.actions.BuyBroadswordAction;
 import game.actions.BuyGiantAxeAction;
+import game.enums.Status;
 
 public class Vendor extends Actor {
 
     public Vendor(){
         super("Fire Keeper", 'F', 0);
+        addCapability(Status.UNATTACKABLE);
     }
 
     @Override

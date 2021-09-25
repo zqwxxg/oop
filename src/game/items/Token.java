@@ -13,7 +13,7 @@ public class Token extends PortableItem implements Soul {
      *  @param name the name of this Item
      * @param displayChar the character to use to represent this item if it is on the ground
      */
-    public Token(String name, char displayChar) {
+    private Token(String name, char displayChar) {
         super(name, displayChar);
     }
 
@@ -63,7 +63,7 @@ public class Token extends PortableItem implements Soul {
 
     @Override
     public DropItemAction getDropAction(Actor actor) {
-        // token cannot drop
+        // cannot drop token
         return null;
     }
 }

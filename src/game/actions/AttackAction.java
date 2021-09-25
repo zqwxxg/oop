@@ -8,6 +8,9 @@ import edu.monash.fit2099.engine.Actor;
 import edu.monash.fit2099.engine.GameMap;
 import edu.monash.fit2099.engine.Item;
 import edu.monash.fit2099.engine.Weapon;
+import game.Player;
+import game.enemies.Enemies;
+import game.enums.Status;
 
 /**
  * Special Action for attacking other Actors.
@@ -31,7 +34,7 @@ public class AttackAction extends Action {
 
 	/**
 	 * Constructor.
-	 * 
+	 *
 	 * @param target the Actor to attack
 	 */
 	public AttackAction(Actor target, String direction) {
@@ -60,15 +63,32 @@ public class AttackAction extends Action {
 				drop.execute(target, map);
 			// remove actor
 			//TODO: In A1 scenario, you must not remove a Player from the game yet. What to do, then?
-			map.removeActor(target);
-			result += System.lineSeparator() + target + " is killed.";
+			if (target.hasCapability(Status.SOFT_RESET)) {
+				// if player is killed by enemies, no need to modify new location of token
+				Action resetAction = new SoftResetAction(null);
+				result += System.lineSeparator() + resetAction.execute(actor, map);
+			}
+			else {
+				((Enemies) target).resetInstance(map, Status.ENEMIES_KILLED, null);
+				if (map.contains(target)) {
+					result += System.lineSeparator() + target + " is revived.";
+				} else {
+					((Enemies) target).transferSouls((Player)actor);
+					result += System.lineSeparator() + target + " is killed.";
+				}
+			}
 		}
-
 		return result;
 	}
 
-	@Override
 	public String menuDescription(Actor actor) {
-		return actor + " attacks " + target + " at " + direction;
+		// only returns menu description when player attacks enemies
+		String result = actor + " attacks " + target;
+		result += " (" + ((Enemies)target).getHitPoints() + "/" + ((Enemies)target).getMaxHitPoints() + ")";
+		if (!target.hasCapability(Status.UNARMED)) {
+			result += " holding " + target.getWeapon();
+		}
+		result += " at " + direction;
+		return result;
 	}
 }
