@@ -1,9 +1,7 @@
 package game.weapons.activeActions;
 
-import edu.monash.fit2099.engine.Actions;
-import edu.monash.fit2099.engine.Actor;
-import edu.monash.fit2099.engine.GameMap;
-import edu.monash.fit2099.engine.WeaponAction;
+import edu.monash.fit2099.engine.*;
+import game.enemies.YhormTheGiant;
 import game.weapons.StormRuler;
 
 /**
@@ -42,7 +40,7 @@ public class Charge extends WeaponAction {
         if(currentCharge==2){
             currentCharge++;
             isFullyCharge = true;
-            ((StormRuler)weapon).addWindSlash();
+            ((StormRuler)weapon).removeCharge();
             ret += "Storm Ruler is fully charged ("+ currentCharge + "/3)";
         }else if(currentCharge < Charge.MAX_CHARGE){
             currentCharge++;
