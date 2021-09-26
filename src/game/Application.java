@@ -87,10 +87,10 @@ public class Application {
 		world.addGameMap(gameMap);
 
 		Player player = new Player("Unkindled (Player)", '@', 100);
-//		world.addPlayer(player, gameMap.at(38, 12));
+		world.addPlayer(player, gameMap.at(38, 12));
 		player.setLastBonfire(gameMap.at(38, 11));
 
-		world.addPlayer(player, gameMap.at(6, 20));
+//		world.addPlayer(player, gameMap.at(6, 20));
 
 //		 Place Yhorm the Giant/boss in the map
 		YhormTheGiant Yhorm = new YhormTheGiant();

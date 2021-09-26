@@ -213,13 +213,6 @@ public class Player extends Actor implements Soul, Resettable {
 					lastToken.removeItem(token);
 				}
 				lastToken = location;
-				for(Item item : getInventory()) {
-					if (item.asWeapon() != null) {
-						removeItemFromInventory(item);
-						break; // after it removes that weapon, break the loop.
-					}
-				}
-				inventory.add(new Broadsword());
 				map.moveActor(this, lastBonfire);
 			}
 		}
