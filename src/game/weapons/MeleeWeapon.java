@@ -2,7 +2,9 @@ package game.weapons;
 
 import edu.monash.fit2099.engine.Actor;
 import edu.monash.fit2099.engine.DropItemAction;
+import edu.monash.fit2099.engine.PickUpItemAction;
 import edu.monash.fit2099.engine.WeaponItem;
+import game.actions.SwapWeaponAction;
 
 public class MeleeWeapon extends WeaponItem {
     private int price;
@@ -25,6 +27,11 @@ public class MeleeWeapon extends WeaponItem {
     }
 
     public int getPrice(){return price;}
+
+    @Override
+    public PickUpItemAction getPickUpAction(Actor actor) {
+        return new SwapWeaponAction(this);
+    }
 
     @Override
     public DropItemAction getDropAction(Actor actor) {

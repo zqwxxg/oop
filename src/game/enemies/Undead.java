@@ -43,6 +43,7 @@ public class Undead extends Enemies {
 		behaviours.add(new WanderBehaviour());
 		addCapability(Status.SPAWN_UNDEAD);
 		addCapability(Status.UNARMED);
+		addCapability(Status.NOT_WEAK_TO_STORM_RULER);
 	}
 
 	@Override

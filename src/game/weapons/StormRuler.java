@@ -25,7 +25,6 @@ public class StormRuler extends Sword{
      */
     public StormRuler(){
         super("Storm Ruler", '7', 70, "slash", 60, 2000);
-        allowableActions.add(charge);
     }
 
     @Override
@@ -35,7 +34,24 @@ public class StormRuler extends Sword{
             allowableActions.add(windSlash);
             return windSlash;
         }else
-            {return charge;}
+            {allowableActions.add(charge);
+                return charge;}
+    }
+
+    @Override
+    public int damage() {
+        if (rand.nextInt(100)<= 20){
+            damage *= 2;
+            this.verb = "perform critical strike";
+        }
+        return damage;
+    }
+
+    /**
+     * allow to perform Charge Action after picking up Storm Ruler
+     */
+    public void afterPickUp(){
+        allowableActions.add(charge);
     }
 
     /**

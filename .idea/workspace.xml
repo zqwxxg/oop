@@ -19,7 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a3fc560-538b-4886-94e6-e99a22878872" name="Default Changelist" comment="added java doc" />
+    <list default="true" id="c359be1d-12dd-45aa-bf87-58617a76d0e9" name="Default Changelist" comment="Made Lord of Cinders drop CindersOfaLord item">
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/actions/SwapWeaponAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/actions/SwapWeaponAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/enemies/Skeleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/enemies/Skeleton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/enemies/Undead.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/enemies/Undead.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/MeleeWeapon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/MeleeWeapon.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +39,9 @@
   </component>
   <component name="Git.Merge.Settings">
     <option name="BRANCH" value="origin/ZhiEn" />
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="Ziqi" />
   </component>
   <component name="Git.Settings">
     <favorite-branches>
@@ -94,7 +102,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="adc69f7b-19aa-4769-9437-b9de151b660f" name="Default Changelist" comment="" />
+      <changelist id="c359be1d-12dd-45aa-bf87-58617a76d0e9" name="Default Changelist" comment="fixed game crashing when yhorm entered ember form" />
       <created>1632421905704</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -149,19 +157,19 @@
       <option name="project" value="LOCAL" />
       <updated>1632604607070</updated>
     </task>
-    <task id="LOCAL-00008" summary="added reset instance for yhorm">
-      <created>1632605793772</created>
+    <task id="LOCAL-00008" summary="fixed game crashing when yhorm entered ember form">
+      <created>1632609506915</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1632605793772</updated>
+      <updated>1632609506915</updated>
     </task>
-    <task id="LOCAL-00009" summary="added reset instance for yhorm">
-      <created>1632605846508</created>
+    <task id="LOCAL-00009" summary="Made Lord of Cinders drop CindersOfaLord item">
+      <created>1632631937054</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1632605846508</updated>
+      <updated>1632631937054</updated>
     </task>
     <option name="localTasksCounter" value="10" />
     <servers />
@@ -186,9 +194,44 @@
     <MESSAGE value="Finish implementing StormRuler and modified some code in YhormTheGiant" />
     <MESSAGE value="merged with the codes from Ziqi branch" />
     <MESSAGE value="added javadoc" />
-    <MESSAGE value="added reset instance for yhorm" />
-    <option name="LAST_COMMIT_MESSAGE" value="added reset instance for yhorm" />
+    <MESSAGE value="fixed game crashing when yhorm entered ember form" />
+    <MESSAGE value="Made Lord of Cinders drop CindersOfaLord item" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made Lord of Cinders drop CindersOfaLord item" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1632631871483">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632631871483" />
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1632644553627">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1632644553627" />
+    <state width="1877" height="119" key="GridCell.Tab.0.bottom" timestamp="1632632280361">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="119" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632632280361" />
+    <state width="1877" height="119" key="GridCell.Tab.0.center" timestamp="1632632280361">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="119" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632632280361" />
+    <state width="1877" height="119" key="GridCell.Tab.0.left" timestamp="1632632280361">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="119" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632632280361" />
+    <state width="1877" height="119" key="GridCell.Tab.0.right" timestamp="1632632280361">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="119" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632632280361" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1632631941694">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632631941694" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1632632254127">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632632254127" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
