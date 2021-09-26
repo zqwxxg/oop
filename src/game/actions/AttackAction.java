@@ -2,16 +2,12 @@ package game.actions;
 
 import java.util.Random;
 
-import edu.monash.fit2099.engine.Action;
-import edu.monash.fit2099.engine.Actions;
-import edu.monash.fit2099.engine.Actor;
-import edu.monash.fit2099.engine.GameMap;
-import edu.monash.fit2099.engine.Item;
-import edu.monash.fit2099.engine.Weapon;
+import edu.monash.fit2099.engine.*;
 import game.Player;
 import game.enemies.Enemies;
 import game.enemies.YhormTheGiant;
 import game.enums.Status;
+import game.items.CindersOfaLord;
 import game.weapons.StormRuler;
 import game.weapons.YhormsGreatMachete;
 
@@ -84,6 +80,8 @@ public class AttackAction extends Action {
 				result += System.lineSeparator() + resetAction.execute(actor, map);
 			}
 			else if (target.getClass() == new YhormTheGiant().getClass()){
+				Location location = map.locationOf(target);
+				location.addItem(new CindersOfaLord(map, actor, location));
 				((YhormTheGiant) target).killed(map);
 				result += System.lineSeparator() + target + " HAS FALLEN.";
 				((Enemies) target).transferSouls((Player)actor);
