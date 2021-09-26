@@ -20,11 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c359be1d-12dd-45aa-bf87-58617a76d0e9" name="Default Changelist" comment="Made Lord of Cinders drop CindersOfaLord item">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/enemies/YhormTheGiant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/enemies/YhormTheGiant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/enemies/YhormTheGiant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enemies/YhormTheGiant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/actions/SwapWeaponAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/actions/SwapWeaponAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/enemies/Skeleton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/enemies/Skeleton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/enemies/Undead.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/enemies/Undead.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/MeleeWeapon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/MeleeWeapon.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +39,9 @@
   </component>
   <component name="Git.Merge.Settings">
     <option name="BRANCH" value="origin/ZhiEn" />
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="Ziqi" />
   </component>
   <component name="Git.Settings">
     <favorite-branches>
@@ -202,6 +204,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632631871483" />
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1632644553627">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1632644553627" />
     <state width="1877" height="119" key="GridCell.Tab.0.bottom" timestamp="1632632280361">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
