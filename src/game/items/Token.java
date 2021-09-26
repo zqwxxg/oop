@@ -25,6 +25,8 @@ public class Token extends PortableItem implements Soul {
 
     /***
      * Constructor.
+     *
+     * The token of souls is displayed as '$'
      */
     private Token() {
         super("Token of Souls", '$');

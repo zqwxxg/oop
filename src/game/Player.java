@@ -8,6 +8,7 @@ import game.interfaces.Soul;
 import game.items.EstusFlask;
 import game.items.Token;
 import game.weapons.Broadsword;
+import game.weapons.StormRuler;
 
 import java.util.List;
 

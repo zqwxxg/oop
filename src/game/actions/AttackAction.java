@@ -62,7 +62,7 @@ public class AttackAction extends Action {
 
 		//Storm Ruler passive action (dullness)
 		if (target.hasCapability(Status.NOT_WEAK_TO_STORM_RULER) && (weapon.getClass() == StormRuler.class)) {
-			damage = weapon.damage();
+            damage = weapon.damage();
 			damage /= 2;
 		}
 

@@ -34,6 +34,14 @@ public class StormRuler extends Sword{
     public Charge getCharge() {
         return charge;
     }
+    
+    /**
+     * double the damage when performing Wind Slash
+     * @return Damage of Wind Slash
+     */
+    public int WindSlashDamage(){
+        return damage*2;
+    }
 
     /**
      * double the damage when performing Wind Slash

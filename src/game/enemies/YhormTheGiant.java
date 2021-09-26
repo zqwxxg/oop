@@ -2,7 +2,6 @@ package game.enemies;
 
 import edu.monash.fit2099.engine.*;
 import game.behaviours.AttackBehaviour;
-import game.behaviours.WanderBehaviour;
 import game.interfaces.Behaviour;
 import game.weapons.StormRuler;
 import game.weapons.YhormsGreatMachete;
@@ -55,9 +54,6 @@ public class YhormTheGiant extends LordOfCinder{
             Weapon weapon = this.getWeapon();
             Action action = behaviour.getAction(this, map);
             if (action != null) {
-                if (followBehaviourAdded && behaviour instanceof WanderBehaviour) {
-                    continue;
-                }
                 return action;
             }
         }
