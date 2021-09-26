@@ -54,14 +54,6 @@ public class StormRuler extends Sword{
     }
 
     /**
-     * set the attributes to specific values when performing Wind Slash Action
-     */
-    public void changeToWindSlash(){
-        this.damage *= 2;
-        this.hitRate = 100;
-    }
-
-    /**
      * remove Charge Action when Storm Ruler is fully charged
      */
     public void removeCharge(){
