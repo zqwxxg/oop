@@ -31,40 +31,6 @@ public abstract class LordOfCinder extends Enemies {
     @Override
     public void resetInstance(GameMap map, Status status, String direction) {
         if (status == Status.ENEMIES_KILLED) {
-//            Location location = map.locationOf(this);
-//            int x = location.x();
-//            int y = location.y();
-//            switch (direction) {
-//                // bonfire is at north of the location that player rested on
-//                case "North" -> y -= 1;
-//                // bonfire is at north-east of the location that player rested on
-//                case "North-East" -> {
-//                    x += 1;
-//                    y -= 1;
-//                }
-//                // bonfire is at east of the location that player rested on
-//                case "East" -> x += 1;
-//                // bonfire is at south-east of the location that player rested on
-//                case "South-East" -> {
-//                    x += 1;
-//                    y += 1;
-//                }
-//                // bonfire is at south of the location that player rested on
-//                case "South" -> y += 1;
-//                // bonfire is at south-west of the location that player rested on
-//                case "South-West" -> {
-//                    x -= 1;
-//                    y += 1;
-//                }
-//                // bonfire is at west of the location that player rested on
-//                case "West" -> x += 1;
-//                // bonfire is at north-west of the location that player rested on
-//                case "North-West" -> {
-//                    x -= 1;
-//                    y -= 1;
-//                }
-//            }
-//            location = map.at(x, y);
             map.locationOf(this).addItem(new CindersOfaLord(map));
             map.removeActor(this);
         } else {
