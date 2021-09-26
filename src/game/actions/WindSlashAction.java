@@ -33,6 +33,7 @@ public class WindSlashAction extends AttackAction{
 
         Weapon weapon = actor.getWeapon();
         int damage = weapon.damage();
+        damage *= 2;
 
         String result = actor + " " + verb + " and " + actor.getWeapon().verb() + " " + target + " for " + damage + " damage.";
         target.hurt(damage);
