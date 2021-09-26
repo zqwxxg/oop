@@ -55,7 +55,7 @@ public class Player extends Actor implements Soul, Resettable {
 	 */
 	public Player(String name, char displayChar, int hitPoints) {
 		super(name, displayChar, hitPoints);
-		soulCount = 0;
+		soulCount = 100;
 		this.addCapability(Status.HOSTILE_TO_ENEMY);
 		this.addCapability(Status.REST);
 		this.addCapability(Status.SOFT_RESET);

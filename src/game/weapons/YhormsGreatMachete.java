@@ -12,7 +12,7 @@ import game.weapons.activeActions.BurnGround;
  * @see edu.monash.fit2099.engine.WeaponItem
  * @see game.weapons.Axe
  */
-public class YhormsGreatMachete extends MeleeWeapon{
+public class YhormsGreatMachete extends Axe{
 
     boolean emberFormBool;
     /**

@@ -19,11 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c359be1d-12dd-45aa-bf87-58617a76d0e9" name="Default Changelist" comment="fixed game crashing when yhorm entered ember form">
+    <list default="true" id="c359be1d-12dd-45aa-bf87-58617a76d0e9" name="Default Changelist" comment="Made Lord of Cinders drop CindersOfaLord item">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/actions/AttackAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/actions/AttackAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/actions/AttackAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/AttackAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/enemies/YhormTheGiant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/enemies/YhormTheGiant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/enemies/YhormTheGiant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enemies/YhormTheGiant.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -162,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632609506915</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Made Lord of Cinders drop CindersOfaLord item">
+      <created>1632631937054</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1632631937054</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -186,38 +193,39 @@
     <MESSAGE value="merged with the codes from Ziqi branch" />
     <MESSAGE value="added javadoc" />
     <MESSAGE value="fixed game crashing when yhorm entered ember form" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed game crashing when yhorm entered ember form" />
+    <MESSAGE value="Made Lord of Cinders drop CindersOfaLord item" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made Lord of Cinders drop CindersOfaLord item" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1632631207337">
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1632631871483">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632631207337" />
-    <state width="1877" height="28" key="GridCell.Tab.0.bottom" timestamp="1632631211463">
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632631871483" />
+    <state width="1877" height="119" key="GridCell.Tab.0.bottom" timestamp="1632632280361">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="28" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632631211463" />
-    <state width="1877" height="28" key="GridCell.Tab.0.center" timestamp="1632631211463">
+    <state width="1877" height="119" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632632280361" />
+    <state width="1877" height="119" key="GridCell.Tab.0.center" timestamp="1632632280361">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="28" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632631211463" />
-    <state width="1877" height="28" key="GridCell.Tab.0.left" timestamp="1632631211463">
+    <state width="1877" height="119" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632632280361" />
+    <state width="1877" height="119" key="GridCell.Tab.0.left" timestamp="1632632280361">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="28" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632631211463" />
-    <state width="1877" height="28" key="GridCell.Tab.0.right" timestamp="1632631211463">
+    <state width="1877" height="119" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632632280361" />
+    <state width="1877" height="119" key="GridCell.Tab.0.right" timestamp="1632632280361">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="28" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632631211463" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1632609510964">
+    <state width="1877" height="119" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632632280361" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1632631941694">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632609510964" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1632628888849">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632631941694" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1632632254127">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632628888849" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632632254127" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
