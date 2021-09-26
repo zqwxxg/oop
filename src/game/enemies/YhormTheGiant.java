@@ -56,6 +56,7 @@ public class YhormTheGiant extends LordOfCinder{
      * @return true if Yhorm is in ember form
      */
     public boolean isEnraged() {
+        ((YhormsGreatMachete)getWeapon()).rageModeTest(this);
         return getHitPoints() < (getMaxHitPoints()/2);
     }
 
