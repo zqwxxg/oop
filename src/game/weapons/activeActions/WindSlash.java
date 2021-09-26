@@ -23,7 +23,6 @@ public class WindSlash extends WeaponAction {
     @Override
     public String execute(Actor actor, GameMap map) {
         String result = "";
-        ((StormRuler)weapon).changeToWindSlash();
         for (Exit exit : map.locationOf(actor).getExits()) {
             Location destination = exit.getDestination();
             if (destination.containsAnActor()) {

@@ -35,6 +35,14 @@ public class StormRuler extends Sword{
         return charge;
     }
 
+    /**
+     * double the damage when performing Wind Slash
+     * @return Damage of Wind Slash
+     */
+    public int WindSlashDamage(){
+        return damage*2;
+    }
+
     @Override
     public WeaponAction getActiveSkill(Actor target, String direction) {
         if(charge.getIsFullyCharge()){
@@ -51,14 +59,6 @@ public class StormRuler extends Sword{
      */
     public void afterPickUp(){
         allowableActions.add(charge);
-    }
-
-    /**
-     * set the attributes to specific values when performing Wind Slash Action
-     */
-    public void changeToWindSlash(){
-        this.damage *= 2;
-        this.hitRate = 100;
     }
 
     /**
