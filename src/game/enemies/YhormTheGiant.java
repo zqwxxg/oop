@@ -6,8 +6,10 @@ import game.behaviours.AttackBehaviour;
 import game.behaviours.WanderBehaviour;
 import game.enums.Status;
 import game.interfaces.Behaviour;
+import game.weapons.StormRuler;
 import game.weapons.YhormsGreatMachete;
 import game.weapons.activeActions.BurnGround;
+import game.weapons.activeActions.WindSlash;
 
 public class YhormTheGiant extends LordOfCinder{
     /**
@@ -31,6 +33,19 @@ public class YhormTheGiant extends LordOfCinder{
      */
     public void setIsStunned(){
         isStunned = true;
+    }
+
+    @Override
+    public Actions getAllowableActions(Actor otherActor, String direction, GameMap map) {
+        Actions actions = super.getAllowableActions(otherActor, direction, map);
+        Weapon weapon = otherActor.getWeapon();
+        if(weapon.getClass()== StormRuler.class){ //allow Player to perform Wind Slash Action
+            if(((StormRuler)weapon).getCharge().getIsFullyCharge()){
+                actions.add(new WindSlash((StormRuler)weapon));
+                return actions;
+            }
+        }
+        return actions;
     }
 
     @Override

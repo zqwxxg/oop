@@ -27,6 +27,14 @@ public class StormRuler extends Sword{
         super("Storm Ruler", '7', 70, "slash", 60, 2000);
     }
 
+    /**
+     * getter for charge attribute
+     * @return Charge of the Storm Ruler
+     */
+    public Charge getCharge() {
+        return charge;
+    }
+
     @Override
     public WeaponAction getActiveSkill(Actor target, String direction) {
         if(charge.getIsFullyCharge()){
@@ -36,15 +44,6 @@ public class StormRuler extends Sword{
         }else
             {allowableActions.add(charge);
                 return charge;}
-    }
-
-    @Override
-    public int damage() {
-        if (rand.nextInt(100)<= 20){
-            damage *= 2;
-            this.verb = "perform critical strike";
-        }
-        return damage;
     }
 
     /**
@@ -63,21 +62,21 @@ public class StormRuler extends Sword{
     }
 
     /**
-     * allow to perform Wind Slash Action when Storm Ruler is fully charged
+     * remove Charge Action when Storm Ruler is fully charged
      */
-    public void addWindSlash(){
+    public void removeCharge(){
         if(charge.getIsFullyCharge()){
             allowableActions.remove(charge);
-            allowableActions.add(windSlash);}
-            charge = new Charge(this);
+        }
     }
 
     /**
-     * allow to recharge the Storm Ruler when Wind Slash Action has performed
+     * allow to recharge the Storm Ruler when Wind Slash Action has been performed
      */
     public void addCharge(){
-        allowableActions.remove(windSlash);
+        charge = new Charge(this);
         allowableActions.add(charge);
-        windSlash = new WindSlash(this);}
+    }
+
 
 }
