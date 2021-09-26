@@ -2,8 +2,6 @@ package game.enemies;
 
 import edu.monash.fit2099.engine.*;
 import game.behaviours.AttackBehaviour;
-import game.behaviours.FollowBehaviour;
-import game.behaviours.WanderBehaviour;
 import game.interfaces.Behaviour;
 import game.weapons.StormRuler;
 import game.weapons.YhormsGreatMachete;

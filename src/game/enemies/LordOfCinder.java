@@ -31,7 +31,7 @@ public abstract class LordOfCinder extends Enemies {
     @Override
     public void resetInstance(GameMap map, Status status, String direction) {
         if (status == Status.ENEMIES_KILLED) {
-            map.locationOf(this).addItem(new CindersOfaLord(map));
+            map.locationOf(this).addItem(new CindersOfaLord());
             map.removeActor(this);
         } else {
             hitPoints = maxHitPoints;
