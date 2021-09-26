@@ -19,10 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c359be1d-12dd-45aa-bf87-58617a76d0e9" name="Default Changelist" comment="Made Lord of Cinders drop CindersOfaLord item">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/enemies/YhormTheGiant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enemies/YhormTheGiant.java" afterDir="false" />
+    <list default="true" id="c359be1d-12dd-45aa-bf87-58617a76d0e9" name="Default Changelist" comment="fixed issue with ember form">
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/enemies/YhormTheGiant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/enemies/YhormTheGiant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/items/CindersOfaLord.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/items/CindersOfaLord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/YhormsGreatMachete.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/YhormsGreatMachete.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632631937054</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fixed issue with ember form">
+      <created>1632647596668</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1632647596668</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -195,7 +202,8 @@
     <MESSAGE value="added javadoc" />
     <MESSAGE value="fixed game crashing when yhorm entered ember form" />
     <MESSAGE value="Made Lord of Cinders drop CindersOfaLord item" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made Lord of Cinders drop CindersOfaLord item" />
+    <MESSAGE value="fixed issue with ember form" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed issue with ember form" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -207,26 +215,26 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1632644553627" />
-    <state width="1877" height="541" key="GridCell.Tab.0.bottom" timestamp="1632647350260">
+    <state width="1877" height="882" key="GridCell.Tab.0.bottom" timestamp="1632647582506">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="541" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632647350260" />
-    <state width="1877" height="541" key="GridCell.Tab.0.center" timestamp="1632647350260">
+    <state width="1877" height="882" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632647582506" />
+    <state width="1877" height="882" key="GridCell.Tab.0.center" timestamp="1632647582506">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="541" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632647350260" />
-    <state width="1877" height="541" key="GridCell.Tab.0.left" timestamp="1632647350260">
+    <state width="1877" height="882" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632647582506" />
+    <state width="1877" height="882" key="GridCell.Tab.0.left" timestamp="1632647582506">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="541" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632647350260" />
-    <state width="1877" height="541" key="GridCell.Tab.0.right" timestamp="1632647350260">
+    <state width="1877" height="882" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632647582506" />
+    <state width="1877" height="882" key="GridCell.Tab.0.right" timestamp="1632647582506">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="541" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632647350260" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1632631941694">
+    <state width="1877" height="882" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632647582506" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1632647600852">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632631941694" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632647600852" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1632632254127">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -24,7 +24,6 @@ public class YhormTheGiant extends LordOfCinder{
         super("Yhorm the Giant", 'y', 500, 5000);
         inventory.add(new YhormsGreatMachete());
         behaviours.add(new AttackBehaviour());
-        hurt(250);
     }
 
     /**
