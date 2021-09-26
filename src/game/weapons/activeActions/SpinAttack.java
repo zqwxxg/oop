@@ -8,8 +8,12 @@ import game.weapons.GiantAxe;
 /**
  * Active Action for weapon Giant Axe
  *
- * @see edu.monash.fit2099.engine.WeaponAction
+ * @see edu.monash.fit2099.engine
+ * @see AttackAction
+ * @see Status
+ * @see GiantAxe
  */
+
 public class SpinAttack extends WeaponAction {
 
     /**

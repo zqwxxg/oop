@@ -7,13 +7,33 @@ import game.ResetManager;
 import game.enums.Status;
 
 /**
+ * Special action for player to rest
  *
+ * @see Action
+ * @see Actor
+ * @see GameMap
+ * @see ResetManager
+ * @see Status
  */
+
 public class RestAction extends Action {
 
+    /**
+     * The direction of bonfire
+     */
     protected String direction;
+
+    /**
+     * The key used in the menu to trigger this Action.
+     */
     protected String hotkey;
 
+    /**
+     * Constructor
+     *
+     * @param direction the direction of bonfire
+     * @param hotkey the key used in the menu to trigger this Action.
+     */
     public RestAction(String direction, String hotkey) {
         this.direction = direction;
         this.hotkey = hotkey;

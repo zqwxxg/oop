@@ -30,7 +30,6 @@ public class BuyGiantAxeAction extends Action {
                 }
             }
             actor.addItemToInventory(new GiantAxe());
-            player.subtractSouls(weapon.getPrice());
             ret +=  weapon.toString() + " has been successfully bought by " + actor.toString();
         }else{
             ret += "Not enough souls to buy " + weapon.toString();

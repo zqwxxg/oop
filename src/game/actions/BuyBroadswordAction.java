@@ -30,7 +30,6 @@ public class BuyBroadswordAction extends Action {
                 }
             }
             actor.addItemToInventory(new Broadsword());
-            player.subtractSouls(weapon.getPrice());
             ret +=  weapon.toString() + " has been successfully bought by " + actor.toString();
         }else{
             ret += "Not enough souls to buy " + weapon.toString();

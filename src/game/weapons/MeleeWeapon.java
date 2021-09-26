@@ -17,15 +17,12 @@ public class MeleeWeapon extends WeaponItem {
      */
     public MeleeWeapon(String name, char displayChar, int damage, String verb, int hitRate) {
         super(name, displayChar, damage, verb, hitRate);
-        this.price = price;
     }
 
     public MeleeWeapon(String name, char displayChar, int damage, String verb, int hitRate, int price) {
         super(name, displayChar, damage, verb, hitRate);
         this.price = price;
     }
-
-    //TODO: please figure out how to disable dropping item action.
 
     public int getPrice(){return price;}
 

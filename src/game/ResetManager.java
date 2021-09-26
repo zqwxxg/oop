@@ -46,7 +46,6 @@ public class ResetManager {
     /**
      * Reset the game by traversing through all the list
      * By doing this way, it will avoid using `instanceof` all over the place.
-     * FIXME: it does nothing, you need to implement it :)
      */
     public void run(GameMap map, Status status, String direction){
         cleanUp(map);

@@ -1,18 +1,22 @@
 package game.behaviours;
 
 import edu.monash.fit2099.engine.*;
-import game.enums.Status;
 import game.interfaces.Behaviour;
 
 /**
  * A class that figures out a MoveAction that will move the actor one step 
  * closer to a target Actor.
+ *
+ * @see edu.monash.fit2099.engine
+ * @see Behaviour
  */
+
 public class FollowBehaviour implements Behaviour {
 
-
+	/**
+	 * The Actor that is to be followed
+	 */
 	private Actor target;
-
 
 	/**
 	 * Constructor.
@@ -43,7 +47,6 @@ public class FollowBehaviour implements Behaviour {
 		}
 		return null;
 	}
-
 
 	/**
 	 * Compute the Manhattan distance between two locations.

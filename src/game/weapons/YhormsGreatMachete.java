@@ -3,10 +3,8 @@ package game.weapons;
 import edu.monash.fit2099.engine.Actor;
 import edu.monash.fit2099.engine.Location;
 import edu.monash.fit2099.engine.WeaponAction;
-import game.enemies.Enemies;
 import game.enemies.YhormTheGiant;
 import game.weapons.activeActions.BurnGround;
-import game.weapons.activeActions.SpinAttack;
 
 /**
  * Yhorm's Great Machete class

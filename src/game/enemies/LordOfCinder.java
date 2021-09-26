@@ -1,12 +1,11 @@
 package game.enemies;
 
 import edu.monash.fit2099.engine.*;
+import game.behaviours.FollowBehaviour;
 import game.enums.Status;
 
 /**
  * The boss of Design o' Souls
- * FIXME: This boss is Boring. It does nothing. You need to implement features here.
- * TODO: Could it be an abstract class? If so, why and how?
  */
 public abstract class LordOfCinder extends Enemies {
     /**
@@ -30,6 +29,15 @@ public abstract class LordOfCinder extends Enemies {
 
     @Override
     public void resetInstance(GameMap map, Status status, String direction) {
+        if (status == Status.ENEMIES_KILLED) {
+            map.removeActor(this);
+        } else {
+            hitPoints = maxHitPoints;
+            map.moveActor(this, initialPosition);
+            // remove follow behaviour from behaviours list
+            behaviours.removeIf(behaviour -> behaviour instanceof FollowBehaviour);
+            followBehaviourAdded = false;
+        }
     }
 }
 

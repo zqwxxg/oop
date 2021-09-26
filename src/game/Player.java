@@ -8,7 +8,6 @@ import game.interfaces.Soul;
 import game.items.EstusFlask;
 import game.items.Token;
 import game.weapons.Broadsword;
-import game.weapons.StormRuler;
 
 import java.util.List;
 
@@ -261,22 +260,41 @@ public class Player extends Actor implements Soul, Resettable {
 		}
 	}
 
+	/**
+	 * Returns max hit points of the player
+	 *
+	 * @return An integer that represents maxHitPoints
+	 */
 	public int getMaxHitPoints(){
 		return maxHitPoints;
 	}
 
+	/**
+	 * Returns hit points of the player
+	 *
+	 * @return An integer that represents hitPoints
+	 */
 	public int getHitPoints() {
 		return hitPoints;
 	}
 
+	/**
+	 * Increases max hit points of the player
+	 *
+	 * @param points the points that adds on max hit points
+	 */
 	public void increaseMaxHitPoints(int points){
 		maxHitPoints += points;
 	}
 
+	/**
+	 * Setter for hitPoints attribute
+	 *
+	 * @param hitPoints the hit points of player
+	 */
 	public void setHitPoints(int hitPoints) {
-		if (hitPoints >= 0 && hitPoints <= 100) {
+		if (hitPoints >= 0 && hitPoints <= maxHitPoints) {
 			this.hitPoints = hitPoints;
 		}
 	}
-
 }

@@ -24,7 +24,6 @@ public class IncreaseMaxHpAction extends Action {
         menuDescription(actor);
         if(player.subtractSouls(price)){
             player.increaseMaxHitPoints(25);
-            player.subtractSouls(price);
             return player.toString() + " maximum hit points has been increased to " + player.getMaxHitPoints();
         }
         return "Not enough souls to buy " + item;

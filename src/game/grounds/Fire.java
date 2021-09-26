@@ -22,6 +22,7 @@ public class Fire extends Ground {
         }
         else if (location.containsAnActor() && location.getActor().getClass() != new YhormTheGiant().getClass()){
             location.getActor().hurt(25);
+            System.out.println(location.getActor() + " took 25 damage from fire");
         }
         turnCounter++;
     }
