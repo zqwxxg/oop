@@ -43,6 +43,14 @@ public class StormRuler extends Sword{
         return damage*2;
     }
 
+    /**
+     * double the damage when performing Wind Slash
+     * @return Damage of Wind Slash
+     */
+    public int WindSlashDamage(){
+        return damage*2;
+    }
+
     @Override
     public WeaponAction getActiveSkill(Actor target, String direction) {
         if(charge.getIsFullyCharge()){
