@@ -24,6 +24,7 @@ public class YhormTheGiant extends LordOfCinder{
         super("Yhorm the Giant", 'y', 500, 5000);
         inventory.add(new YhormsGreatMachete());
         behaviours.add(new AttackBehaviour());
+        hurt(250);
     }
 
     /**
@@ -56,6 +57,7 @@ public class YhormTheGiant extends LordOfCinder{
      * @return true if Yhorm is in ember form
      */
     public boolean isEnraged() {
+        ((YhormsGreatMachete)getWeapon()).rageModeTest(this);
         return getHitPoints() < (getMaxHitPoints()/2);
     }
 
