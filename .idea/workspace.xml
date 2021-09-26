@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd94943e-3b68-472f-8520-29ba19a407bd" name="Default Changelist" comment="" />
+    <list default="true" id="c359be1d-12dd-45aa-bf87-58617a76d0e9" name="Default Changelist" comment="modify damage of storm ruler">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/Player$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Player$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/actions/AttackAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/actions/AttackAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/actions/AttackAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/AttackAction.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,17 +37,45 @@
       </list>
     </option>
   </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/ZhiEn" />
+  </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/ZhiEn" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Ziqi2" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1xsldxudAB5FADPaHeia2zuKpzQ" />
+  <component name="ProjectId" id="1yYI4XQSlW3KMBkNNqU04iZeMfR" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="OverrideImplement.combined" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../zwon0015/Bootcamps/Bootcamp5" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="game" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -43,48 +94,185 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Application" />
+        <item itemvalue="Application.Application" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bd94943e-3b68-472f-8520-29ba19a407bd" name="Default Changelist" comment="" />
-      <created>1631151771428</created>
+      <changelist id="c359be1d-12dd-45aa-bf87-58617a76d0e9" name="Default Changelist" comment="fixed game crashing when yhorm entered ember form" />
+      <created>1632421905704</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1631151771428</updated>
+      <updated>1632421905704</updated>
     </task>
+    <task id="LOCAL-00001" summary="vendor and broadsword done">
+      <created>1632505865532</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1632505865532</updated>
+    </task>
+    <task id="LOCAL-00002" summary="modified storm ruler">
+      <created>1632554985602</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1632554985602</updated>
+    </task>
+    <task id="LOCAL-00003" summary="vendor increase max HP added">
+      <created>1632571458408</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1632571458408</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added StormRuler passive action (Dullness)">
+      <created>1632573050557</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1632573050557</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Finish implementing StormRuler and modified some code in YhormTheGiant">
+      <created>1632580080346</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1632580080346</updated>
+    </task>
+    <task id="LOCAL-00006" summary="merged with the codes from Ziqi branch">
+      <created>1632586852752</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1632586852752</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added javadoc">
+      <created>1632604607070</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1632604607070</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fixed game crashing when yhorm entered ember form">
+      <created>1632609506915</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1632609506915</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Made Lord of Cinders drop CindersOfaLord item">
+      <created>1632631937054</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1632631937054</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fix errors">
+      <created>1632652612726</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1632652612726</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fix errors">
+      <created>1632652666063</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1632652666063</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fix errors">
+      <created>1632652758602</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1632652758602</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fix errors">
+      <created>1632652795045</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1632652795045</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fix errors">
+      <created>1632662765430</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1632662765430</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fix errors">
+      <created>1632662902439</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1632662902439</updated>
+    </task>
+    <task id="LOCAL-00016" summary="push rationale and uml diagrams">
+      <created>1632665060761</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1632665060761</updated>
+    </task>
+    <task id="LOCAL-00017" summary="modify damage of storm ruler">
+      <created>1632667149047</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1632667149047</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="779" y="38" key="#com.intellij.ide.util.MemberChooser" timestamp="1632414802640">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="779" y="38" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1632414802640" />
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1631151805219">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1631151805219" />
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1632403639819">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1632403639819" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1632403639819">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1632403639819" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1632403639818">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1632403639818" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1632403639819">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1632403639819" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1632331433643">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1632331433643" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="vendor and broadsword done" />
+    <MESSAGE value="modified storm ruler" />
+    <MESSAGE value="vendor increase max HP added" />
+    <MESSAGE value="added StormRuler passive action (Dullness)" />
+    <MESSAGE value="Finish implementing StormRuler and modified some code in YhormTheGiant" />
+    <MESSAGE value="merged with the codes from Ziqi branch" />
+    <MESSAGE value="added javadoc" />
+    <MESSAGE value="fixed game crashing when yhorm entered ember form" />
+    <MESSAGE value="Made Lord of Cinders drop CindersOfaLord item" />
+    <MESSAGE value="fix errors" />
+    <MESSAGE value="push rationale and uml diagrams" />
+    <MESSAGE value="modify damage of storm ruler" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify damage of storm ruler" />
+    <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/game/actions/WindSlashAction.java</url>
+          <line>31</line>
+          <properties class="game.actions.WindSlashAction" method="execute">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

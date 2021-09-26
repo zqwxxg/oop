@@ -1,23 +1,39 @@
 package game;
 
 import edu.monash.fit2099.engine.*;
+import game.actions.BuyBroadswordAction;
+import game.actions.BuyGiantAxeAction;
+import game.actions.IncreaseMaxHpAction;
+import game.enums.Status;
 
-import java.util.ArrayList;
-
-public class Vendor {
-    private ArrayList<WeaponItem> weaponsForSale = new ArrayList<>();
-    private static final String VENDOR_NAME = "Fire Keeper";
-
-    public void addWeaponsForSale(){
-        weaponsForSale.add(new Broadsword());
-        weaponsForSale.add(new GiantAxe());
+/**
+ * Class that sells weapons
+ *
+ * @see edu.monash.fit2099.engine.Actor
+ */
+public class Vendor extends Actor {
+    
+    /**
+     * Constructor for Vendor class
+     * 
+     * Vendor is named as Fire Keeper and represents by character 'F'
+     */
+    public Vendor(){
+        super("Fire Keeper", 'F', 0);
+        addCapability(Status.UNATTACKABLE);
+        addCapability(Status.ENTER_FLOOR);
     }
 
-    public String buyWeapon(Actor actor, GameMap map, WeaponItem weapon){
-        if(weaponsForSale.contains(weapon)){
-            BuyWeaponAction buyWeaponAction = new BuyWeaponAction(weapon);
-            return buyWeaponAction.execute(actor, map);
-        }
-        return "We do not sell this weapon.";
+    @Override
+    public Actions getAllowableActions(Actor otherActor, String direction, GameMap map) {
+        Actions actions = super.getAllowableActions(otherActor, direction, map);
+        actions.add(new BuyBroadswordAction());
+        actions.add(new BuyGiantAxeAction());
+        actions.add(new IncreaseMaxHpAction());
+        return actions;
     }
+
+    @Override
+    public Action playTurn(Actions actions, Action lastAction, GameMap map, Display display) {return new DoNothingAction();}
+
 }
