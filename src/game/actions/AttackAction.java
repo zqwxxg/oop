@@ -59,13 +59,15 @@ public class AttackAction extends Action {
 		}
 
 		int damage = weapon.damage();
+		String verb = weapon.verb();
 
 		//Storm Ruler passive action (dullness)
 		if (target.hasCapability(Status.NOT_WEAK_TO_STORM_RULER) && (weapon.getClass() == StormRuler.class)) {
 			damage /= 2;
+			verb += " but weakly attacks";
 		}
 
-		String result = actor + " " + weapon.verb() + " " + target + " for " + damage + " damage.";
+		String result = actor + " " + verb + " " + target + " for " + damage + " damage.";
 		target.hurt(damage);
 		if (!target.isConscious()) {
 			Actions dropActions = new Actions();

@@ -1,10 +1,8 @@
 package game.weapons.activeActions;
 
 import edu.monash.fit2099.engine.*;
-import game.actions.AttackAction;
 import game.actions.WindSlashAction;
 import game.enemies.YhormTheGiant;
-import game.enums.Status;
 import game.weapons.StormRuler;
 
 /**
