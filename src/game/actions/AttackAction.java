@@ -5,9 +5,9 @@ import java.util.Random;
 import edu.monash.fit2099.engine.*;
 import game.Player;
 import game.enemies.Enemies;
+import game.enemies.LordOfCinder;
 import game.enemies.YhormTheGiant;
 import game.enums.Status;
-import game.items.CindersOfaLord;
 import game.weapons.StormRuler;
 import game.weapons.YhormsGreatMachete;
 
@@ -50,19 +50,20 @@ public class AttackAction extends Action {
 			return actor + " misses " + target + ".";
 		}
 
-		if (actor.getClass() == new YhormTheGiant().getClass() && ((YhormTheGiant)actor).isEnraged() && rand.nextInt(2) < 1){
+		if (actor.getClass() == new YhormTheGiant().getClass() && ((YhormTheGiant) actor).isEnraged() && rand.nextInt(2) < 1) {
 			actor.getWeapon().getActiveSkill(target, direction).execute(actor, map);
 		}
 
-		if (target.getClass() == new YhormTheGiant().getClass()){
-			((YhormsGreatMachete)((YhormTheGiant)target).getWeapon()).rageModeTest((YhormTheGiant)target);
+		if (target.getClass() == new YhormTheGiant().getClass()) {
+			((YhormsGreatMachete) target.getWeapon()).rageModeTest((YhormTheGiant) target);
 		}
 
 		int damage = weapon.damage();
 
 		//Storm Ruler passive action (dullness)
-		if (target.hasCapability(Status.NOT_WEAK_TO_STORM_RULER) && (weapon.getClass()==StormRuler.class)){
-			damage /= 2;}
+		if (target.hasCapability(Status.NOT_WEAK_TO_STORM_RULER) && (weapon.getClass() == StormRuler.class)) {
+			damage /= 2;
+		}
 
 		String result = actor + " " + weapon.verb() + " " + target + " for " + damage + " damage.";
 		target.hurt(damage);
@@ -78,22 +79,18 @@ public class AttackAction extends Action {
 				// if player is killed by enemies, no need to modify new location of token
 				Action resetAction = new SoftResetAction(null);
 				result += System.lineSeparator() + resetAction.execute(actor, map);
-			}
-			else if (target.getClass() == new YhormTheGiant().getClass()){
-				Location location = map.locationOf(target);
-				location.addItem(new CindersOfaLord(map, actor, location));
-				((YhormTheGiant) target).killed(map);
-				result += System.lineSeparator() + target + " HAS FALLEN.";
-				((Enemies) target).transferSouls((Player)actor);
-			}
-			else {
-				((Enemies) target).resetInstance(map, Status.ENEMIES_KILLED, null);
+			} else {
+				((Enemies) target).resetInstance(map, Status.ENEMIES_KILLED, direction);
 				// checks if the dead target is revived
 				if (map.contains(target)) {
 					result += System.lineSeparator() + target + " is revived.";
 				} else {
-					((Enemies) target).transferSouls((Player)actor);
-					result += System.lineSeparator() + target + " is killed.";
+					((Enemies) target).transferSouls((Player) actor);
+					if (target instanceof LordOfCinder) {
+						result += System.lineSeparator() + target + " HAS FALLEN.";
+					} else {
+						result += System.lineSeparator() + target + " is killed.";
+					}
 				}
 			}
 		}

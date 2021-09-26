@@ -204,7 +204,7 @@ public class Player extends Actor implements Soul, Resettable {
 					}
 					location = map.at(x, y);
 				}
-				Token token = Token.getInstance("Token of Souls", '$');
+				Token token = Token.getInstance();
 				transferSouls(token);
 				location.addItem(token);
 				// if the location of last token is not null, which means token has been placed on map,
@@ -213,6 +213,13 @@ public class Player extends Actor implements Soul, Resettable {
 					lastToken.removeItem(token);
 				}
 				lastToken = location;
+				for(Item item : getInventory()) {
+					if (item.asWeapon() != null) {
+						removeItemFromInventory(item);
+						break; // after it removes that weapon, break the loop.
+					}
+				}
+				inventory.add(new Broadsword());
 				map.moveActor(this, lastBonfire);
 			}
 		}

@@ -17,12 +17,4 @@ public class Broadsword extends Sword{
         super("Broadsword", '/', 30, "slash", 80, 500);
     }
 
-    @Override
-    public int damage() {
-        if (rand.nextInt(100)<= 20){
-            damage *= 2;
-            this.verb = "perform critical strike";
-        }
-        return damage;
-    }
 }

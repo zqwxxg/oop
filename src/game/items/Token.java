@@ -25,28 +25,23 @@ public class Token extends PortableItem implements Soul {
 
     /***
      * Constructor.
-     *
-     * @param name the name of this Item
-     * @param displayChar the character to use to represent this item if it is on the ground
      */
-    private Token(String name, char displayChar) {
-        super(name, displayChar);
+    private Token() {
+        super("Token of Souls", '$');
     }
 
     /**
      * Replaces the zero-parameter constructor and creates an instance of Token
      *
-     * @param name the name of this Item
-     * @param displayChar the character to use to represent this item if it is on the ground
      * @return a new instance of Token if there is no Token instantiated, the instantiated Token otherwise
      */
-    public static Token getInstance(String name, char displayChar) {
+    public static Token getInstance() {
         soulCount = 0;
         // since only one token is allowed to exist, if there is no token instantiated,
         // return a new token instance, else return the instantiated token
         // note that token instantiated is static
         if (tokenInstantiated == null) {
-            tokenInstantiated = new Token(name, displayChar);
+            tokenInstantiated = new Token();
         }
         return tokenInstantiated;
     }
