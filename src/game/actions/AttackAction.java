@@ -50,7 +50,7 @@ public class AttackAction extends Action {
 			return actor + " misses " + target + ".";
 		}
 
-		if (actor.getClass() == new YhormTheGiant().getClass() && ((YhormTheGiant) actor).isEnraged() && rand.nextInt(2) < 1) {
+		if (actor.getClass() == new YhormTheGiant().getClass() && ((YhormTheGiant) actor).isEnraged()) {
 			actor.getWeapon().getActiveSkill(target, direction).execute(actor, map);
 		}
 
