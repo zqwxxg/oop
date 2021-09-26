@@ -1,6 +1,7 @@
 package game.actions;
 
 import edu.monash.fit2099.engine.*;
+import game.weapons.StormRuler;
 
 import java.util.List;
 
@@ -24,6 +25,10 @@ public class SwapWeaponAction extends PickUpItemAction {
     public String execute(Actor actor, GameMap map) {
         Weapon currentWeapon = actor.getWeapon();
         List<Item> items = actor.getInventory();
+
+        if(item.getClass()== StormRuler.class){
+            ((StormRuler)item).afterPickUp();
+        }
 
         // loop through all inventory
         for(Item item : items){
