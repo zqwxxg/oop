@@ -19,28 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c359be1d-12dd-45aa-bf87-58617a76d0e9" name="Default Changelist" comment="Made Lord of Cinders drop CindersOfaLord item">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/Player$drinkEstusFlaskAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Player$drinkEstusFlaskAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/actions/AttackAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/actions/AttackAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/enemies/LordOfCinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/enemies/LordOfCinder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/enemies/YhormTheGiant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/enemies/YhormTheGiant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/items/CindersOfaLord.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/items/CindersOfaLord.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/items/Token.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/items/Token.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/Broadsword.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/Broadsword.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/Sword.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/Sword.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/YhormsGreatMachete.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/YhormsGreatMachete.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/actions/AttackAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/AttackAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/enemies/LordOfCinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enemies/LordOfCinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/items/CindersOfaLord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/items/CindersOfaLord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/items/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/items/Token.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/weapons/Broadsword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/Broadsword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/weapons/Sword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/Sword.java" afterDir="false" />
-    </list>
+    <list default="true" id="c359be1d-12dd-45aa-bf87-58617a76d0e9" name="Default Changelist" comment="fix errors" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -186,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632631937054</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fix errors">
+      <created>1632652612726</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1632652612726</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -211,7 +197,8 @@
     <MESSAGE value="added javadoc" />
     <MESSAGE value="fixed game crashing when yhorm entered ember form" />
     <MESSAGE value="Made Lord of Cinders drop CindersOfaLord item" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made Lord of Cinders drop CindersOfaLord item" />
+    <MESSAGE value="fix errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix errors" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -236,6 +223,11 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/game/weapons/Sword.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
