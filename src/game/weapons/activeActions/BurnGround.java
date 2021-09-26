@@ -23,7 +23,7 @@ public class BurnGround extends WeaponAction {
     @Override
     public String execute(Actor actor, GameMap map) {
         Dirt tempDirt = new Dirt();
-        String result = "";
+        String result = "Burn the ground";
         for (Exit exit : map.locationOf(actor).getExits()) {
             Location destination = exit.getDestination();
             if (destination.getGround().getClass() == tempDirt.getClass()) {
