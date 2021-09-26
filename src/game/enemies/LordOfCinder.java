@@ -3,6 +3,7 @@ package game.enemies;
 import edu.monash.fit2099.engine.*;
 import game.behaviours.FollowBehaviour;
 import game.enums.Status;
+import game.items.CindersOfaLord;
 
 /**
  * The boss of Design o' Souls
@@ -30,6 +31,7 @@ public abstract class LordOfCinder extends Enemies {
     @Override
     public void resetInstance(GameMap map, Status status, String direction) {
         if (status == Status.ENEMIES_KILLED) {
+            map.locationOf(this).addItem(new CindersOfaLord(map));
             map.removeActor(this);
         } else {
             hitPoints = maxHitPoints;

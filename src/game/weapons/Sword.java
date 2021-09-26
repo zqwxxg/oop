@@ -28,8 +28,8 @@ public class Sword extends MeleeWeapon {
     @Override
     public int damage() {
         if (rand.nextInt(100)<= 20){
-            damage *= 2;
-            this.verb = "perform critical strike";
+            verb = "critically strikes";
+            return damage*2;
         }
         return damage;
     }

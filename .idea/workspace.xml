@@ -19,22 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c359be1d-12dd-45aa-bf87-58617a76d0e9" name="Default Changelist" comment="Made Lord of Cinders drop CindersOfaLord item">
+    <list default="true" id="c359be1d-12dd-45aa-bf87-58617a76d0e9" name="Default Changelist" comment="fix errors">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project/game/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/Player$drinkEstusFlaskAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Player$drinkEstusFlaskAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/enemies/LordOfCinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/enemies/LordOfCinder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project/game/enemies/YhormTheGiant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/enemies/YhormTheGiant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/items/CindersOfaLord.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/items/CindersOfaLord.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/Broadsword.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/Broadsword.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/StormRuler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/StormRuler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/Sword.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/Sword.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/YhormsGreatMachete.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/YhormsGreatMachete.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/activeActions/Charge.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/activeActions/Charge.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/enemies/YhormTheGiant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enemies/YhormTheGiant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/weapons/Broadsword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/Broadsword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/weapons/StormRuler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/StormRuler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/weapons/Sword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/Sword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/weapons/activeActions/Charge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/activeActions/Charge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,9 +43,6 @@
   </component>
   <component name="Git.Merge.Settings">
     <option name="BRANCH" value="origin/ZhiEn" />
-  </component>
-  <component name="Git.Pull.Settings">
-    <option name="BRANCH" value="Ziqi" />
   </component>
   <component name="Git.Settings">
     <favorite-branches>
@@ -70,7 +60,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Ziqi2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -83,6 +73,7 @@
   <component name="PropertiesComponent">
     <property name="OverrideImplement.combined" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../zwon0015/Bootcamps/Bootcamp5" />
   </component>
   <component name="RecentsManager">
@@ -106,6 +97,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Application" />
         <item itemvalue="Application.Application" />
       </list>
     </recent_temporary>
@@ -182,14 +174,35 @@
       <option name="project" value="LOCAL" />
       <updated>1632631937054</updated>
     </task>
-    <task id="LOCAL-00010" summary="fixed error for swapping weapons">
-      <created>1632644572892</created>
+    <task id="LOCAL-00010" summary="fix errors">
+      <created>1632652612726</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1632644572892</updated>
+      <updated>1632652612726</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fix errors">
+      <created>1632652666063</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1632652666063</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fix errors">
+      <created>1632652758602</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1632652758602</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fix errors">
+      <created>1632652795045</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1632652795045</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -214,72 +227,9 @@
     <MESSAGE value="added javadoc" />
     <MESSAGE value="fixed game crashing when yhorm entered ember form" />
     <MESSAGE value="Made Lord of Cinders drop CindersOfaLord item" />
-    <MESSAGE value="fixed error for swapping weapons" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed error for swapping weapons" />
+    <MESSAGE value="fix errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix errors" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="393" y="165" key="#Notifications" timestamp="1632652070276">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="393" y="165" key="#Notifications/0.0.1280.680@0.0.1280.680" timestamp="1632652070276" />
-    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1632631871483">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632631871483" />
-    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1632651986084">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1632651986084" />
-    <state width="1237" height="523" key="GridCell.Tab.0.bottom" timestamp="1632656346735">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="523" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1632656346735" />
-    <state width="1877" height="119" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632632280361" />
-    <state width="1237" height="523" key="GridCell.Tab.0.center" timestamp="1632656346735">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="523" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1632656346735" />
-    <state width="1877" height="119" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632632280361" />
-    <state width="1237" height="523" key="GridCell.Tab.0.left" timestamp="1632656346735">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="523" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1632656346735" />
-    <state width="1877" height="119" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632632280361" />
-    <state width="1237" height="523" key="GridCell.Tab.0.right" timestamp="1632656346735">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="523" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1632656346735" />
-    <state width="1877" height="119" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632632280361" />
-    <state width="1237" height="463" key="GridCell.Tab.1.bottom" timestamp="1632655584413">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="463" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1632655584413" />
-    <state width="1237" height="463" key="GridCell.Tab.1.center" timestamp="1632655584413">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="463" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1632655584413" />
-    <state width="1237" height="463" key="GridCell.Tab.1.left" timestamp="1632655584413">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="463" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1632655584413" />
-    <state width="1237" height="463" key="GridCell.Tab.1.right" timestamp="1632655584413">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="463" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1632655584413" />
-    <state x="368" y="147" key="Vcs.Push.Dialog.v2" timestamp="1632644616808">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="368" y="147" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1632644616808" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632631941694" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1632632254127">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632632254127" />
-    <state x="189" y="52" width="902" height="628" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1632655576011">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="189" y="52" width="902" height="628" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1280.680@0.0.1280.680" timestamp="1632655576011" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -288,6 +238,11 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/game/weapons/Sword.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
