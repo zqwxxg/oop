@@ -32,8 +32,7 @@ public class WindSlashAction extends AttackAction{
     public String execute(Actor actor, GameMap map) {
 
         Weapon weapon = actor.getWeapon();
-        int damage = weapon.damage();
-        damage *= 2;
+        int damage = ((StormRuler)weapon).WindSlashDamage();
 
         String result = actor + " " + verb + " and " + actor.getWeapon().verb() + " " + target + " for " + damage + " damage.";
         target.hurt(damage);
