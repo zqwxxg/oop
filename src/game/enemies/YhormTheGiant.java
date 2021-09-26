@@ -1,13 +1,10 @@
 package game.enemies;
 
 import edu.monash.fit2099.engine.*;
-import game.actions.UndeadDieAction;
 import game.behaviours.AttackBehaviour;
 import game.behaviours.WanderBehaviour;
-import game.enums.Status;
 import game.interfaces.Behaviour;
 import game.weapons.YhormsGreatMachete;
-import game.weapons.activeActions.BurnGround;
 
 public class YhormTheGiant extends LordOfCinder{
     /**
