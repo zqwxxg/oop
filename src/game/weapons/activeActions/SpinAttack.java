@@ -1,6 +1,7 @@
 package game.weapons.activeActions;
 
 import edu.monash.fit2099.engine.*;
+import game.Player;
 import game.actions.AttackAction;
 import game.enums.Status;
 import game.weapons.GiantAxe;
@@ -35,12 +36,14 @@ public class SpinAttack extends WeaponAction {
             if (destination.containsAnActor()) {
                 // if target is attackable
                 if (!destination.getActor().hasCapability(Status.UNATTACKABLE)) {
-                    Action action = new AttackAction(destination.getActor(), exit.getName());
-                    numOfTarget += 1;
-                    if (numOfTarget > 1) {
-                        result += System.lineSeparator();
-                    }
-                    result += action.execute(actor, map);
+                    Actor target = destination.getActor();
+                    if(target.getClass()== Player.class){
+                        Action action = new AttackAction(target, exit.getName());
+                        numOfTarget += 1;
+                        if (numOfTarget > 1) {
+                            result += System.lineSeparator();
+                        }
+                        result += action.execute(actor, map);}
                     }
                 }
             }
