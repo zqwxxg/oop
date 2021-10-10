@@ -57,14 +57,13 @@ public class Application {
 		GameMap gameMap = new GameMap(groundFactory, map);
 		world.addGameMap(gameMap);
 
-		Player player = new Player("Unkindled (Player)", '@', 100);
+		Player player = new Player("Unkindled (Player)", '@', 9000);
 		world.addPlayer(player, gameMap.at(38, 12));
 		player.setLastBonfire(gameMap.at(38, 11));
 
 //		 Place Yhorm the Giant/boss in the map
 		YhormTheGiant Yhorm = new YhormTheGiant();
-//		gameMap.at(6, 25).addActor(Yhorm);
-		gameMap.at(38, 14).addActor(Yhorm);
+		gameMap.at(6, 25).addActor(Yhorm);
 		Yhorm.setInitialPosition(gameMap.at(6, 25));
 
 		gameMap.at(37,11).addActor(new Vendor());
@@ -90,8 +89,7 @@ public class Application {
 		skeleton5.setInitialPosition(gameMap.at(30,17));
 
 		StormRuler stormRuler = new StormRuler();
-//		gameMap.at(7,25).addItem(stormRuler);
-		gameMap.at(39,12).addItem(stormRuler);
+		gameMap.at(7,25).addItem(stormRuler);
 
 		world.run();
 

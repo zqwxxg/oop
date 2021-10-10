@@ -4,7 +4,10 @@ import edu.monash.fit2099.engine.*;
 import game.actions.BuyBroadswordAction;
 import game.actions.BuyGiantAxeAction;
 import game.actions.IncreaseMaxHpAction;
+import game.actions.TradeCinderOfLordAction;
+import game.enemies.LordOfCinder;
 import game.enums.Status;
+import game.items.CindersOfaLord;
 
 /**
  * Class that sells weapons
@@ -30,6 +33,12 @@ public class Vendor extends Actor {
         actions.add(new BuyBroadswordAction());
         actions.add(new BuyGiantAxeAction());
         actions.add(new IncreaseMaxHpAction());
+        for(Item item : otherActor.getInventory()){
+            if(item.getClass()== CindersOfaLord.class){
+                LordOfCinder lordOfCinder = ((CindersOfaLord)item).getLordOfCinder();
+                actions.add(new TradeCinderOfLordAction(lordOfCinder));
+            }
+        }
         return actions;
     }
 

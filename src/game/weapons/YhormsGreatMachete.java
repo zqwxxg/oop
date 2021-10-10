@@ -31,16 +31,15 @@ public class YhormsGreatMachete extends Axe{
             allowableActions.add(new BurnGround(this));
             emberFormBool = true;
             System.out.println("Yhorm has entered ember form");
-
         }
     }
 
-    @Override
-    public void tick(Location currentLocation, Actor actor) {
-        if (emberFormBool == false){
-            rageModeTest((YhormTheGiant) actor);
-        }
-    }
+//    @Override
+//    public void tick(Location currentLocation, Actor actor) {
+//        if (emberFormBool == false){
+//            rageModeTest((YhormTheGiant) actor);
+//        }
+//    }
 
     public WeaponAction getActiveSkill(Actor target, String direction) {
         if (emberFormBool) {
