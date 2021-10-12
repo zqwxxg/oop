@@ -21,9 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="c359be1d-12dd-45aa-bf87-58617a76d0e9" name="Default Changelist" comment="modify damage of storm ruler">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/YhormsGreatMachete.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/YhormsGreatMachete.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/weapons/YhormsGreatMachete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/YhormsGreatMachete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/weapons/activeActions/BurnGround.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/activeActions/BurnGround.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/Player$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Player$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/Player$drinkEstusFlaskAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Player$drinkEstusFlaskAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/activeActions/BurnGround.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/activeActions/BurnGround.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,7 +247,21 @@
       <option name="project" value="LOCAL" />
       <updated>1633851243855</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="player can now use burn ground action">
+      <created>1633855250868</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1633855250868</updated>
+    </task>
+    <task id="LOCAL-00021" summary="player can now use burn ground action">
+      <created>1633855259061</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1633855259061</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -272,62 +290,67 @@
     <MESSAGE value="push rationale and uml diagrams" />
     <MESSAGE value="modify damage of storm ruler" />
     <MESSAGE value="implemented requirement 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented requirement 5" />
+    <MESSAGE value="player can now use burn ground action" />
+    <option name="LAST_COMMIT_MESSAGE" value="player can now use burn ground action" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="446" y="47" key="#com.intellij.ide.util.MemberChooser" timestamp="1633790146557">
+    <state x="446" y="47" key="#com.intellij.ide.util.MemberChooser" timestamp="1633961592435">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="47" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1633790146557" />
-    <state width="1237" height="523" key="GridCell.Tab.0.bottom" timestamp="1633854463929">
+    <state x="446" y="47" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1633961592435" />
+    <state width="1237" height="523" key="GridCell.Tab.0.bottom" timestamp="1634026246736">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="523" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1633854463929" />
-    <state width="1237" height="523" key="GridCell.Tab.0.center" timestamp="1633854463928">
+    <state width="1237" height="523" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1634026246736" />
+    <state width="1237" height="523" key="GridCell.Tab.0.center" timestamp="1634026246736">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="523" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1633854463928" />
-    <state width="1237" height="523" key="GridCell.Tab.0.left" timestamp="1633854463928">
+    <state width="1237" height="523" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1634026246736" />
+    <state width="1237" height="523" key="GridCell.Tab.0.left" timestamp="1634026246736">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="523" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1633854463928" />
-    <state width="1237" height="523" key="GridCell.Tab.0.right" timestamp="1633854463928">
+    <state width="1237" height="523" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1634026246736" />
+    <state width="1237" height="523" key="GridCell.Tab.0.right" timestamp="1634026246736">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="523" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1633854463928" />
-    <state width="1237" height="78" key="GridCell.Tab.1.bottom" timestamp="1632670267891">
+    <state width="1237" height="523" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1634026246736" />
+    <state width="1237" height="519" key="GridCell.Tab.1.bottom" timestamp="1633964420516">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="78" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1632670267891" />
-    <state width="1237" height="78" key="GridCell.Tab.1.center" timestamp="1632670267890">
+    <state width="1237" height="519" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1633964420516" />
+    <state width="1237" height="519" key="GridCell.Tab.1.center" timestamp="1633964420516">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="78" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1632670267890" />
-    <state width="1237" height="78" key="GridCell.Tab.1.left" timestamp="1632670267890">
+    <state width="1237" height="519" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1633964420516" />
+    <state width="1237" height="519" key="GridCell.Tab.1.left" timestamp="1633964420516">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="78" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1632670267890" />
-    <state width="1237" height="78" key="GridCell.Tab.1.right" timestamp="1632670267891">
+    <state width="1237" height="519" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1633964420516" />
+    <state width="1237" height="519" key="GridCell.Tab.1.right" timestamp="1633964420516">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="78" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1632670267891" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1633851256114">
+    <state width="1237" height="519" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1633964420516" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1633855265295">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1633851256114" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1633855265295" />
     <state x="458" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1633751096473">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="458" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1633751096473" />
+    <state x="183" y="70" width="914" height="591" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1633960833230">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="183" y="70" width="914" height="591" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1280.680@0.0.1280.680" timestamp="1633960833230" />
     <state x="239" y="54" key="git4idea.branch.GitSmartOperationDialog" timestamp="1632669921247">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="239" y="54" key="git4idea.branch.GitSmartOperationDialog/0.0.1280.680@0.0.1280.680" timestamp="1632669921247" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1633789802108">
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1634025866010">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1633789802108" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1634025866010" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
