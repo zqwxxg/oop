@@ -1,6 +1,7 @@
 package game;
 
 import edu.monash.fit2099.engine.*;
+import game.actions.OpenChestAction;
 import game.enums.Abilities;
 import game.enums.Status;
 import game.interfaces.Resettable;
