@@ -19,11 +19,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c359be1d-12dd-45aa-bf87-58617a76d0e9" name="Default Changelist" comment="modify damage of storm ruler">
-      <change beforePath="$PROJECT_DIR$/src/game/actions/OpenChestAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/OpenChestAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/actions/TradeCinderOfLordAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/TradeCinderOfLordAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/enemies/Mimic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enemies/Mimic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/grounds/Chest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/grounds/Chest.java" afterDir="false" />
+    <list default="true" id="c359be1d-12dd-45aa-bf87-58617a76d0e9" name="Default Changelist" comment="implemented requirement 1 &amp; 2, added Abilities.PLAYER and changed Status.REST, Status.SOFT_RESET to this in Player, AttackAction">
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/actions/AttackAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/AttackAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/actions/RestAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/RestAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/actions/WindSlashAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/WindSlashAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/enums/Abilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enums/Abilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/grounds/Bonfire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/grounds/Bonfire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/grounds/Valley.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/grounds/Valley.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/interfaces/Behaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/interfaces/Behaviour.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,23 +47,7 @@
   <component name="Git.Merge.Settings">
     <option name="BRANCH" value="origin/ZhiEn" />
   </component>
-  <component name="Git.Pull.Settings">
-    <option name="BRANCH" value="master" />
-  </component>
   <component name="Git.Settings">
-    <favorite-branches>
-      <branch-storage>
-        <map>
-          <entry type="REMOTE">
-            <value>
-              <list>
-                <branch-info repo="$PROJECT_DIR$" source="origin/ZhiEn" />
-              </list>
-            </value>
-          </entry>
-        </map>
-      </branch-storage>
-    </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="Ziqi2" />
@@ -65,6 +56,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1yYI4XQSlW3KMBkNNqU04iZeMfR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -73,7 +65,11 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../zwon0015/Bootcamps/Bootcamp5" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../zwon0015" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -229,56 +225,7 @@
       <option name="project" value="LOCAL" />
       <updated>1632667149047</updated>
     </task>
-    <task id="LOCAL-00018" summary="implemented requirement 5">
-      <created>1633851233237</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1633851233238</updated>
-    </task>
-    <task id="LOCAL-00019" summary="implemented requirement 5">
-      <created>1633851243855</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1633851243855</updated>
-    </task>
-    <task id="LOCAL-00020" summary="player can now use burn ground action">
-      <created>1633855250868</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1633855250868</updated>
-    </task>
-    <task id="LOCAL-00021" summary="player can now use burn ground action">
-      <created>1633855259061</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1633855259061</updated>
-    </task>
-    <task id="LOCAL-00022" summary="implemented chest and mimic">
-      <created>1634026506572</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1634026506572</updated>
-    </task>
-    <task id="LOCAL-00023" summary="chest can now drop tokens">
-      <created>1634274275430</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1634274275430</updated>
-    </task>
-    <task id="LOCAL-00024" summary="chest can now drop tokens">
-      <created>1634274284472</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1634274284472</updated>
-    </task>
-    <option name="localTasksCounter" value="25" />
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -306,70 +253,8 @@
     <MESSAGE value="fix errors" />
     <MESSAGE value="push rationale and uml diagrams" />
     <MESSAGE value="modify damage of storm ruler" />
-    <MESSAGE value="implemented requirement 5" />
-    <MESSAGE value="player can now use burn ground action" />
-    <MESSAGE value="implemented chest and mimic" />
-    <MESSAGE value="chest can now drop tokens" />
-    <option name="LAST_COMMIT_MESSAGE" value="chest can now drop tokens" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify damage of storm ruler" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="446" y="47" key="#com.intellij.ide.util.MemberChooser" timestamp="1633961592435">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="446" y="47" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1633961592435" />
-    <state width="1237" height="523" key="GridCell.Tab.0.bottom" timestamp="1634274198966">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="523" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1634274198966" />
-    <state width="1237" height="523" key="GridCell.Tab.0.center" timestamp="1634274198966">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="523" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1634274198966" />
-    <state width="1237" height="523" key="GridCell.Tab.0.left" timestamp="1634274198966">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="523" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1634274198966" />
-    <state width="1237" height="523" key="GridCell.Tab.0.right" timestamp="1634274198966">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="523" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1634274198966" />
-    <state width="1237" height="103" key="GridCell.Tab.1.bottom" timestamp="1634271707953">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="103" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1634271707953" />
-    <state width="1237" height="103" key="GridCell.Tab.1.center" timestamp="1634271707953">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="103" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1634271707953" />
-    <state width="1237" height="103" key="GridCell.Tab.1.left" timestamp="1634271707953">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="103" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1634271707953" />
-    <state width="1237" height="103" key="GridCell.Tab.1.right" timestamp="1634271707953">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="103" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1634271707953" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1634274291733">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1634274291733" />
-    <state x="458" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1633751096473">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="458" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1633751096473" />
-    <state x="183" y="70" width="914" height="591" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1633960833230">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="183" y="70" width="914" height="591" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1280.680@0.0.1280.680" timestamp="1633960833230" />
-    <state x="239" y="54" key="git4idea.branch.GitSmartOperationDialog" timestamp="1632669921247">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="239" y="54" key="git4idea.branch.GitSmartOperationDialog/0.0.1280.680@0.0.1280.680" timestamp="1632669921247" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1634025866010">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1634025866010" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

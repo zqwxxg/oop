@@ -7,6 +7,7 @@ import game.Player;
 import game.enemies.Enemies;
 import game.enemies.LordOfCinder;
 import game.enemies.YhormTheGiant;
+import game.enums.Abilities;
 import game.enums.Status;
 import game.weapons.StormRuler;
 import game.weapons.YhormsGreatMachete;
@@ -76,7 +77,7 @@ public class AttackAction extends Action {
 			for (Action drop : dropActions)
 				drop.execute(target, map);
 			// if the dead target can trigger soft reset, means the target is player
-			if (target.hasCapability(Status.SOFT_RESET)) {
+			if (target.hasCapability(Abilities.PLAYER)) {
 				// if player is killed by enemies, no need to modify new location of token
 				Action resetAction = new SoftResetAction(null);
 				result += System.lineSeparator() + resetAction.execute(actor, map);
