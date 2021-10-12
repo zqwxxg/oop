@@ -23,75 +23,126 @@ public class Application {
 		World world = new World(new Display());
 
 		FancyGroundFactory groundFactory = new FancyGroundFactory(new Dirt(), new Wall(), new Floor(), new Valley(),
-				new Bonfire(), new Cemetery());
+				new Cemetery());
 
-		List<String> map = Arrays.asList(
-				"..++++++..+++...........................++++......+++.................+++.......",
-				"........+++++..............................+++++++.................+++++........",
-				"...........+++.......................................................+++++......",
-				"........................................................................++......",
-				"........................................................C................+++....",
-				"............................+.............................................+++...",
-				".............................+++.......++++.....................................",
-				"................C............++.......+......................++++...............",
-				".............................................................+++++++............",
-				"..................................###___###...................+++...............",
-				"..................................#_______#......................+++............",
-				"...C.......++.....................#___B___#.......................+.............",
-				".........+++......................#_______#........................++...........",
-				"............+++...................####_####...............C..........+..........",
-				"..............+......................................................++.........",
-				"..............++.................................................++++++.........",
-				"............+++...................................................++++..........",
-				"+..................................................................++...........",
-				"++...+++.........................................................++++...........",
-				"+++......................................+++........................+.++........",
-				"++++.......++++.........................++.........................+....++......",
-				"#####___#####++++.........C............+...............................+..+.....",
-				"_..._....._._#.++......................+...................................+....",
-				"...+.__..+...#+++...........................................................+...",
-				"...+.....+._.#.+.....+++++...++........................C.....................++.",
-				"___.......___#.++++++++++++++.+++.............................................++");
+//		List<String> map = Arrays.asList(
+//				"..++++++..+++...........................++++......+++.................+++.......",
+//				"........+++++..............................+++++++.................+++++........",
+//				"...........+++.......................................................+++++......",
+//				"........................................................................++......",
+//				"........................................................C................+++....",
+//				"............................+.............................................+++...",
+//				".............................+++.......++++.....................................",
+//				"................C............++.......+......................++++...............",
+//				".............................................................+++++++............",
+//				"..................................###___###...................+++...............",
+//				"..................................#_______#......................+++............",
+//				"...C.......++.....................#___B___#.......................+.............",
+//				".........+++......................#_______#........................++...........",
+//				"............+++...................####_####...............C..........+..........",
+//				"..............+......................................................++.........",
+//				"..............++.................................................++++++.........",
+//				"............+++...................................................++++..........",
+//				"+..................................................................++...........",
+//				"++...+++.........................................................++++...........",
+//				"+++......................................+++........................+.++........",
+//				"++++.......++++.........................++.........................+....++......",
+//				"#####___#####++++.........C............+...............................+..+.....",
+//				"_..._....._._#.++......................+...................................+....",
+//				"...+.__..+...#+++...........................................................+...",
+//				"...+.....+._.#.+.....+++++...++........................C.....................++.",
+//				"___.......___#.++++++++++++++.+++.............................................++");
+//
+//
+//		GameMap gameMap = new GameMap(groundFactory, map);
+//		world.addGameMap(gameMap);
+//
+//		Player player = new Player("Unkindled (Player)", '@', 100);
+//		world.addPlayer(player, gameMap.at(38, 12));
+//		player.setLastBonfire(gameMap.at(38, 11));
+//
+////		 Place Yhorm the Giant/boss in the map
+//		YhormTheGiant Yhorm = new YhormTheGiant();
+//		gameMap.at(6, 25).addActor(Yhorm);
+//		Yhorm.setInitialPosition(gameMap.at(6, 25));
+//
+//		gameMap.at(37,11).addActor(new Vendor());
+//
+//		Skeleton skeleton = new Skeleton();
+//		gameMap.at(60,20).addActor(skeleton);
+//		skeleton.setInitialPosition(gameMap.at(60,20));
+//
+//		Skeleton skeleton2 = new Skeleton();
+//		gameMap.at(20,1).addActor(skeleton2);
+//		skeleton2.setInitialPosition(gameMap.at(20,1));
+//
+//		Skeleton skeleton3 = new Skeleton();
+//		gameMap.at(35,2).addActor(skeleton3);
+//		skeleton3.setInitialPosition(gameMap.at(35,2));
+//
+//		Skeleton skeleton4 = new Skeleton();
+//		gameMap.at(22,12).addActor(skeleton4);
+//		skeleton4.setInitialPosition(gameMap.at(22,12));
+//
+//		Skeleton skeleton5 = new Skeleton();
+//		gameMap.at(30,17).addActor(skeleton5);
+//		skeleton5.setInitialPosition(gameMap.at(30,17));
+//
+//		StormRuler stormRuler = new StormRuler();
+//		gameMap.at(7,25).addItem(stormRuler);
+//
+//		world.run();
 
+		List<String> profaneCapitalMap = Arrays.asList(
+				".............................++.......+.............",
+				"....................................................",
+				"..................................###___###.........",
+				"..................................#_______#.........",
+				"...........++.....................#________.........",
+				".........+++......................#_______#.........",
+				"............+++...................####_####.........",
+				"..............+.....................................",
+				"..............++....................................");
 
-		GameMap gameMap = new GameMap(groundFactory, map);
-		world.addGameMap(gameMap);
+		List<String> anorLondoMap = Arrays.asList(
+				".............................++.....................",
+				"....................................................",
+				"..................................###___###.........",
+				"..................................#_______#.........",
+				"...........++.....................#_______#.........",
+				".........+++......................#_______#.........",
+				"............+++...................####_####.........",
+				"..............+.......................+.............",
+				"..............++....................................");
+
+		GameMap profaneCapital = new GameMap(groundFactory, profaneCapitalMap);
+		world.addGameMap(profaneCapital);
+
+		GameMap anorLondo = new GameMap(groundFactory, anorLondoMap);
+		world.addGameMap(anorLondo);
 
 		Player player = new Player("Unkindled (Player)", '@', 100);
-		world.addPlayer(player, gameMap.at(38, 12));
-		player.setLastBonfire(gameMap.at(38, 11));
+		world.addPlayer(player, profaneCapital.at(38, 5));
 
-//		 Place Yhorm the Giant/boss in the map
-		YhormTheGiant Yhorm = new YhormTheGiant();
-		gameMap.at(6, 25).addActor(Yhorm);
-		Yhorm.setInitialPosition(gameMap.at(6, 25));
+		BonfireManager bonfireManager = new BonfireManager();
 
-		gameMap.at(37,11).addActor(new Vendor());
+		Bonfire firelinkBonfire = new Bonfire("Firelink Shrine's Bonfire", true, bonfireManager);
+		profaneCapital.at(38, 4).setGround(firelinkBonfire);
+		bonfireManager.addBonfire(firelinkBonfire, profaneCapital.at(38, 4));
+		player.setLastBonfire(profaneCapital.at(38, 4));
 
-		Skeleton skeleton = new Skeleton();
-		gameMap.at(60,20).addActor(skeleton);
-		skeleton.setInitialPosition(gameMap.at(60,20));
+		Bonfire anorBonfire = new Bonfire("Anor Londo's Bonfire", false, bonfireManager);
+		anorLondo.at(38, 4).setGround(anorBonfire);
+		bonfireManager.addBonfire(anorBonfire, anorLondo.at(38, 4));
 
-		Skeleton skeleton2 = new Skeleton();
-		gameMap.at(20,1).addActor(skeleton2);
-		skeleton2.setInitialPosition(gameMap.at(20,1));
+		FogDoor capitalFogDoor = new FogDoor();
+		profaneCapital.at(51, 4).setGround(capitalFogDoor);
+		capitalFogDoor.addDestination("Anor Londo", anorLondo.at(38, 1));
 
-		Skeleton skeleton3 = new Skeleton();
-		gameMap.at(35,2).addActor(skeleton3);
-		skeleton3.setInitialPosition(gameMap.at(35,2));
-
-		Skeleton skeleton4 = new Skeleton();
-		gameMap.at(22,12).addActor(skeleton4);
-		skeleton4.setInitialPosition(gameMap.at(22,12));
-
-		Skeleton skeleton5 = new Skeleton();
-		gameMap.at(30,17).addActor(skeleton5);
-		skeleton5.setInitialPosition(gameMap.at(30,17));
-
-		StormRuler stormRuler = new StormRuler();
-		gameMap.at(7,25).addItem(stormRuler);
+		FogDoor anorFogDoor = new FogDoor();
+		anorLondo.at(38, 1).setGround(anorFogDoor);
+		anorFogDoor.addDestination("Profane Capital", profaneCapital.at(51, 4));
 
 		world.run();
-
 	}
 }

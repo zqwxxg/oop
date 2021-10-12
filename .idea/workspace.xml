@@ -19,11 +19,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c359be1d-12dd-45aa-bf87-58617a76d0e9" name="Default Changelist" comment="modify damage of storm ruler">
+    <list default="true" id="c359be1d-12dd-45aa-bf87-58617a76d0e9" name="Default Changelist" comment="implemented requirement 1 &amp; 2, added Abilities.PLAYER and changed Status.REST, Status.SOFT_RESET to this in Player, AttackAction">
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/Player$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Player$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/actions/AttackAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/actions/AttackAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/actions/AttackAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/AttackAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/actions/RestAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/RestAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/actions/WindSlashAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/WindSlashAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/enums/Abilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enums/Abilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/grounds/Bonfire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/grounds/Bonfire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/grounds/Valley.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/grounds/Valley.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/interfaces/Behaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/interfaces/Behaviour.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,19 +48,6 @@
     <option name="BRANCH" value="origin/ZhiEn" />
   </component>
   <component name="Git.Settings">
-    <favorite-branches>
-      <branch-storage>
-        <map>
-          <entry type="REMOTE">
-            <value>
-              <list>
-                <branch-info repo="$PROJECT_DIR$" source="origin/ZhiEn" />
-              </list>
-            </value>
-          </entry>
-        </map>
-      </branch-storage>
-    </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="Ziqi2" />
@@ -62,6 +56,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1yYI4XQSlW3KMBkNNqU04iZeMfR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -70,7 +65,11 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../zwon0015/Bootcamps/Bootcamp5" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../zwon0015" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -264,14 +263,6 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/game/actions/WindSlashAction.java</url>
-          <line>31</line>
-          <properties class="game.actions.WindSlashAction" method="execute">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

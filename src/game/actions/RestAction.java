@@ -21,22 +21,21 @@ public class RestAction extends Action {
     /**
      * The direction of bonfire
      */
-    protected String direction;
+    private String direction;
 
     /**
      * The key used in the menu to trigger this Action.
      */
-    protected String hotkey;
+    private String bonfireName;
 
     /**
      * Constructor
      *
      * @param direction the direction of bonfire
-     * @param hotkey the key used in the menu to trigger this Action.
      */
-    public RestAction(String direction, String hotkey) {
+    public RestAction(String direction, String bonfireName) {
         this.direction = direction;
-        this.hotkey = hotkey;
+        this.bonfireName = bonfireName;
     }
 
     @Override
@@ -48,11 +47,6 @@ public class RestAction extends Action {
 
     @Override
     public String menuDescription(Actor actor) {
-        return "Rest at Firelink Shrine's Bonfire";
-    }
-
-    @Override
-    public String hotkey() {
-        return hotkey;
+        return "Rest at " + bonfireName;
     }
 }

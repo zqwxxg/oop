@@ -2,6 +2,7 @@ package game.grounds;
 
 import edu.monash.fit2099.engine.*;
 import game.actions.SoftResetAction;
+import game.enums.Abilities;
 import game.enums.Status;
 
 /**
@@ -31,7 +32,7 @@ public class Valley extends Ground {
 	@Override
 	public boolean canActorEnter(Actor actor) {
 		// allow only player to trigger soft reset
-		return actor.hasCapability(Status.SOFT_RESET);
+		return actor.hasCapability(Abilities.PLAYER);
 	}
 
 	@Override
