@@ -8,10 +8,25 @@ import game.items.Token;
 
 import java.util.Random;
 
+/**
+ * Class to open chest
+ *
+ * @see edu.monash.fit2099.engine.Action
+ */
 public class OpenChestAction extends Action {
+    /**
+     * A random number generator
+     */
     private Random rand = new Random();
+    /**
+     * the chest that we want to open
+     */
     private Chest chest;
 
+    /**
+     * Constructor
+     * @param chest the chest that we want to open
+     */
     public OpenChestAction(Chest chest){
         this.chest = chest;
     }

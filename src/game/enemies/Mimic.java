@@ -2,19 +2,32 @@ package game.enemies;
 
 import edu.monash.fit2099.engine.*;
 import game.behaviours.AttackBehaviour;
-import game.behaviours.FollowBehaviour;
 import game.enums.Status;
 import game.grounds.Chest;
-import game.grounds.Dirt;
 import game.interfaces.Behaviour;
 import game.items.Token;
 import game.weapons.Kicking;
 
 import java.util.Random;
 
+/**
+ * Class representing a Mimic
+ *
+ * @see edu.monash.fit2099.engine.Actor
+ * @see game.enemies.Enemies
+ * @see game.interfaces.Resettable
+ */
 public class Mimic extends Enemies{
+    /**
+     * A random number generator
+     */
     private Random random = new Random();
 
+    /**
+     * Constructor
+     *
+     * All Mimics are represented by an 'M' and have 100 hit points, 200 souls.
+     */
     public Mimic(Location initialLocation) {
         super("Mimic", 'M', 100, 200);
         setInitialPosition(initialLocation);

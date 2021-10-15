@@ -20,11 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c359be1d-12dd-45aa-bf87-58617a76d0e9" name="Default Changelist" comment="modify damage of storm ruler">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/actions/OpenChestAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/OpenChestAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/actions/TradeCinderOfLordAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/TradeCinderOfLordAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/enemies/Mimic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enemies/Mimic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/items/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/items/Token.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/grounds/Chest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/grounds/Chest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -265,7 +264,21 @@
       <option name="project" value="LOCAL" />
       <updated>1634026506572</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="chest can now drop tokens">
+      <created>1634274275430</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1634274275430</updated>
+    </task>
+    <task id="LOCAL-00024" summary="chest can now drop tokens">
+      <created>1634274284472</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1634274284472</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -296,7 +309,8 @@
     <MESSAGE value="implemented requirement 5" />
     <MESSAGE value="player can now use burn ground action" />
     <MESSAGE value="implemented chest and mimic" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented chest and mimic" />
+    <MESSAGE value="chest can now drop tokens" />
+    <option name="LAST_COMMIT_MESSAGE" value="chest can now drop tokens" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -336,10 +350,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1237" height="103" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1634271707953" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1634026513773">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1634274291733">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1634026513773" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1634274291733" />
     <state x="458" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1633751096473">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

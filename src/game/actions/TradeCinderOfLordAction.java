@@ -9,15 +9,27 @@ import game.enemies.AldrichTheDevourer;
 import game.enemies.LordOfCinder;
 import game.enemies.YhormTheGiant;
 import game.items.CindersOfaLord;
-import game.weapons.Broadsword;
 import game.weapons.DarkmoonLongbow;
 import game.weapons.MeleeWeapon;
 import game.weapons.YhormsGreatMachete;
 
 import java.util.List;
 
+/**
+ * Class to trade Cinder of Lord with Vendor
+ *
+ * @see edu.monash.fit2099.engine.Action
+ * @see CindersOfaLord
+ * @see LordOfCinder
+ */
 public class TradeCinderOfLordAction extends Action {
+    /**
+     * keep track of which lord of cinder's cinder of lord we are trading
+     */
     private LordOfCinder lordOfCinder;
+    /**
+     * the lord of cinder's weapon
+     */
     private MeleeWeapon weapon;
 
     public TradeCinderOfLordAction(LordOfCinder lordOfCinder){
@@ -38,15 +50,13 @@ public class TradeCinderOfLordAction extends Action {
             if(item.getClass() == CindersOfaLord.class){
                 if(((CindersOfaLord) item).getLordOfCinder() == this.lordOfCinder){
                     actor.removeItemFromInventory(item);
-                    break;
-                }
+                    break; }
             }
         }
         for(Item item : items){ //remove weapon
             if(item.asWeapon() != null){
                 actor.removeItemFromInventory(item);
-                break;
-            }
+                break; }
         }
         actor.addItemToInventory(weapon); //add new weapon
         ret += actor.toString() + " traded Cinder of " + lordOfCinder.toString() + " for " + weapon.toString();
