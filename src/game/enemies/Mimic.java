@@ -37,18 +37,18 @@ public class Mimic extends Enemies{
     @Override
     public void resetInstance(GameMap map, Status status, String direction) {
         if (status == Status.ENEMIES_KILLED) {
-            map.removeActor(this);
             int prob = random.nextInt(3);
             if (prob == 0){
-//                map.locationOf(this).addItem(new Token());
+                map.locationOf(this).addItem(new Token(100));
             } else if (prob == 1){
-//                map.locationOf(this).addItem(new Token());
-//                map.locationOf(this).addItem(new Token());
+                map.locationOf(this).addItem(new Token(100));
+                map.locationOf(this).addItem(new Token(100));
             } else {
-//                map.locationOf(this).addItem(new Token());
-//                map.locationOf(this).addItem(new Token());
-//                map.locationOf(this).addItem(new Token());
+                map.locationOf(this).addItem(new Token(100));
+                map.locationOf(this).addItem(new Token(100));
+                map.locationOf(this).addItem(new Token(100));
             }
+            map.removeActor(this);
         } else {
             hitPoints = maxHitPoints;
             map.removeActor(this);
