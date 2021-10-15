@@ -19,18 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c359be1d-12dd-45aa-bf87-58617a76d0e9" name="Default Changelist" comment="implemented requirement 1 &amp; 2, added Abilities.PLAYER and changed Status.REST, Status.SOFT_RESET to this in Player, AttackAction">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+    <list default="true" id="c359be1d-12dd-45aa-bf87-58617a76d0e9" name="Default Changelist" comment="Implemented requirement 1 &amp; 2. Added Abilities.PLAYER and changed Status.REST, Status.SOFT_RESET to this in Player, AttackAction, WindSlashAction, Valley classes. Removed hotkey but added bonfireName parameter at the constructor of RestAction class.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/actions/AttackAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/AttackAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/actions/RestAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/RestAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/actions/WindSlashAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/WindSlashAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/behaviours/AttackBehaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/behaviours/AttackBehaviour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/enemies/Enemies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enemies/Enemies.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/enums/Abilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enums/Abilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/grounds/Bonfire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/grounds/Bonfire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/grounds/Valley.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/grounds/Valley.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/interfaces/Behaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/interfaces/Behaviour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/weapons/MeleeWeapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/MeleeWeapon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/weapons/YhormsGreatMachete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/YhormsGreatMachete.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632667149047</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Implemented requirement 1 &amp; 2. Added Abilities.PLAYER and changed Status.REST, Status.SOFT_RESET to this in Player, AttackAction, WindSlashAction, Valley classes. Removed hotkey but added bonfireName parameter at the constructor of RestAction class.">
+      <created>1634075230924</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1634075230924</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -253,7 +258,8 @@
     <MESSAGE value="fix errors" />
     <MESSAGE value="push rationale and uml diagrams" />
     <MESSAGE value="modify damage of storm ruler" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify damage of storm ruler" />
+    <MESSAGE value="Implemented requirement 1 &amp; 2. Added Abilities.PLAYER and changed Status.REST, Status.SOFT_RESET to this in Player, AttackAction, WindSlashAction, Valley classes. Removed hotkey but added bonfireName parameter at the constructor of RestAction class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented requirement 1 &amp; 2. Added Abilities.PLAYER and changed Status.REST, Status.SOFT_RESET to this in Player, AttackAction, WindSlashAction, Valley classes. Removed hotkey but added bonfireName parameter at the constructor of RestAction class." />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -263,6 +269,11 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/game/actions/AttackAction.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

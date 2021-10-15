@@ -4,11 +4,14 @@ import java.util.Random;
 
 import edu.monash.fit2099.engine.*;
 import game.Player;
+import game.enemies.AldrichTheDevourer;
 import game.enemies.Enemies;
 import game.enemies.LordOfCinder;
 import game.enemies.YhormTheGiant;
 import game.enums.Abilities;
 import game.enums.Status;
+import game.grounds.Wall;
+import game.weapons.DarkmoonLongbow;
 import game.weapons.StormRuler;
 import game.weapons.YhormsGreatMachete;
 
@@ -45,17 +48,18 @@ public class AttackAction extends Action {
 	@Override
 	public String execute(Actor actor, GameMap map) {
 
+		Random random = new Random();
 		Weapon weapon = actor.getWeapon();
 
 		if (!(rand.nextInt(100) <= weapon.chanceToHit())) {
 			return actor + " misses " + target + ".";
 		}
 
-		if (actor.getClass() == new YhormTheGiant().getClass() && ((YhormTheGiant) actor).isEnraged()) {
+		if (actor.getClass() == YhormTheGiant.class && ((YhormTheGiant) actor).isEnraged()) {
 			actor.getWeapon().getActiveSkill(target, direction).execute(actor, map);
 		}
 
-		if (target.getClass() == new YhormTheGiant().getClass()) {
+		if (target.getClass() == YhormTheGiant.class) {
 			((YhormsGreatMachete) target.getWeapon()).rageModeTest((YhormTheGiant) target);
 		}
 
@@ -63,8 +67,20 @@ public class AttackAction extends Action {
 
 		//Storm Ruler passive action (dullness)
 		if (target.hasCapability(Status.NOT_WEAK_TO_STORM_RULER) && (weapon.getClass() == StormRuler.class)) {
-            damage = weapon.damage();
+			damage = weapon.damage();
 			damage /= 2;
+		}
+
+		if (!actor.hasCapability(Status.UNARMED)) {
+			if (((WeaponItem) weapon).hasCapability(Abilities.RANGED)) {
+				if (actor.getWeapon().getClass() == DarkmoonLongbow.class) {
+					int chance = random.nextInt(100) + 1;
+					if (chance <= 15) {
+						damage *= 2;
+					}
+				}
+				return new RangedAttackAction(target, direction).execute(actor, map);
+			}
 		}
 
 		String result = actor + " " + weapon.verb() + " " + target + " for " + damage + " damage.";

@@ -34,7 +34,7 @@ import java.util.ArrayList;
  * @see Status
  */
 
-public abstract class Enemies extends Actor implements Soul, Resettable{
+public abstract class Enemies extends Actor implements Soul, Resettable {
 
     /**
      * The state that keeps track of the enemy's follow behaviour
@@ -84,7 +84,7 @@ public abstract class Enemies extends Actor implements Soul, Resettable{
      *
      * @return An integer that represents maxHitPoints
      */
-    public int getMaxHitPoints(){
+    public int getMaxHitPoints() {
         return maxHitPoints;
     }
 
@@ -101,8 +101,8 @@ public abstract class Enemies extends Actor implements Soul, Resettable{
     public Actions getAllowableActions(Actor otherActor, String direction, GameMap map) {
         Actions actions = new Actions();
         // it can be attacked only by the HOSTILE opponent, and this action will not attack the HOSTILE enemy back.
-        if(otherActor.hasCapability(Status.HOSTILE_TO_ENEMY)) {
-            actions.add(new AttackAction(this,direction));
+        if (otherActor.hasCapability(Status.HOSTILE_TO_ENEMY)) {
+            actions.add(new AttackAction(this, direction));
             // if follow behaviour is not added, add this into behaviours list
             // used to prevent adding redundant follow behaviour into behaviours list
             if (!followBehaviourAdded) {
@@ -128,10 +128,12 @@ public abstract class Enemies extends Actor implements Soul, Resettable{
         if (souls >= 0) {
             soulCount += souls;
             return true;
-        }
-        else {
+        } else {
             return false;
         }
     }
 
+    public void addBehaviour(Behaviour behaviour) {
+        behaviours.add(behaviour);
+    }
 }

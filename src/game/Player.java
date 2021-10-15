@@ -1,7 +1,7 @@
 package game;
 
 import edu.monash.fit2099.engine.*;
-import game.actions.OpenChestAction;
+import game.actions.RangedAttackAction;
 import game.enums.Abilities;
 import game.enums.Status;
 import game.interfaces.Resettable;
@@ -9,6 +9,7 @@ import game.interfaces.Soul;
 import game.items.EstusFlask;
 import game.items.Token;
 import game.weapons.Broadsword;
+import game.weapons.RangedWeapon;
 
 import java.util.List;
 
@@ -82,9 +83,29 @@ public class Player extends Actor implements Soul, Resettable {
 
 		display.println("Unkindled (" + hitPoints + "/" + maxHitPoints + "), holding " + getWeapon() + ", " + soulCount + " souls");
 		actions.add(new drinkEstusFlaskAction());
+		if (((Item)this.getWeapon()).hasCapability(Abilities.RANGED)){
+			Location here = map.locationOf(this);
+			for (int counter=0; counter < Application.enemiesList.size(); counter++){
+				int range = ((RangedWeapon)this.getWeapon()).getRange();
+				if (map.locationOf(Application.enemiesList.get(counter)) != null) {
+					if (Math.round(Math.sqrt(Math.pow(
+							map.locationOf(Application.enemiesList.get(counter)).x() - here.x()
+							, 2) + Math.pow(map.locationOf(Application.enemiesList.get(counter)).y() - here.y(), 2))) <= range || ((map.locationOf(Application.enemiesList.get(counter)).y()- here.y() > 1) && Math.round(Math.sqrt(Math.pow(
+							map.locationOf(Application.enemiesList.get(counter)).x() - here.x()
+							, 2) + Math.pow(map.locationOf(Application.enemiesList.get(counter)).y() - here.y(), 2))) <= range + 1) || ((map.locationOf(Application.enemiesList.get(counter)).x()- here.x() > 1) && Math.round(Math.sqrt(Math.pow(
+							map.locationOf(Application.enemiesList.get(counter)).x() - here.x()
+							, 2) + Math.pow(map.locationOf(Application.enemiesList.get(counter)).y() - here.y(), 2))) <= range + 1)) {
+						actions.add(new RangedAttackAction(Application.enemiesList.get(counter), ""));
+					}
+				}else{
+					Application.enemiesList.remove(counter);
+				}
+			}
+		}
 		// return/print the console menu
 		return menu.showMenu(this, actions, display);
 	}
+
 
 	@Override
 	public void transferSouls(Soul soulObject) {
@@ -204,7 +225,7 @@ public class Player extends Actor implements Soul, Resettable {
 					}
 					location = map.at(x, y);
 				}
-				Token token = new Token(0);
+				Token token = Token.getInstance();
 				transferSouls(token);
 				location.addItem(token);
 				// if the location of last token is not null, which means token has been placed on map,
