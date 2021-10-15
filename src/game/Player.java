@@ -206,7 +206,7 @@ public class Player extends Actor implements Soul, Resettable {
 					}
 					location = map.at(x, y);
 				}
-				Token token = Token.getInstance();
+				Token token = new Token(0);
 				transferSouls(token);
 				location.addItem(token);
 				// if the location of last token is not null, which means token has been placed on map,

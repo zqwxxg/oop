@@ -18,7 +18,6 @@ public class OpenChestAction extends Action {
 
     @Override
     public String execute(Actor actor, GameMap map) {
-        String ret = "";
         Location chestLocation = map.locationOf(actor);
         for(Exit exit : map.locationOf(actor).getExits()){
             Location destination = exit.getDestination();
@@ -34,19 +33,19 @@ public class OpenChestAction extends Action {
             chestLocation.setGround(new Dirt());
         }else{
             int prob = rand.nextInt(3);
+            chestLocation.setGround(new Dirt());
             if (prob == 0){
-//               chestLocation.addItem(new Token());
-                ret += actor + " retrieved 100 souls";
+                chestLocation.addItem(new Token(100));
             } else if (prob == 1){
-//                chestLocation.addItem(new Token());
-//                chestLocation.addItem(new Token());
+                chestLocation.addItem(new Token(100));
+                chestLocation.addItem(new Token(100));
             } else {
-//                chestLocation.addItem(new Token());
-//                chestLocation.addItem(new Token());
-//                chestLocation.addItem(new Token());
+                chestLocation.addItem(new Token(100));
+                chestLocation.addItem(new Token(100));
+                chestLocation.addItem(new Token(100));
             }
         }
-        return ret;
+        return actor + " opened chest";
     }
 
     @Override
