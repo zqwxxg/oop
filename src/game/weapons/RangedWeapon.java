@@ -7,8 +7,9 @@ import edu.monash.fit2099.engine.WeaponItem;
 import game.actions.SwapWeaponAction;
 import game.enums.Abilities;
 
-public class MeleeWeapon extends WeaponItem {
+public class RangedWeapon extends WeaponItem {
     private int price;
+    private int range;
     /**
      * Constructor.
      *
@@ -18,15 +19,18 @@ public class MeleeWeapon extends WeaponItem {
      * @param verb        verb to use for this weapon, e.g. "hits", "zaps"
      * @param hitRate     the probability/chance to hit the target.
      */
-    public MeleeWeapon(String name, char displayChar, int damage, String verb, int hitRate) {
+    public RangedWeapon(String name, char displayChar, int damage, String verb, int hitRate,int range) {
         super(name, displayChar, damage, verb, hitRate);
-        addCapability(Abilities.MELEE);
+        this.range = range;
+        addCapability(Abilities.RANGED);
+
     }
 
-    public MeleeWeapon(String name, char displayChar, int damage, String verb, int hitRate, int price) {
+    public RangedWeapon(String name, char displayChar, int damage, String verb, int hitRate, int range, int price) {
         super(name, displayChar, damage, verb, hitRate);
-        addCapability(Abilities.MELEE);
+        this.range = range;
         this.price = price;
+        addCapability(Abilities.RANGED);
     }
 
     public int getPrice(){return price;}
@@ -39,6 +43,10 @@ public class MeleeWeapon extends WeaponItem {
     @Override
     public DropItemAction getDropAction(Actor actor) {
         return null;
+    }
+
+    public int getRange(){
+        return range;
     }
 
     @Override

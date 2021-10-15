@@ -6,5 +6,7 @@ package game.enums;
 public enum Abilities {
     ESTUS_FLASK,
     NOT_ACTIVATED,
-    PLAYER
+    PLAYER,
+    MELEE,
+    RANGED
 }
