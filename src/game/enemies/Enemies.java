@@ -1,9 +1,6 @@
 package game.enemies;
 
-import edu.monash.fit2099.engine.Actions;
-import edu.monash.fit2099.engine.Actor;
-import edu.monash.fit2099.engine.GameMap;
-import edu.monash.fit2099.engine.Location;
+import edu.monash.fit2099.engine.*;
 import game.actions.UndeadDieAction;
 import game.behaviours.AttackBehaviour;
 import game.behaviours.FollowBehaviour;
