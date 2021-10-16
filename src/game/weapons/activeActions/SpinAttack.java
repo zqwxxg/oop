@@ -57,6 +57,6 @@ public class SpinAttack extends WeaponAction {
 
     @Override
     public String menuDescription(Actor actor) {
-        return "Perform Spin Attack";
+        return actor + " performs Spin Attack";
     }
 }

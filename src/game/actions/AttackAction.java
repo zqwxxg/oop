@@ -4,14 +4,11 @@ import java.util.Random;
 
 import edu.monash.fit2099.engine.*;
 import game.Player;
-import game.enemies.AldrichTheDevourer;
 import game.enemies.Enemies;
 import game.enemies.LordOfCinder;
 import game.enemies.YhormTheGiant;
 import game.enums.Abilities;
 import game.enums.Status;
-import game.grounds.Wall;
-import game.weapons.DarkmoonLongbow;
 import game.weapons.StormRuler;
 import game.weapons.YhormsGreatMachete;
 
@@ -71,17 +68,10 @@ public class AttackAction extends Action {
 			damage /= 2;
 		}
 
-		if (!actor.hasCapability(Status.UNARMED)) {
-			if (((WeaponItem) weapon).hasCapability(Abilities.RANGED)) {
-				if (actor.getWeapon().getClass() == DarkmoonLongbow.class) {
-					int chance = random.nextInt(100) + 1;
-					if (chance <= 15) {
-						damage *= 2;
-					}
-				}
+		if (!actor.hasCapability(Status.UNARMED))
+			if (((WeaponItem)actor.getWeapon()).hasCapability(Abilities.RANGED)){
 				return new RangedAttackAction(target, direction).execute(actor, map);
 			}
-		}
 
 		String result = actor + " " + weapon.verb() + " " + target + " for " + damage + " damage.";
 		target.hurt(damage);

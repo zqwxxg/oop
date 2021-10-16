@@ -3,7 +3,10 @@ package game.actions;
 import edu.monash.fit2099.engine.*;
 import game.Player;
 import game.enemies.Enemies;
+import game.enemies.LordOfCinder;
+import game.enums.Abilities;
 import game.enums.Status;
+import game.weapons.DarkmoonLongbow;
 import game.weapons.RangedWeapon;
 
 import java.util.Random;
@@ -32,6 +35,18 @@ public class RangedAttackAction extends Action {
 
     @Override
     public String execute(Actor actor, GameMap map) {
+        Weapon weapon = actor.getWeapon();
+        int damage = weapon.damage();
+        String result = "";
+        Random random = new Random();
+
+        if (weapon.getClass() == DarkmoonLongbow.class) {
+            int chance = random.nextInt(100) + 1;
+            if (chance <= 15) {
+                damage *= 2;
+            }
+        }
+
         Location currentLocation = map.locationOf(actor);
         int startX = currentLocation.x() - ((RangedWeapon) actor.getWeapon()).getRange();
         int startY = currentLocation.y() - ((RangedWeapon) actor.getWeapon()).getRange();
@@ -42,11 +57,10 @@ public class RangedAttackAction extends Action {
                 Location here = new Location(map, counterX, counterY);
                 if (here.containsAnActor()) {
                     Actor otherActor = here.getActor();
-                    if (actor.getClass() != new Player("t", 't', 50).getClass()) {
+                    if (actor.getClass() != Player.class) {
                         if (otherActor.hasCapability(Status.HOSTILE_TO_ENEMY)) {
                             Location there = map.locationOf(target);
-                            Weapon weapon = actor.getWeapon();
-                            int damage = weapon.damage();
+                            damage = weapon.damage();
                             NumberRange xs, ys;
                             xs = new NumberRange(Math.min(currentLocation.x(), there.x()), Math.abs(currentLocation.x() - there.x()) + 1);
                             ys = new NumberRange(Math.min(currentLocation.y(), there.y()), Math.abs(currentLocation.y() - there.y()) + 1);
@@ -57,13 +71,11 @@ public class RangedAttackAction extends Action {
                                         return actor + " " + weapon.verb() + " attack is blocked.";
                                 }
                             }
-                            target.hurt(damage);
-                            return actor + " " + weapon.verb() + " " + target + " for " + damage + " damage.";
+                            result = actor + " " + weapon.verb() + " " + target + " for " + damage + " damage.";
                         }
                     } else {
                         Location there = map.locationOf(target);
-                        Weapon weapon = actor.getWeapon();
-                        int damage = weapon.damage();
+                        damage = weapon.damage();
 
                         NumberRange xs, ys;
                         xs = new NumberRange(Math.min(currentLocation.x(), there.x()), Math.abs(currentLocation.x() - there.x()) + 1);
@@ -75,13 +87,42 @@ public class RangedAttackAction extends Action {
                                     return actor + " " + weapon.verb() + " but the attack is blocked.";
                             }
                         }
-                        target.hurt(damage);
-                        return actor + " " + weapon.verb() + " " + target + " for " + damage + " damage.";
+                        result = actor + " " + weapon.verb() + " " + target + " for " + damage + " damage.";
                     }
                 }
             }
         }
-        return null;
+
+        target.hurt(damage);
+
+        if (!target.isConscious()) {
+            Actions dropActions = new Actions();
+            // drop all items
+            for (Item item : target.getInventory())
+                dropActions.add(item.getDropAction(actor));
+            for (Action drop : dropActions)
+                drop.execute(target, map);
+            // if the dead target can trigger soft reset, means the target is player
+            if (target.hasCapability(Abilities.PLAYER)) {
+                // if player is killed by enemies, no need to modify new location of token
+                Action resetAction = new SoftResetAction(null);
+                result += System.lineSeparator() + resetAction.execute(actor, map);
+            } else {
+                ((Enemies) target).resetInstance(map, Status.ENEMIES_KILLED, direction);
+                // checks if the dead target is revived
+                if (map.contains(target)) {
+                    result += System.lineSeparator() + target + " is revived.";
+                } else {
+                    ((Enemies) target).transferSouls((Player) actor);
+                    if (target instanceof LordOfCinder) {
+                        result += System.lineSeparator() + target + " HAS FALLEN.";
+                    } else {
+                        result += System.lineSeparator() + target + " is killed.";
+                    }
+                }
+            }
+        }
+        return result;
     }
 
 

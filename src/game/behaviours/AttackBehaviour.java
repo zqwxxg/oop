@@ -7,8 +7,6 @@ import game.enemies.Enemies;
 import game.enums.Abilities;
 import game.enums.Status;
 import game.interfaces.Behaviour;
-import game.weapons.DarkmoonLongbow;
-import game.weapons.MeleeWeapon;
 import game.weapons.RangedWeapon;
 
 import javax.swing.*;

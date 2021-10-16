@@ -17,13 +17,7 @@ public class Token extends PortableItem implements Soul {
     /**
      * The count of souls
      */
-//    private static int soulCount;
-     private int soulCount;
-
-//    /**
-//     * A token instance
-//     */
-//    private static Token tokenInstantiated;
+    private int soulCount;
 
     /***
      * Constructor.
@@ -38,22 +32,6 @@ public class Token extends PortableItem implements Soul {
     public int getSoulCount() {
         return soulCount;
     }
-
-    //    /**
-//     * Replaces the zero-parameter constructor and creates an instance of Token
-//     *
-//     * @return a new instance of Token if there is no Token instantiated, the instantiated Token otherwise
-//     */
-//    public static Token getInstance() {
-//        soulCount = 0;
-//        // since only one token is allowed to exist, if there is no token instantiated,
-//        // return a new token instance, else return the instantiated token
-//        // note that token instantiated is static
-//        if (tokenInstantiated == null) {
-//            tokenInstantiated = new Token();
-//        }
-//        return tokenInstantiated;
-//    }
 
     @Override
     public void transferSouls(Soul soulObject) {
@@ -92,10 +70,7 @@ public class Token extends PortableItem implements Soul {
 
     @Override
     public PickUpItemAction getPickUpAction(Actor actor) {
-        if(portable)
-            return new RetrieveSoulAction(this);
-
-        return null;
+        return new RetrieveSoulAction(this);
     }
 
     @Override
