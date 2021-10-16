@@ -10,7 +10,7 @@ import java.util.Random;
  */
 public class Sword extends MeleeWeapon {
 
-    public static Random rand = new Random();
+    public Random rand = new Random();
 
     /**
      * Constructor for Axe class

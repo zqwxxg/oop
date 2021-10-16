@@ -12,7 +12,7 @@ public class DarkmoonLongbow extends RangedWeapon{
     private boolean abilityToggle;
 
     public DarkmoonLongbow() {
-        super("Darkmoon Longbow", 'D', 70, "Shoots", 80, 3);
+        super("Darkmoon Longbow", 'D', 70, "shoots", 80, 3, -1);
         emberFormBool = false;
         abilityToggle = false;
     }

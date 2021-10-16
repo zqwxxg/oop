@@ -1,25 +1,23 @@
 package game.items;
 
 import edu.monash.fit2099.engine.*;
-import game.grounds.Bonfire;
+import game.enemies.LordOfCinder;
 
 public class CindersOfaLord extends PortableItem {
+
+    private LordOfCinder lordOfCinder;
 
     /***
      * Constructor.
      *
      * The cinders of a lord is displayed as 'O'
      */
-    public CindersOfaLord() {
+    public CindersOfaLord(LordOfCinder lordOfCinder) {
         super("Cinders of A Lord", 'O');
+        this.lordOfCinder = lordOfCinder;
     }
 
-    @Override
-    public void tick(Location currentLocation) {
-        if (currentLocation.getGround() instanceof Bonfire) {
-            currentLocation.removeItem(this);
-            System.out.println("NEW CHAPTER");
-        }
+    public LordOfCinder getLordOfCinder() {
+        return lordOfCinder;
     }
 }
-

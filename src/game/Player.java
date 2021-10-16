@@ -46,7 +46,12 @@ public class Player extends Actor implements Soul, Resettable {
 	/**
 	 * The location of the last token
 	 */
-	private Location lastToken;
+	private Location lastTokenLocation;
+
+	/**
+	 * The token instance of last token
+	 */
+	private Token lastToken;
 
 	/**
 	 * Constructor.
@@ -65,6 +70,7 @@ public class Player extends Actor implements Soul, Resettable {
 		inventory.add(new EstusFlask("Estus Flask", 'e', false));
 		inventory.add(new Broadsword());
 	}
+
 
 	/**
 	 * Setter for lastBonfire attribute
@@ -225,15 +231,16 @@ public class Player extends Actor implements Soul, Resettable {
 					}
 					location = map.at(x, y);
 				}
-				Token token = Token.getInstance();
+				Token token = new Token(0);
 				transferSouls(token);
 				location.addItem(token);
 				// if the location of last token is not null, which means token has been placed on map,
-				if (lastToken != null) {
+				if (lastTokenLocation != null) {
 					// remove it from the map
-					lastToken.removeItem(token);
+					lastTokenLocation.removeItem(lastToken);
 				}
-				lastToken = location;
+				lastToken = token;
+				lastTokenLocation = location;
 				map.moveActor(this, lastBonfire);
 			}
 		}

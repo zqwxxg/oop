@@ -19,16 +19,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c359be1d-12dd-45aa-bf87-58617a76d0e9" name="Default Changelist" comment="Implemented requirement 1 &amp; 2. Added Abilities.PLAYER and changed Status.REST, Status.SOFT_RESET to this in Player, AttackAction, WindSlashAction, Valley classes. Removed hotkey but added bonfireName parameter at the constructor of RestAction class.">
+    <list default="true" id="c359be1d-12dd-45aa-bf87-58617a76d0e9" name="Default Changelist" comment="Merged with anson's code. Created Anor Londo map.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Vendor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Vendor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/actions/AttackAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/AttackAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/actions/RangedAttackAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/RangedAttackAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/behaviours/AttackBehaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/behaviours/AttackBehaviour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/enemies/Enemies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enemies/Enemies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/enums/Abilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enums/Abilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/weapons/MeleeWeapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/MeleeWeapon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/enemies/LordOfCinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enemies/LordOfCinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/items/CindersOfaLord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/items/CindersOfaLord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/items/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/items/Token.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/weapons/DarkmoonLongbow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/DarkmoonLongbow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/weapons/Sword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/Sword.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/weapons/YhormsGreatMachete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/YhormsGreatMachete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/weapons/activeActions/BurnGround.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/activeActions/BurnGround.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/weapons/activeActions/SpinAttack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/activeActions/SpinAttack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,7 +236,21 @@
       <option name="project" value="LOCAL" />
       <updated>1634075230924</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Merged with anson's code. Created Anor Londo map.">
+      <created>1634331112516</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1634331112516</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Merged with anson's code. Created Anor Londo map.">
+      <created>1634331125873</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1634331125873</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -259,7 +279,8 @@
     <MESSAGE value="push rationale and uml diagrams" />
     <MESSAGE value="modify damage of storm ruler" />
     <MESSAGE value="Implemented requirement 1 &amp; 2. Added Abilities.PLAYER and changed Status.REST, Status.SOFT_RESET to this in Player, AttackAction, WindSlashAction, Valley classes. Removed hotkey but added bonfireName parameter at the constructor of RestAction class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented requirement 1 &amp; 2. Added Abilities.PLAYER and changed Status.REST, Status.SOFT_RESET to this in Player, AttackAction, WindSlashAction, Valley classes. Removed hotkey but added bonfireName parameter at the constructor of RestAction class." />
+    <MESSAGE value="Merged with anson's code. Created Anor Londo map." />
+    <option name="LAST_COMMIT_MESSAGE" value="Merged with anson's code. Created Anor Londo map." />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -269,11 +290,6 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/game/actions/AttackAction.java</url>
-          <line>73</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
