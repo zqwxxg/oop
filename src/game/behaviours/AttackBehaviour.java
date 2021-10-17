@@ -64,20 +64,28 @@ public class AttackBehaviour implements Behaviour {
             int endY = currentLocation.y() + ((RangedWeapon)actor.getWeapon()).getRange();
             for (int counterY = startY; counterY <= endY; counterY++){
                 for (int counterX = startX; counterX <= endX; counterX++){
-                    Location here = new Location(map, counterX, counterY);
-                    if (here.containsAnActor()){
-                        Actor otherActor = here.getActor();
-                        if (otherActor.hasCapability(Status.HOSTILE_TO_ENEMY)) {
-                            if ((counterY == startY ||  counterY == endY) || (counterX == startX || counterX == endX)){
-                                ((Enemies)actor).addBehaviour(new FollowBehaviour(otherActor));
+                    Location here = null;
+                    boolean exceptionPass = true;
+                    try {
+                        here = new Location(map, counterX, counterY);
+                    } catch (Exception e) {
+                        exceptionPass = false;
+                    }
+                    if (exceptionPass) {
+                        if (here.containsAnActor()) {
+                            Actor otherActor = here.getActor();
+                            if (otherActor.hasCapability(Status.HOSTILE_TO_ENEMY)) {
+                                if ((counterY == startY || counterY == endY) || (counterX == startX || counterX == endX)) {
+                                    ((Enemies) actor).addBehaviour(new FollowBehaviour(otherActor));
+                                }
+                                Actions actions = new Actions();
+                                // add active skills of the actor's weapon
+                                actions.add(actor.getWeapon().getActiveSkill(otherActor, ""));
+                                // add normal attack
+                                actions.add(new AttackAction(otherActor, ""));
+                                // randomly choose from using active skill to attack or perform normal attack
+                                return actions.get(random.nextInt(actions.size()));
                             }
-                            Actions actions = new Actions();
-                            // add active skills of the actor's weapon
-                            actions.add(actor.getWeapon().getActiveSkill(otherActor, ""));
-                            // add normal attack
-                            actions.add(new AttackAction(otherActor, ""));
-                            // randomly choose from using active skill to attack or perform normal attack
-                            return actions.get(random.nextInt(actions.size()));
                         }
                     }
                 }

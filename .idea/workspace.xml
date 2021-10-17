@@ -19,53 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bd99173-c3b3-4924-ab28-78e7250429ef" name="Changes" comment="Added rationale for class diagram">
+    <list default="true" id="a3aa9d59-9250-4300-8054-50e53ba8fe1f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/BonfireManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/BonfireManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/Player$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Player$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/Player$drinkEstusFlaskAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Player$drinkEstusFlaskAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/ResetManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/ResetManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/Vendor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Vendor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/actions/AttackAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/actions/AttackAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/actions/OpenChestAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/actions/OpenChestAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/actions/RangedAttackAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/actions/RangedAttackAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/actions/RetrieveSoulAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/actions/RetrieveSoulAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/actions/TradeCinderOfLordAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/actions/TradeCinderOfLordAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/behaviours/AttackBehaviour.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/behaviours/AttackBehaviour.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/enemies/AldrichTheDevourer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/enemies/AldrichTheDevourer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/enemies/Enemies.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/enemies/Enemies.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/enemies/Mimic.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/enemies/Mimic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/enemies/YhormTheGiant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/enemies/YhormTheGiant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/grounds/Chest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/grounds/Chest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/items/CindersOfaLord.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/items/CindersOfaLord.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/items/Token.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/items/Token.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/DarkmoonLongbow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/DarkmoonLongbow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/Kicking.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/Kicking.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/RangedWeapon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/RangedWeapon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/Sword.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/Sword.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/activeActions/BurnGround.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/activeActions/BurnGround.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/activeActions/SpinAttack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/activeActions/SpinAttack.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/actions/OpenChestAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/OpenChestAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/actions/RetrieveSoulAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/RetrieveSoulAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/enemies/AldrichTheDevourer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enemies/AldrichTheDevourer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/enemies/Skeleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enemies/Skeleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/enemies/Undead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enemies/Undead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/enemies/YhormTheGiant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enemies/YhormTheGiant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/grounds/Chest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/grounds/Chest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/grounds/Fire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/grounds/Fire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/items/CindersOfaLord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/items/CindersOfaLord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/weapons/Bow.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/weapons/DarkmoonLongbow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/DarkmoonLongbow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/weapons/GiantAxe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/GiantAxe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/weapons/Kicking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/Kicking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/weapons/MeleeWeapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/MeleeWeapon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/weapons/RangedWeapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/RangedWeapon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/weapons/StormRuler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/StormRuler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/weapons/Sword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/Sword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/weapons/YhormsGreatMachete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/YhormsGreatMachete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/behaviours/AttackBehaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/behaviours/AttackBehaviour.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
