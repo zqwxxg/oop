@@ -19,11 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3aa9d59-9250-4300-8054-50e53ba8fe1f" name="Changes" comment="AttackBehaviour : Added a try...catch exception in case the enemy is on the edge of the map. 17/10/2021">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Player.java" afterDir="false" />
-    </list>
+    <list default="true" id="a3aa9d59-9250-4300-8054-50e53ba8fe1f" name="Changes" comment="Made all enemies on creation, be added to the enemies list" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -280,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634469687969</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Made all enemies on creation, be added to the enemies list">
+      <created>1634473729879</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1634473729879</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -315,30 +318,31 @@
     <MESSAGE value="Added rationale for class diagram" />
     <MESSAGE value="AttackBehaviour : Added a try...catch exception in case the enemy is on the edge of the map. 17/10/2021" />
     <MESSAGE value="Added rationale for RangedWeapon, DarkmoonLongbow, AldrichTheDevourer, AttackBehaviour and RangedAttackAction classes 17/10/2021" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added rationale for RangedWeapon, DarkmoonLongbow, AldrichTheDevourer, AttackBehaviour and RangedAttackAction classes 17/10/2021" />
+    <MESSAGE value="Made all enemies on creation, be added to the enemies list" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made all enemies on creation, be added to the enemies list" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="862" key="GridCell.Tab.0.bottom" timestamp="1634473364568">
+    <state width="1877" height="862" key="GridCell.Tab.0.bottom" timestamp="1634473675696">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="862" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1634473364568" />
-    <state width="1877" height="862" key="GridCell.Tab.0.center" timestamp="1634473364568">
+    <state width="1877" height="862" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1634473675696" />
+    <state width="1877" height="862" key="GridCell.Tab.0.center" timestamp="1634473675696">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="862" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1634473364568" />
-    <state width="1877" height="862" key="GridCell.Tab.0.left" timestamp="1634473364568">
+    <state width="1877" height="862" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1634473675696" />
+    <state width="1877" height="862" key="GridCell.Tab.0.left" timestamp="1634473675696">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="862" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1634473364568" />
-    <state width="1877" height="862" key="GridCell.Tab.0.right" timestamp="1634473364568">
+    <state width="1877" height="862" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1634473675696" />
+    <state width="1877" height="862" key="GridCell.Tab.0.right" timestamp="1634473675696">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="862" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1634473364568" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1634469692435">
+    <state width="1877" height="862" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1634473675696" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1634473731432">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1634469692435" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1634473731432" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1634473122092">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
