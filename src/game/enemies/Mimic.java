@@ -1,6 +1,7 @@
 package game.enemies;
 
 import edu.monash.fit2099.engine.*;
+import game.Application;
 import game.behaviours.AttackBehaviour;
 import game.enums.Status;
 import game.grounds.Chest;
@@ -34,6 +35,7 @@ public class Mimic extends Enemies{
         behaviours.add(new AttackBehaviour());
         addCapability(Status.UNARMED);
         addCapability(Status.NOT_WEAK_TO_STORM_RULER);
+        Application.enemiesList.add(this);
     }
 
     /**

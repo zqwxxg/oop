@@ -1,6 +1,7 @@
 package game.enemies;
 
 import edu.monash.fit2099.engine.*;
+import game.Application;
 import game.behaviours.AttackBehaviour;
 import game.interfaces.Behaviour;
 import game.weapons.StormRuler;
@@ -32,6 +33,7 @@ public class YhormTheGiant extends LordOfCinder{
         super("Yhorm the Giant", 'y', 500, 5000);
         inventory.add(new YhormsGreatMachete());
         behaviours.add(new AttackBehaviour());
+        Application.enemiesList.add(this);
     }
 
     /**
