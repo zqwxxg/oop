@@ -19,7 +19,7 @@ public class OpenChestAction extends Action {
      */
     private Random rand = new Random();
     /**
-     * the chest that we want to open
+     * The chest we are opening
      */
     private Chest chest;
 
@@ -31,6 +31,15 @@ public class OpenChestAction extends Action {
         this.chest = chest;
     }
 
+    /**
+     * Allow player to open the chest
+     *
+     * Overrides Action.execute()
+     *
+     * @param actor The actor performing the action.
+     * @param map The map the actor is on.
+     * @return
+     */
     @Override
     public String execute(Actor actor, GameMap map) {
         Location chestLocation = map.locationOf(actor);
@@ -63,6 +72,15 @@ public class OpenChestAction extends Action {
         return actor + " opened chest";
     }
 
+    /**
+     * Returns the key used in the menu to trigger this Action.
+     *
+     * Overrides Action.menuDescription()
+     *
+     * @see Action#menuDescription(Actor)
+     * @param actor The actor who is performing the action
+     * @return a String
+     */
     @Override
     public String menuDescription(Actor actor) {
         return actor + " opens chest";

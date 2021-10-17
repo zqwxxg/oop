@@ -21,6 +21,12 @@ public class SwapWeaponAction extends PickUpItemAction {
         super(weapon);
     }
 
+    /**
+     * Allow player to swap his current weapon with the weapon he just picked up
+     *
+     * @param actor The actor performing the action.
+     * @param map The map the actor is on.
+     */
     @Override
     public String execute(Actor actor, GameMap map) {
         Weapon currentWeapon = actor.getWeapon();

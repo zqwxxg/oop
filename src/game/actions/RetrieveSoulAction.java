@@ -1,9 +1,6 @@
 package game.actions;
 
-import edu.monash.fit2099.engine.Actor;
-import edu.monash.fit2099.engine.GameMap;
-import edu.monash.fit2099.engine.Item;
-import edu.monash.fit2099.engine.PickUpItemAction;
+import edu.monash.fit2099.engine.*;
 import game.items.Token;
 
 /**
@@ -24,7 +21,7 @@ public class RetrieveSoulAction extends PickUpItemAction {
     }
 
     /**
-     * Retrieve the token of souls and add to inventory
+     * Allow player to retrieve the token of souls and add to inventory
      *
      * @param actor The actor performing the action.
      * @param map The map the actor is on.
@@ -36,6 +33,15 @@ public class RetrieveSoulAction extends PickUpItemAction {
         return actor + " retrieved souls (" + ((Token)item).getSoulCount() + " souls)";
     }
 
+    /**
+     * Returns the key used in the menu to trigger this Action.
+     *
+     * Overrides Action.menuDescription()
+     *
+     * @see Action#menuDescription(Actor)
+     * @param actor The actor who is performing the action
+     * @return a String
+     */
     @Override
     public String menuDescription(Actor actor){
         return actor + " retrieve souls (" + ((Token)item).getSoulCount() + " souls)";

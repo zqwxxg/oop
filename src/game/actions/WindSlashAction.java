@@ -29,6 +29,13 @@ public class WindSlashAction extends AttackAction{
         super(target, direction);
     }
 
+    /**
+     * Allow player to perform Wind Slash
+     *
+     * @param actor The actor performing the action.
+     * @param map The map the actor is on.
+     * @return
+     */
     @Override
     public String execute(Actor actor, GameMap map) {
 
