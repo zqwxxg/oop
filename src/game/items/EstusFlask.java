@@ -31,7 +31,7 @@ public class EstusFlask extends Item {
     /**
      * Returns the charge count of EstusFlask.
      *
-     * @return
+     * @return the charge count
      */
     public int getChargeCount() {
         return chargeCount;
