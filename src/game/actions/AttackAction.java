@@ -42,6 +42,13 @@ public class AttackAction extends Action {
 		this.direction = direction;
 	}
 
+	/**
+	 * Perform the Action.
+	 *
+	 * @param actor The actor performing the action.
+	 * @param map The map the actor is on.
+	 * @return a description of what happened that can be displayed to the user.
+	 */
 	@Override
 	public String execute(Actor actor, GameMap map) {
 
@@ -105,6 +112,12 @@ public class AttackAction extends Action {
 		return result;
 	}
 
+	/**
+	 * Returns the key used in the menu to trigger this Action.
+	 *
+	 * @param actor The actor who is performing the action
+	 * @return The key we use for this Action in the menu, or null to have it assigned for you.
+	 */
 	public String menuDescription(Actor actor) {
 		// only returns menu description when player attacks enemies
 		String result = actor + " attacks " + target;

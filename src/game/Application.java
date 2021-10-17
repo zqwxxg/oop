@@ -22,6 +22,7 @@ import game.weapons.StormRuler;
  */
 public class Application {
 
+	//Stores a list of enemies
 	public static ArrayList<Enemies> enemiesList= new ArrayList<>();
 
 	public static void main(String[] args) {
