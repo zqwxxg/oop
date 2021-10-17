@@ -10,18 +10,28 @@ import game.enums.Status;
  * Class representing a bonfire
  *
  * @see edu.monash.fit2099.engine
+ * @see BonfireManager
  * @see RestAction
+ * @see Abilities
  * @see Status
  */
 
 public class Bonfire extends Ground {
 
-    private BonfireManager bonfireManager;
-    private String name;
     /**
-     * Constructor
+     * The bonfire manager that stores all instances of bonfire in current game
+     */
+    private BonfireManager bonfireManager;
+
+    /**
+     * The name of this bonfire
+     */
+    private String name;
+
+    /**
+     * Constructor.
      *
-     * All bonfires are displayed as 'B'
+     * All bonfires are displayed as 'B'.
      */
     public Bonfire(String name, boolean activated, BonfireManager bonfireManager) {
         super('B');
@@ -32,10 +42,26 @@ public class Bonfire extends Ground {
         }
     }
 
+    /**
+     * Returns the name of this bonfire.
+     *
+     * @return a String
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * Returns an Action list.
+     *
+     * Overrides Ground.allowableActions()
+     *
+     * @see Ground#allowableActions(Actor, Location, String)
+     * @param actor the Actor acting
+     * @param location the current Location
+     * @param direction the direction of the Bonfire from the Actor
+     * @return a collection of Actions
+     */
     @Override
     public Actions allowableActions(Actor actor, Location location, String direction) {
         Actions actions = new Actions();

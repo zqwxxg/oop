@@ -17,6 +17,7 @@ import java.util.List;
  * Class representing the Player.
  *
  * @see edu.monash.fit2099.engine
+ * @see RangedAttackAction
  * @see Abilities
  * @see Status
  * @see Resettable
@@ -24,6 +25,7 @@ import java.util.List;
  * @see EstusFlask
  * @see Token
  * @see Broadsword
+ * @see RangedWeapon
  * @see List
  */
 public class Player extends Actor implements Soul, Resettable {
@@ -49,7 +51,7 @@ public class Player extends Actor implements Soul, Resettable {
 	private Location lastTokenLocation;
 
 	/**
-	 * The token instance of last token
+	 * The Token instance of last token
 	 */
 	private Token lastToken;
 
@@ -70,7 +72,6 @@ public class Player extends Actor implements Soul, Resettable {
 		inventory.add(new EstusFlask("Estus Flask", 'e', false));
 		inventory.add(new Broadsword());
 	}
-
 
 	/**
 	 * Setter for lastBonfire attribute
@@ -123,13 +124,29 @@ public class Player extends Actor implements Soul, Resettable {
 		return menu.showMenu(this, actions, display);
 	}
 
-
+	/**
+	 * Transfer Player's souls to another Soul instance.
+	 *
+	 * Overrides Soul.transferSouls()
+	 *
+	 * @see Soul#transferSouls(Soul)
+	 * @param soulObject a target soul object.
+	 */
 	@Override
 	public void transferSouls(Soul soulObject) {
 		soulObject.addSouls(soulCount);
 		soulCount = 0;
 	}
 
+	/**
+	 * Adds souls to current instance's souls.
+	 *
+	 * Overrides Soul.transferSouls()
+	 *
+	 * @see Soul#addSouls(int)
+	 * @param souls number of souls to be incremented.
+	 * @return transaction status. True if addition successful, otherwise False.
+	 */
 	@Override
 	public boolean addSouls(int souls) {
 		if (souls >= 0) {
@@ -141,6 +158,15 @@ public class Player extends Actor implements Soul, Resettable {
 		}
 	}
 
+	/**
+	 * Deducts souls from current instance's souls.
+	 *
+	 * Overrides Soul.subtractSouls()
+	 *
+	 * @see Soul#subtractSouls(int)
+	 * @param souls number of souls to be decremented.
+	 * @return transaction status. True if addition successful, otherwise False.
+	 */
 	@Override
 	public boolean subtractSouls(int souls) {
 		if (soulCount >= souls && souls >= 0) {
@@ -153,6 +179,16 @@ public class Player extends Actor implements Soul, Resettable {
 
 	}
 
+	/**
+	 * Allows Player to reset abilities, attributes, and items.
+	 *
+	 * Overrides Resettable.resetInstance()
+	 *
+	 * @see game.interfaces.Resettable#resetInstance(GameMap, Status, String)
+	 * @param map the map the Player is on
+	 * @param status the status of the action that triggers reset
+	 * @param direction the direction of the object that triggers reset
+	 */
 	@Override
 	public void resetInstance(GameMap map,Status status, String direction) {
 		hitPoints = maxHitPoints;
@@ -257,13 +293,37 @@ public class Player extends Actor implements Soul, Resettable {
 		}
 	}
 
+	/**
+	 * A useful method to clean up the list of instances in the ResetManager class
+	 *
+	 * Overrides Resettable.isExist()
+	 *
+	 * @see Resettable#isExist(GameMap)
+	 * @param map the map the Player is on
+	 * @return the existence of the Player in the game.
+	 * for example, true to keep it permanent, or false if Player needs to be removed from the reset list.
+	 */
 	@Override
 	public boolean isExist(GameMap map) {
 		return map.contains(this);
 	}
 
+	/**
+	 * Special action for player to drink estus flask.
+	 */
 	private class drinkEstusFlaskAction extends Action{
 		EstusFlask est;
+
+		/**
+		 * Allow Player to drink an estus flask.
+		 *
+		 * Overrides Action.execute()
+		 *
+		 * @see Action#execute(Actor, GameMap)
+		 * @param actor The Player performing the action.
+		 * @param map The map the Player is on.
+		 * @return a description of the Action suitable for the menu
+		 */
 		@Override
 		public String execute(Actor actor, GameMap map) {
 
@@ -286,6 +346,12 @@ public class Player extends Actor implements Soul, Resettable {
 
 		}
 
+		/**
+		 * Returns the key used in the menu to trigger this Action.
+		 *
+		 * @param actor The Player who is performing the action
+		 * @return a String. e.g. "Drink from Estus FLask 3 charges remaining"
+		 */
 		@Override
 		public String menuDescription(Actor actor) {
 			List<Item> tempList = getInventory();

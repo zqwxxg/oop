@@ -94,6 +94,17 @@ public abstract class Enemies extends Actor implements Soul, Resettable {
         this.initialPosition = initialPosition;
     }
 
+    /**
+     * Returns a collection of the Actions that the Player can do to the current Enemy.
+     *
+     * Overrides Actor.getAllowableActions
+     *
+     * @see Actor#getAllowableActions(Actor, String, GameMap)
+     * @param otherActor the Player that might be performing attack
+     * @param direction  String representing the direction of the Player
+     * @param map        current GameMap
+     * @return A collection of Actions.
+     */
     @Override
     public Actions getAllowableActions(Actor otherActor, String direction, GameMap map) {
         Actions actions = new Actions();
@@ -110,16 +121,43 @@ public abstract class Enemies extends Actor implements Soul, Resettable {
         return actions;
     }
 
+    /**
+     * A useful method to clean up the list of instances in the ResetManager class
+     *
+     * Overrides Resettable.isExist()
+     *
+     * @see Resettable#isExist(GameMap)
+     * @param map the map the enemy is on
+     * @return the existence of the enemy in the game.
+     * for example, true to keep it permanent, or false if enemy needs to be removed from the reset list.
+     */
     @Override
     public boolean isExist(GameMap map) {
         return map.contains(this);
     }
 
+    /**
+     * Transfer current enemy's souls to another Soul instance.
+     *
+     * Overrides Soul.transferSouls()
+     *
+     * @see Soul#transferSouls(Soul)
+     * @param soulObject a target soul object.
+     */
     @Override
     public void transferSouls(Soul soulObject) {
         soulObject.addSouls(soulCount);
     }
 
+    /**
+     * Adds souls to current instance's souls.
+     *
+     * Overrides Soul.addSouls()
+     *
+     * @see Soul#addSouls(int)
+     * @param souls number of souls to be incremented.
+     * @return transaction status. True if addition successful, otherwise False.
+     */
     @Override
     public boolean addSouls(int souls) {
         if (souls >= 0) {
@@ -130,6 +168,11 @@ public abstract class Enemies extends Actor implements Soul, Resettable {
         }
     }
 
+    /**
+     * Add a behaviour to list of behaviours of an enemy.
+     *
+     * @param behaviour the behaviour that is being added to the list of behaviours
+     */
     public void addBehaviour(Behaviour behaviour) {
         behaviours.add(behaviour);
     }

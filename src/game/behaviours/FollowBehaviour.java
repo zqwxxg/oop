@@ -27,6 +27,14 @@ public class FollowBehaviour implements Behaviour {
 		this.target = subject;
 	}
 
+	/**
+	 * Returns a MoveAction to follow an actor.
+	 * If no movement is possible, returns null.
+	 *
+	 * @param actor the Actor enacting the behaviour
+	 * @param map the map that actor is currently on
+	 * @return an Action, or null if no MoveAction is possible
+	 */
 	@Override
 	public Action getAction(Actor actor, GameMap map) {
 		if(!map.contains(target) || !map.contains(actor))

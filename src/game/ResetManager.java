@@ -65,7 +65,6 @@ public class ResetManager {
 
     /**
      * clean up instances (actor, item, or ground) that doesn't exist anymore in the map
-     * FIXME: it does nothing, you need to implement it :)
      */
     private void cleanUp(GameMap map){
         if (resettableList != null) {

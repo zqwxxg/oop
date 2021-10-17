@@ -10,23 +10,37 @@ import game.grounds.Bonfire;
 
 import java.util.HashMap;
 
+/**
+ * A manager that stores all instances of Bonfire in a game.
+ *
+ * @see edu.monash.fit2099.engine
+ * @see LightBonfireAction
+ * @see RestAction
+ * @see TeleportAction
+ * @see Abilities
+ * @see Bonfire
+ */
+
 public class BonfireManager {
+
     /**
-     * A list of resettable instances (any classes that implements Resettable,
-     * such as Player implements Resettable will be stored in here)
+     * A hash map that stores Bonfire as key and Location as value
      */
     private HashMap<Bonfire, Location> bonfireMap;
 
     /**
-     * Constructor
+     * Constructor.
      */
     public BonfireManager(){
         bonfireMap = new HashMap<>();
     }
 
     /**
-     * Reset the game by traversing through all the list
-     * By doing this way, it will avoid using `instanceof` all over the place.
+     * Returns a list of available action.
+     *
+     * @param bonfire the bonfire that an actor is currently acting on
+     * @param direction the direction of the actor that is currently acting on this bonfire
+     * @return a list of available action
      */
     public Actions getActions(Bonfire bonfire, String direction){
         Actions actions = new Actions();
@@ -45,7 +59,10 @@ public class BonfireManager {
     }
 
     /**
-     * Add the Resettable instance to the list
+     * Adds a bonfire instance to the bonfire manager
+     *
+     * @param bonfire a bonfire instance
+     * @param location the location of this bonfire instance
      */
     public void addBonfire(Bonfire bonfire, Location location){
         bonfireMap.put(bonfire, location);
