@@ -4,8 +4,11 @@ import game.enemies.LordOfCinder;
 
 /**
  * Class representing the cinder of a Lord
+ *
+ * @see LordOfCinder
  */
 public class CindersOfaLord extends PortableItem {
+
     /**
      * keep track of the owner of this Cinder of Lord
      */
@@ -21,6 +24,11 @@ public class CindersOfaLord extends PortableItem {
         this.lordOfCinder = lordOfCinder;
     }
 
+    /**
+     * Returns the LordOfCinder that this item belongs to.
+     *
+     * @return LordOfCinder
+     */
     public LordOfCinder getLordOfCinder() {
         return lordOfCinder;
     }

@@ -14,6 +14,8 @@ import java.util.Random;
  *
  * @see edu.monash.fit2099.engine
  * @see UndeadDieAction
+ * @see AttackBehaviour
+ * @see WanderBehaviour
  * @see Behaviour
  * @see Status
  * @see Random

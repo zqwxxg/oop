@@ -6,10 +6,12 @@ import java.util.Random;
  * Class for sword weapons to inherit
  *
  * @see game.weapons.MeleeWeapon
- * @see edu.monash.fit2099.engine.WeaponItem
  */
 public class Sword extends MeleeWeapon {
 
+    /**
+     * A random number generator
+     */
     public Random rand = new Random();
 
     /**
@@ -26,7 +28,9 @@ public class Sword extends MeleeWeapon {
     }
 
     /**
-     * @return the damage of sword
+     * Returns the damage of sword.
+     *
+     * @return the damage
      */
     @Override
     public int damage() {

@@ -1,7 +1,12 @@
 package game.weapons;
 
 import edu.monash.fit2099.engine.*;
-import java.util.Random;
+
+/**
+ * Class representing darkmoon longbow
+ *
+ * @see edu.monash.fit2099.engine
+ */
 
 public class DarkmoonLongbow extends RangedWeapon{
 

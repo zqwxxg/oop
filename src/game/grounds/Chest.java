@@ -3,14 +3,15 @@ package game.grounds;
 import edu.monash.fit2099.engine.*;
 
 import game.actions.OpenChestAction;
+import game.enums.Abilities;
 
 /**
  * Class representing a Chest
  *
  * @see edu.monash.fit2099.engine.Ground
+ * @see OpenChestAction
  */
 public class Chest extends Ground {
-    private Action openChestAction = new OpenChestAction(this);
 
     /***
      * Constructor.
@@ -29,8 +30,10 @@ public class Chest extends Ground {
      */
     @Override
     public Actions allowableActions(Actor actor, Location location, String direction) {
-        Actions actions = super.allowableActions(actor, location, direction);
-        actions.add(openChestAction);
+        Actions actions = new Actions();
+        if (actor.hasCapability(Abilities.PLAYER)) {
+            actions.add(new OpenChestAction(this));
+        }
         return actions;
     }
 
