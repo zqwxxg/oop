@@ -24,6 +24,7 @@ public class AldrichTheDevourer extends LordOfCinder{
         super("Aldrich the Devourer", 'A', 350, 5000);
         inventory.add(new DarkmoonLongbow());
         behaviours.add(new AttackBehaviour());
+        Application.enemiesList.add(this);
     }
 
     /**

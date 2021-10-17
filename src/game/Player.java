@@ -9,6 +9,7 @@ import game.interfaces.Soul;
 import game.items.EstusFlask;
 import game.items.Token;
 import game.weapons.Broadsword;
+import game.weapons.DarkmoonLongbow;
 import game.weapons.RangedWeapon;
 
 import java.util.List;
@@ -70,7 +71,8 @@ public class Player extends Actor implements Soul, Resettable {
 		this.addCapability(Status.ENTER_FLOOR);
 		registerInstance();
 		inventory.add(new EstusFlask("Estus Flask", 'e', false));
-		inventory.add(new Broadsword());
+		inventory.add(new DarkmoonLongbow());
+		//inventory.add(new Broadsword());
 	}
 
 	/**
@@ -106,13 +108,16 @@ public class Player extends Actor implements Soul, Resettable {
 			for (int counter=0; counter < Application.enemiesList.size(); counter++){
 				int range = ((RangedWeapon)this.getWeapon()).getRange();
 				if (map.locationOf(Application.enemiesList.get(counter)) != null) {
+//					(Math.round(Math.sqrt(Math.pow(
+//							map.locationOf(Application.enemiesList.get(counter)).x() - here.x()
+//							, 2) + Math.pow(map.locationOf(Application.enemiesList.get(counter)).y() - here.y(), 2))) <= range || ((map.locationOf(Application.enemiesList.get(counter)).y()- here.y() > 1) && Math.round(Math.sqrt(Math.pow(
+//							map.locationOf(Application.enemiesList.get(counter)).x() - here.x()
+//							, 2) + Math.pow(map.locationOf(Application.enemiesList.get(counter)).y() - here.y(), 2))) <= range + 1) || ((map.locationOf(Application.enemiesList.get(counter)).x()- here.x() > 1) && Math.round(Math.sqrt(Math.pow(
+//							map.locationOf(Application.enemiesList.get(counter)).x() - here.x()
+//							, 2) + Math.pow(map.locationOf(Application.enemiesList.get(counter)).y() - here.y(), 2))) <= range + 1))
 					if (Math.round(Math.sqrt(Math.pow(
 							map.locationOf(Application.enemiesList.get(counter)).x() - here.x()
-							, 2) + Math.pow(map.locationOf(Application.enemiesList.get(counter)).y() - here.y(), 2))) <= range || ((map.locationOf(Application.enemiesList.get(counter)).y()- here.y() > 1) && Math.round(Math.sqrt(Math.pow(
-							map.locationOf(Application.enemiesList.get(counter)).x() - here.x()
-							, 2) + Math.pow(map.locationOf(Application.enemiesList.get(counter)).y() - here.y(), 2))) <= range + 1) || ((map.locationOf(Application.enemiesList.get(counter)).x()- here.x() > 1) && Math.round(Math.sqrt(Math.pow(
-							map.locationOf(Application.enemiesList.get(counter)).x() - here.x()
-							, 2) + Math.pow(map.locationOf(Application.enemiesList.get(counter)).y() - here.y(), 2))) <= range + 1)) {
+							, 2) + Math.pow(map.locationOf(Application.enemiesList.get(counter)).y() - here.y(), 2))) <= range + 1) {
 						actions.add(new RangedAttackAction(Application.enemiesList.get(counter), ""));
 					}
 				}else{

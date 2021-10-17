@@ -1,6 +1,7 @@
 package game.enemies;
 
 import edu.monash.fit2099.engine.*;
+import game.Application;
 import game.actions.UndeadDieAction;
 import game.behaviours.AttackBehaviour;
 import game.behaviours.WanderBehaviour;
@@ -44,6 +45,7 @@ public class Undead extends Enemies {
 		addCapability(Status.SPAWN_UNDEAD);
 		addCapability(Status.UNARMED);
 		addCapability(Status.NOT_WEAK_TO_STORM_RULER);
+		Application.enemiesList.add(this);
 	}
 
 	/**

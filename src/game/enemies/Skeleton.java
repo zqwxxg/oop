@@ -1,6 +1,7 @@
 package game.enemies;
 
 import edu.monash.fit2099.engine.*;
+import game.Application;
 import game.behaviours.AttackBehaviour;
 import game.behaviours.FollowBehaviour;
 import game.behaviours.WanderBehaviour;
@@ -53,6 +54,7 @@ public class Skeleton extends Enemies {
         behaviours.add(new WanderBehaviour());
         addCapability(Status.RESURRECTABLE);
         addCapability(Status.NOT_WEAK_TO_STORM_RULER);
+        Application.enemiesList.add(this);
     }
 
     /**
