@@ -28,11 +28,24 @@ public class RangedAttackAction extends Action {
      */
     protected Random rand = new Random();
 
+    /**
+     * Constructor
+     *
+     * @param target    The actor being attacked
+     * @param direction Direction of the actor being attacked
+     */
     public RangedAttackAction(Actor target, String direction){
         this.target = target;
         this.direction = direction;
     }
 
+    /**
+     * Perform the Action.
+     *
+     * @param actor The actor performing the action.
+     * @param map The map the actor is on.
+     * @return a description of what happened that can be displayed to the user.
+     */
     @Override
     public String execute(Actor actor, GameMap map) {
         Weapon weapon = actor.getWeapon();
@@ -40,6 +53,7 @@ public class RangedAttackAction extends Action {
         String result = "";
         Random random = new Random();
 
+        // DarkmoonLongbow has a crit chance passive
         if (weapon.getClass() == DarkmoonLongbow.class) {
             int chance = random.nextInt(100) + 1;
             if (chance <= 15) {
@@ -47,6 +61,7 @@ public class RangedAttackAction extends Action {
             }
         }
 
+        // This whole parts checks if there is anything in the way that can block the ranged attack, ie. a wall
         Location currentLocation = map.locationOf(actor);
         int startX = currentLocation.x() - ((RangedWeapon) actor.getWeapon()).getRange();
         int startY = currentLocation.y() - ((RangedWeapon) actor.getWeapon()).getRange();
@@ -127,6 +142,12 @@ public class RangedAttackAction extends Action {
 
 
 
+    /**
+     * Returns the key used in the menu to trigger this Action.
+     *
+     * @param actor The actor who is performing the action
+     * @return The key we use for this Action in the menu, or null to have it assigned for you.
+     */
     @Override
     public String menuDescription(Actor actor) {
         // only returns menu description when player attacks enemies

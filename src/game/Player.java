@@ -81,6 +81,15 @@ public class Player extends Actor implements Soul, Resettable {
 		this.lastBonfire = lastBonfire;
 	}
 
+	/**
+	 * Select and return an action to perform on the current turn.
+	 *
+	 * @param actions    collection of possible Actions for this Actor
+	 * @param lastAction The Action this Actor took last turn. Can do interesting things in conjunction with Action.getNextAction()
+	 * @param map        the map containing the Actor
+	 * @param display    the I/O object to which messages may be written
+	 * @return the Action to be performed
+	 */
 	@Override
 	public Action playTurn(Actions actions, Action lastAction, GameMap map, Display display) {
 		// Handle multi-turn Actions
@@ -89,6 +98,8 @@ public class Player extends Actor implements Soul, Resettable {
 
 		display.println("Unkindled (" + hitPoints + "/" + maxHitPoints + "), holding " + getWeapon() + ", " + soulCount + " souls");
 		actions.add(new drinkEstusFlaskAction());
+
+		// Handles Ranged Weapons
 		if (((Item)this.getWeapon()).hasCapability(Abilities.RANGED)){
 			Location here = map.locationOf(this);
 			for (int counter=0; counter < Application.enemiesList.size(); counter++){

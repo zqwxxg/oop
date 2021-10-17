@@ -29,6 +29,13 @@ public class AttackBehaviour implements Behaviour {
      */
     private Random random = new Random();
 
+    /**
+     * Gets an action based on the actor and map
+     *
+     * @param actor the Actor acting
+     * @param map the GameMap containing the Actor
+     * @return An Action
+     */
     @Override
     public Action getAction(Actor actor, GameMap map) {
         if (actor.hasCapability(Status.UNARMED) || !((Item)actor.getWeapon()).hasCapability(Abilities.RANGED)) {
@@ -47,7 +54,8 @@ public class AttackBehaviour implements Behaviour {
                     }
                 }
             }
-        }else{
+        }else{ // if weapon is ranged
+            // This check is only for enemies with ranged weapons
             //loop through range and see if actor is there
             Location currentLocation = map.locationOf(actor);
             int startX = currentLocation.x() - ((RangedWeapon)actor.getWeapon()).getRange();

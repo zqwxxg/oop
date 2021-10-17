@@ -22,21 +22,15 @@
     <list default="true" id="c359be1d-12dd-45aa-bf87-58617a76d0e9" name="Default Changelist" comment="Updated RangedAttackAction. Merged with zhien's code. Fix error of getting weapon for unarmed enemies in AttackAction. Added Token attribute in Player and fix error in resetInstance().">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/project/game/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/Player$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Player$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/Player$drinkEstusFlaskAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Player$drinkEstusFlaskAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/Vendor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Vendor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/actions/AttackAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/actions/AttackAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/behaviours/AttackBehaviour.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/behaviours/AttackBehaviour.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/enemies/LordOfCinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/enemies/LordOfCinder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/enemies/YhormTheGiant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/enemies/YhormTheGiant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/items/CindersOfaLord.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/items/CindersOfaLord.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/items/Token.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/items/Token.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/Sword.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/Sword.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/YhormsGreatMachete.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/YhormsGreatMachete.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/activeActions/BurnGround.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/activeActions/BurnGround.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/activeActions/SpinAttack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/activeActions/SpinAttack.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/enemies/Enemies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enemies/Enemies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/enemies/Enemies.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/enemies/Enemies.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/actions/AttackAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/AttackAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/actions/RangedAttackAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/RangedAttackAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/behaviours/AttackBehaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/behaviours/AttackBehaviour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/enemies/AldrichTheDevourer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enemies/AldrichTheDevourer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/weapons/DarkmoonLongbow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/DarkmoonLongbow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/weapons/RangedWeapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/weapons/RangedWeapon.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -292,6 +286,28 @@
     <MESSAGE value="Updated RangedAttackAction. Merged with zhien's code. Fix error of getting weapon for unarmed enemies in AttackAction. Added Token attribute in Player and fix error in resetInstance()." />
     <option name="LAST_COMMIT_MESSAGE" value="Updated RangedAttackAction. Merged with zhien's code. Fix error of getting weapon for unarmed enemies in AttackAction. Added Token attribute in Player and fix error in resetInstance()." />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1877" height="798" key="GridCell.Tab.0.bottom" timestamp="1634435085687">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="798" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1634435085687" />
+    <state width="1877" height="798" key="GridCell.Tab.0.center" timestamp="1634435085687">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="798" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1634435085687" />
+    <state width="1877" height="798" key="GridCell.Tab.0.left" timestamp="1634435085687">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="798" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1634435085687" />
+    <state width="1877" height="798" key="GridCell.Tab.0.right" timestamp="1634435085687">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="798" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1634435085687" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1634396837002">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1634396837002" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
