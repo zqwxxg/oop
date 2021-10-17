@@ -19,9 +19,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3aa9d59-9250-4300-8054-50e53ba8fe1f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/behaviours/AttackBehaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/behaviours/AttackBehaviour.java" afterDir="false" />
+    <list default="true" id="a3aa9d59-9250-4300-8054-50e53ba8fe1f" name="Changes" comment="AttackBehaviour : Added a try...catch exception in case the enemy is on the edge of the map. 17/10/2021">
+      <change beforePath="$PROJECT_DIR$/docs/Assignment3-Rationale.docx" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Assignment3-Rationale.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/actions/OpenChestAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/actions/OpenChestAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/actions/RetrieveSoulAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/actions/RetrieveSoulAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/behaviours/AttackBehaviour.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/behaviours/AttackBehaviour.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/grounds/Fire.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/grounds/Fire.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/items/CindersOfaLord.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/items/CindersOfaLord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/DarkmoonLongbow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/DarkmoonLongbow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/Kicking.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/Kicking.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/MeleeWeapon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/MeleeWeapon.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/RangedWeapon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/RangedWeapon.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/StormRuler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/StormRuler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/Sword.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/Sword.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/project/game/weapons/YhormsGreatMachete.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/project/game/weapons/YhormsGreatMachete.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -266,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634465586971</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="AttackBehaviour : Added a try...catch exception in case the enemy is on the edge of the map. 17/10/2021">
+      <created>1634469313300</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1634469313300</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -299,8 +318,31 @@
     <MESSAGE value="Updated RangedAttackAction. Merged with zhien's code. Fix error of getting weapon for unarmed enemies in AttackAction. Added Token attribute in Player and fix error in resetInstance()." />
     <MESSAGE value="Added all the java doc for my part" />
     <MESSAGE value="Added rationale for class diagram" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added rationale for class diagram" />
+    <MESSAGE value="AttackBehaviour : Added a try...catch exception in case the enemy is on the edge of the map. 17/10/2021" />
+    <option name="LAST_COMMIT_MESSAGE" value="AttackBehaviour : Added a try...catch exception in case the enemy is on the edge of the map. 17/10/2021" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1877" height="862" key="GridCell.Tab.0.bottom" timestamp="1634469528524">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="862" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1634469528524" />
+    <state width="1877" height="862" key="GridCell.Tab.0.center" timestamp="1634469528524">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="862" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1634469528524" />
+    <state width="1877" height="862" key="GridCell.Tab.0.left" timestamp="1634469528523">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="862" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1634469528523" />
+    <state width="1877" height="862" key="GridCell.Tab.0.right" timestamp="1634469528524">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="862" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1634469528524" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1634469321050">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1634469321050" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
