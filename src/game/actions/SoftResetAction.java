@@ -28,6 +28,16 @@ public class SoftResetAction extends Action {
         this.direction = direction;
     }
 
+    /**
+     * Allow the actor to die.
+     *
+     * Overrides Action.execute()
+     *
+     * @see Action#execute(Actor, GameMap)
+     * @param actor The actor performing the action.
+     * @param map The map the actor is on.
+     * @return a description of the Action suitable for the menu
+     */
     @Override
     public String execute(Actor actor, GameMap map) {
         ResetManager resetManager = ResetManager.getInstance();
@@ -35,6 +45,15 @@ public class SoftResetAction extends Action {
         return menuDescription(actor);
     }
 
+    /**
+     * Returns the key used in the menu to trigger this Action.
+     *
+     * Overrides Action.menuDescription()
+     *
+     * @see Action#menuDescription(Actor)
+     * @param actor The actor who is performing the action
+     * @return a String
+     */
     @Override
     public String menuDescription(Actor actor) {
         return "YOU DIED";

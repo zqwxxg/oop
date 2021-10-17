@@ -9,7 +9,6 @@ import game.enums.Status;
 import game.interfaces.Behaviour;
 import game.weapons.RangedWeapon;
 
-import javax.swing.*;
 import java.util.Random;
 
 /**
@@ -30,11 +29,12 @@ public class AttackBehaviour implements Behaviour {
     private Random random = new Random();
 
     /**
-     * Gets an action based on the actor and map
+     * Returns ActiveSkill of weapon or AttackAction to attack a target
+     * If no attack is possible, returns null.
      *
-     * @param actor the Actor acting
-     * @param map the GameMap containing the Actor
-     * @return An Action
+     * @param actor the Actor enacting the behaviour
+     * @param map the map that actor is currently on
+     * @return an Action, or null if no MoveAction is possible
      */
     @Override
     public Action getAction(Actor actor, GameMap map) {
