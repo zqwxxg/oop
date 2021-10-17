@@ -91,7 +91,7 @@ public class Application {
 		GameMap anorLondo = new GameMap(groundFactory, anorLondoMap);
 		world.addGameMap(anorLondo);
 
-		Player player = new Player("Unkindled (Player)", '@', 10000);
+		Player player = new Player("Unkindled (Player)", '@', 100);
 		world.addPlayer(player, profaneCapital.at(38, 12));
 
 		BonfireManager bonfireManager = new BonfireManager();

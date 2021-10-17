@@ -4,6 +4,8 @@ import edu.monash.fit2099.engine.IntrinsicWeapon;
 
 /**
  * Class for Kicking as weapon
+ *
+ * @see IntrinsicWeapon
  */
 public class Kicking extends IntrinsicWeapon {
 

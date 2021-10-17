@@ -7,6 +7,16 @@ import game.weapons.StormRuler;
 import game.weapons.YhormsGreatMachete;
 import game.weapons.activeActions.WindSlash;
 
+/**
+ * Class representing Yhorm The Giant
+ *
+ * @see edu.monash.fit2099.engine
+ * @see AttackBehaviour
+ * @see Behaviour
+ * @see YhormsGreatMachete
+ * @see WindSlash
+ */
+
 public class YhormTheGiant extends LordOfCinder{
     /**
      * return true if Yhorm is stunned (when performing Wind Slash Action)
@@ -31,6 +41,17 @@ public class YhormTheGiant extends LordOfCinder{
         isStunned = true;
     }
 
+    /**
+     * Returns a collection of the Actions that the otherActor can do to the current Yhorm.
+     *
+     * Overrides LordOfCinder.getAllowableActions()
+     *
+     * @see LordOfCinder#getAllowableActions(Actor, String, GameMap)
+     * @param otherActor the Actor that might be performing attack
+     * @param direction  String representing the direction of the other Actor
+     * @param map        current GameMap
+     * @return A collection of Actions.
+     */
     @Override
     public Actions getAllowableActions(Actor otherActor, String direction, GameMap map) {
         Actions actions = super.getAllowableActions(otherActor, direction, map);
@@ -44,6 +65,18 @@ public class YhormTheGiant extends LordOfCinder{
         return actions;
     }
 
+    /**
+     * Select and return an action to perform on the current turn.
+     *
+     * Overrides LordOfCinder.playTurn()
+     *
+     * @see LordOfCinder#playTurn(Actions, Action, GameMap, Display)
+     * @param actions    collection of possible Actions for this Yhorm
+     * @param lastAction The Action this Yhorm took last turn.
+     * @param map        the map containing the Yhorm
+     * @param display    the I/O object to which messages may be written
+     * @return the Action to be performed
+     */
     @Override
     public Action playTurn(Actions actions, Action lastAction, GameMap map, Display display) {
         if(isStunned){
@@ -61,14 +94,12 @@ public class YhormTheGiant extends LordOfCinder{
     }
 
     /**
-     * @return true if Yhorm is in ember form
+     * Checks if Yhotm is enraged.
+     *
+     * @return true if Yhorm is in ember form, false otherwise
      */
     public boolean isEnraged() {
         ((YhormsGreatMachete)getWeapon()).rageModeTest(this);
         return getHitPoints() < (getMaxHitPoints()/2);
-    }
-
-    public void killed(GameMap map){
-        map.removeActor(this);
     }
 }

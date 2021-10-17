@@ -10,13 +10,20 @@ import game.weapons.activeActions.WindSlash;
  * Storm Ruler class
  *
  * @see edu.monash.fit2099.engine.WeaponItem
+ * @see Charge
+ * @see WindSlash
  * @see game.weapons.Sword
  */
 public class StormRuler extends Sword{
+
     /**
-     * Active actions that Storm Ruler can perform
+     * Charge action that Storm Ruler can perform
      */
     private Charge charge = new Charge(this);
+
+    /**
+     * Wind Slash action that Storm Ruler can perform
+     */
     private WindSlash windSlash = new WindSlash(this);
 
     /**

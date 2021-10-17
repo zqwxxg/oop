@@ -6,6 +6,15 @@ import game.behaviours.AttackBehaviour;
 import game.interfaces.Behaviour;
 import game.weapons.DarkmoonLongbow;
 
+/**
+ * Class representing Aldrich The Devourer
+ *
+ * @see edu.monash.fit2099.engine
+ * @see Application
+ * @see Behaviour
+ * @see AttackBehaviour
+ * @see DarkmoonLongbow
+ */
 public class AldrichTheDevourer extends LordOfCinder{
 
     /**
@@ -18,8 +27,11 @@ public class AldrichTheDevourer extends LordOfCinder{
     }
 
     /**
-     * Returns a collection of the Actions that the otherActor can do to the current Actor.
+     * Returns a collection of the Actions that the otherActor can do to the current Aldrich.
      *
+     * Overrides LordOfCinder.getAllowableActions()
+     *
+     * @see LordOfCinder#getAllowableActions(Actor, String, GameMap)
      * @param otherActor the Actor that might be performing attack
      * @param direction  String representing the direction of the other Actor
      * @param map        current GameMap
@@ -33,9 +45,12 @@ public class AldrichTheDevourer extends LordOfCinder{
     /**
      * Select and return an action to perform on the current turn.
      *
-     * @param actions    collection of possible Actions for this Actor
-     * @param lastAction The Action this Actor took last turn. Can do interesting things in conjunction with Action.getNextAction()
-     * @param map        the map containing the Actor
+     * Overrides LordOfCinder.playTurn()
+     *
+     * @see LordOfCinder#playTurn(Actions, Action, GameMap, Display)
+     * @param actions    collection of possible Actions for this Aldrich
+     * @param lastAction The Action this Aldrich took last turn.
+     * @param map        the map containing the Aldrich
      * @param display    the I/O object to which messages may be written
      * @return the Action to be performed
      */
@@ -59,8 +74,4 @@ public class AldrichTheDevourer extends LordOfCinder{
         }
         return new DoNothingAction();
     }
-
-    /**
-     * @return true if Yhorm is in ember form
-     */
 }

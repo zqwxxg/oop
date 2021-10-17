@@ -16,6 +16,9 @@ import java.util.Random;
  * Class representing a skeleton
  *
  * @see edu.monash.fit2099.engine
+ * @see AttackBehaviour
+ * @see FollowBehaviour
+ * @see WanderBehaviour
  * @see Behaviour
  * @see Resettable
  * @see Status

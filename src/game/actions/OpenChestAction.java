@@ -12,12 +12,17 @@ import java.util.Random;
  * Class to open chest
  *
  * @see edu.monash.fit2099.engine.Action
+ * @see Mimic
+ * @see Chest
+ * @see Dirt
+ * @see Token
  */
 public class OpenChestAction extends Action {
     /**
      * A random number generator
      */
     private Random rand = new Random();
+
     /**
      * The chest we are opening
      */
@@ -25,6 +30,7 @@ public class OpenChestAction extends Action {
 
     /**
      * Constructor
+     *
      * @param chest the chest that we want to open
      */
     public OpenChestAction(Chest chest){
@@ -38,7 +44,7 @@ public class OpenChestAction extends Action {
      *
      * @param actor The actor performing the action.
      * @param map The map the actor is on.
-     * @return
+     * @return a description of the Action suitable for the menu
      */
     @Override
     public String execute(Actor actor, GameMap map) {

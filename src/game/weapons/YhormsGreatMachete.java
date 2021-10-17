@@ -3,6 +3,7 @@ package game.weapons;
 import edu.monash.fit2099.engine.Actor;
 import edu.monash.fit2099.engine.Location;
 import edu.monash.fit2099.engine.WeaponAction;
+import edu.monash.fit2099.engine.WeaponItem;
 import game.Player;
 import game.enemies.YhormTheGiant;
 import game.weapons.activeActions.BurnGround;
@@ -10,7 +11,10 @@ import game.weapons.activeActions.BurnGround;
 /**
  * Yhorm's Great Machete class
  *
- * @see edu.monash.fit2099.engine.WeaponItem
+ * @see edu.monash.fit2099.engine
+ * @see Player
+ * @see YhormTheGiant
+ * @see BurnGround
  * @see game.weapons.Axe
  */
 public class YhormsGreatMachete extends Axe{
@@ -26,6 +30,11 @@ public class YhormsGreatMachete extends Axe{
         emberFormBool = false;
     }
 
+    /**
+     * Checks if the Actor has entered rage mode.
+     *
+     * @param actor the Actor holding this weapon
+     */
     public void rageModeTest(Actor actor){
         if (actor.getClass() == YhormTheGiant.class){
             YhormTheGiant player = (YhormTheGiant)actor;
@@ -44,6 +53,15 @@ public class YhormsGreatMachete extends Axe{
         }
     }
 
+    /**
+     * Checks if this weapon is in ember form each turn.
+     *
+     * Overrides Axe.tick()
+     *
+     * @see Axe#tick(Location)
+     * @param currentLocation The location of the actor carrying this weapon.
+     * @param actor The actor carrying this weapon.
+     */
     @Override
     public void tick(Location currentLocation, Actor actor) {
         if (!emberFormBool){
@@ -51,6 +69,14 @@ public class YhormsGreatMachete extends Axe{
         }
     }
 
+    /**
+     * Return the active skill from the weapon that will be used against one target.
+     *
+     * @see WeaponItem#allowableActions for a self-direction skill instead of using this method (recommendation)
+     * @param target the target actor
+     * @param direction the direction of target, e.g. "north"
+     * @return null by default because a weapon doesn't have any active skill. Otherwise, return a WeaponAction instance.
+     */
     @Override
     public WeaponAction getActiveSkill(Actor target, String direction) {
         if (emberFormBool) {
@@ -58,9 +84,5 @@ public class YhormsGreatMachete extends Axe{
         }else{
             return null;
         }
-    }
-
-    public boolean getEmberFormBool(){
-        return emberFormBool;
     }
 }

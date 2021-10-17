@@ -8,8 +8,17 @@ import game.actions.SwapWeaponAction;
 import game.enums.Abilities;
 
 public class RangedWeapon extends WeaponItem {
+
+    /**
+     * The price of this weapon
+     */
     private int price;
+
+    /**
+     * The range that this weapon can attack
+     */
     private int range;
+
     /**
      * Constructor.
      *
