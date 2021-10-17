@@ -17,6 +17,13 @@ public class BurnGround extends WeaponAction {
      */
     public BurnGround(WeaponItem yhormsGreatMachete){super(yhormsGreatMachete);}
 
+    /**
+     * Perform the Weapon Action.
+     *
+     * @param actor The actor performing the action.
+     * @param map The map the actor is on.
+     * @return a description of what happened that can be displayed to the user.
+     */
     @Override
     public String execute(Actor actor, GameMap map) {
         Dirt tempDirt = new Dirt();
@@ -29,6 +36,11 @@ public class BurnGround extends WeaponAction {
         return menuDescription(actor);
     }
 
+    /**
+     * Returns a descriptive string
+     * @param actor The actor performing the action.
+     * @return the text we put on the menu
+     */
     @Override
     public String menuDescription(Actor actor) {
         return actor + " burns the ground";

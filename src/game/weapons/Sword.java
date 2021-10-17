@@ -25,6 +25,9 @@ public class Sword extends MeleeWeapon {
         super(name, displayChar, damage, verb, hitRate, price);
     }
 
+    /**
+     * @return the damage of sword
+     */
     @Override
     public int damage() {
         if (rand.nextInt(100)<= 20){

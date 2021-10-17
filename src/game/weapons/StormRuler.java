@@ -2,6 +2,7 @@ package game.weapons;
 
 import edu.monash.fit2099.engine.Actor;
 import edu.monash.fit2099.engine.WeaponAction;
+import edu.monash.fit2099.engine.WeaponItem;
 import game.weapons.activeActions.Charge;
 import game.weapons.activeActions.WindSlash;
 
@@ -43,6 +44,14 @@ public class StormRuler extends Sword{
         return damage*2;
     }
 
+    /**
+     * Return the active skill from the weapon that will be used against one target.
+     *
+     * @see WeaponItem#allowableActions for a self-direction skill instead of using this method (recommendation)
+     * @param target the target actor
+     * @param direction the direction of target, e.g. "north"
+     * @return null by default because a weapon doesn't have any active skill. Otherwise, return a WeaponAction instance.
+     */
     @Override
     public WeaponAction getActiveSkill(Actor target, String direction) {
         if(charge.getIsFullyCharge()){

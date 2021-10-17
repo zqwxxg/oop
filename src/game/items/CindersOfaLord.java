@@ -1,10 +1,14 @@
 package game.items;
 
-import edu.monash.fit2099.engine.*;
 import game.enemies.LordOfCinder;
 
+/**
+ * Class representing the cinder of a Lord
+ */
 public class CindersOfaLord extends PortableItem {
-
+    /**
+     * keep track of the owner of this Cinder of Lord
+     */
     private LordOfCinder lordOfCinder;
 
     /***

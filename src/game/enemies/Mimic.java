@@ -5,6 +5,7 @@ import game.behaviours.AttackBehaviour;
 import game.enums.Status;
 import game.grounds.Chest;
 import game.interfaces.Behaviour;
+import game.interfaces.Resettable;
 import game.items.Token;
 import game.weapons.Kicking;
 
@@ -15,7 +16,6 @@ import java.util.Random;
  *
  * @see edu.monash.fit2099.engine.Actor
  * @see game.enemies.Enemies
- * @see game.interfaces.Resettable
  */
 public class Mimic extends Enemies{
     /**
@@ -36,6 +36,15 @@ public class Mimic extends Enemies{
         addCapability(Status.NOT_WEAK_TO_STORM_RULER);
     }
 
+    /**
+     * Select and return an action to perform on the current turn.
+     *
+     * @param actions    collection of possible Actions for this Actor
+     * @param lastAction The Action this Actor took last turn. Can do interesting things in conjunction with Action.getNextAction()
+     * @param map        the map containing the Actor
+     * @param display    the I/O object to which messages may be written
+     * @return the Action to be performed
+     */
     @Override
     public Action playTurn(Actions actions, Action lastAction, GameMap map, Display display) {
         for(Behaviour behaviour:behaviours){
@@ -47,6 +56,14 @@ public class Mimic extends Enemies{
         return new DoNothingAction();
     }
 
+    /**
+     * Allows Mimic to reset abilities, attributes, and items.
+     *
+     * @see Resettable#resetInstance(GameMap, Status, String)
+     * @param map the map the Mimic is on
+     * @param status the status of the action that triggers reset
+     * @param direction the direction of the object that triggers reset
+     */
     @Override
     public void resetInstance(GameMap map, Status status, String direction) {
         if (status == Status.ENEMIES_KILLED) {
@@ -69,6 +86,11 @@ public class Mimic extends Enemies{
         }
     }
 
+    /**
+     * Allow Mimic to get his weapon
+     *
+     * @return Mimic's weapon
+     */
     @Override
     public Weapon getWeapon() {
         return new Kicking();

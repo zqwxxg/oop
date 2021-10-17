@@ -28,6 +28,11 @@ public class TradeCinderOfLordAction extends Action {
      */
     private WeaponItem weapon;
 
+    /**
+     * Constructor
+     *
+     * @param lordOfCinder we are trading this lordOfCinder's cinder of lord
+     */
     public TradeCinderOfLordAction(LordOfCinder lordOfCinder){
         this.lordOfCinder = lordOfCinder;
         if(lordOfCinder.getClass()==YhormTheGiant.class){
@@ -37,6 +42,15 @@ public class TradeCinderOfLordAction extends Action {
         }
     }
 
+    /**
+     * Allow player to trade Cinder of Lord
+     *
+     * Overrides Action.execute()
+     *
+     * @param actor The actor performing the action.
+     * @param map The map the actor is on.
+     * @return
+     */
     @Override
     public String execute(Actor actor, GameMap map) {
         Player player = (Player)actor;
@@ -59,6 +73,15 @@ public class TradeCinderOfLordAction extends Action {
         return  ret;
     }
 
+    /**
+     * Returns the key used in the menu to trigger this Action.
+     *
+     * Overrides Action.menuDescription()
+     *
+     * @see Action#menuDescription(Actor)
+     * @param actor The actor who is performing the action
+     * @return a String
+     */
     @Override
     public String menuDescription(Actor actor) {
         return actor.toString() + " trades Cinder of " + lordOfCinder.toString();

@@ -18,6 +18,13 @@ public class WindSlash extends WeaponAction {
      */
     public WindSlash(StormRuler stormRuler){super(stormRuler);};
 
+    /**
+     * Perform the Weapon Action.
+     *
+     * @param actor The actor performing the action.
+     * @param map The map the actor is on.
+     * @return a description of what happened that can be displayed to the user.
+     */
     @Override
     public String execute(Actor actor, GameMap map) {
         String result = "";
@@ -38,6 +45,11 @@ public class WindSlash extends WeaponAction {
         return result;
     }
 
+    /**
+     * Returns a descriptive string
+     * @param actor The actor performing the action.
+     * @return the text we put on the menu
+     */
     @Override
     public String menuDescription(Actor actor) {
         return actor + " performs Wind Slash" ;

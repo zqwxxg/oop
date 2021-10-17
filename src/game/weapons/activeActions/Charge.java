@@ -34,6 +34,13 @@ public class Charge extends WeaponAction {
         return isFullyCharge;
     }
 
+    /**
+     * Perform the Weapon Action.
+     *
+     * @param actor The actor performing the action.
+     * @param map The map the actor is on.
+     * @return a description of what happened that can be displayed to the user.
+     */
     public String execute(Actor actor, GameMap map) {
         menuDescription(actor);
         String ret = "";
@@ -51,6 +58,11 @@ public class Charge extends WeaponAction {
         return ret;
     }
 
+    /**
+     * Returns a descriptive string
+     * @param actor The actor performing the action.
+     * @return the text we put on the menu
+     */
     public String menuDescription(Actor actor) {
         return actor + " charges " + weapon.toString();
     }

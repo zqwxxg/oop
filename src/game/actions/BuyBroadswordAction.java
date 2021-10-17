@@ -13,8 +13,20 @@ import java.util.List;
  * @see edu.monash.fit2099.engine.Action
  */
 public class BuyBroadswordAction extends Action {
+    /**
+     * The type of weapon we are buying
+     */
     private MeleeWeapon weapon = new Broadsword();
 
+    /**
+     * Allow player to buy Broadsword from Vendor
+     *
+     * Overrides Action.execute()
+     *
+     * @param actor The actor performing the action.
+     * @param map The map the actor is on.
+     * @return
+     */
     @Override
     public String execute(Actor actor, GameMap map) {
         Player player = (Player)actor;
@@ -37,6 +49,15 @@ public class BuyBroadswordAction extends Action {
         return ret;
     }
 
+    /**
+     * Returns the key used in the menu to trigger this Action.
+     *
+     * Overrides Action.menuDescription()
+     *
+     * @see Action#menuDescription(Actor)
+     * @param actor The actor who is performing the action
+     * @return a String
+     */
     @Override
     public String menuDescription(Actor actor) {
         return actor.toString() + " buys " + weapon.toString() + " (" + weapon.getPrice() + " souls)";
