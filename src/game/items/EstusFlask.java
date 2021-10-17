@@ -1,10 +1,14 @@
 package game.items;
 
-import edu.monash.fit2099.engine.GameMap;
 import edu.monash.fit2099.engine.Item;
 import game.enums.Abilities;
-import game.interfaces.Resettable;
 
+/**
+ * Class representing an estus flask
+ *
+ * @see edu.monash.fit2099.engine
+ * @see Abilities
+ */
 public class EstusFlask extends Item {
 
     /***
@@ -27,7 +31,7 @@ public class EstusFlask extends Item {
     /**
      * Returns the charge count of EstusFlask.
      *
-     * @return
+     * @return the charge count
      */
     public int getChargeCount() {
         return chargeCount;
