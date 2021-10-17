@@ -39,6 +39,7 @@ public class Vendor extends Actor {
                 actions.add(new TradeCinderOfLordAction(lordOfCinder));
             }
         }
+
         return actions;
     }
 

@@ -12,7 +12,7 @@ import game.enums.Status;
 public class Floor extends Ground {
 
     /**
-     * Constructor
+     * Constructor.
      *
      * All floors are represented by '_'
      */
@@ -20,6 +20,15 @@ public class Floor extends Ground {
         super('_');
     }
 
+    /**
+     * Allows Actor other than Enemies to enter.
+     *
+     * Overrides Ground.canActorEnter()
+     *
+     * @see Ground#canActorEnter(Actor)
+     * @param actor the Actor to check
+     * @return true if Actor is not Enemies, false otherwise
+     */
     @Override
     public boolean canActorEnter(Actor actor) {
         // allow only actor that has this capability to enter (player and npc),

@@ -7,6 +7,7 @@ import game.Player;
 import game.enemies.Enemies;
 import game.enemies.LordOfCinder;
 import game.enemies.YhormTheGiant;
+import game.enums.Abilities;
 import game.enums.Status;
 import game.weapons.StormRuler;
 import game.weapons.YhormsGreatMachete;
@@ -41,20 +42,28 @@ public class AttackAction extends Action {
 		this.direction = direction;
 	}
 
+	/**
+	 * Perform the Action.
+	 *
+	 * @param actor The actor performing the action.
+	 * @param map The map the actor is on.
+	 * @return a description of what happened that can be displayed to the user.
+	 */
 	@Override
 	public String execute(Actor actor, GameMap map) {
 
+		Random random = new Random();
 		Weapon weapon = actor.getWeapon();
 
 		if (!(rand.nextInt(100) <= weapon.chanceToHit())) {
 			return actor + " misses " + target + ".";
 		}
 
-		if (actor.getClass() == new YhormTheGiant().getClass() && ((YhormTheGiant) actor).isEnraged()) {
+		if (actor.getClass() == YhormTheGiant.class && ((YhormTheGiant) actor).isEnraged()) {
 			actor.getWeapon().getActiveSkill(target, direction).execute(actor, map);
 		}
 
-		if (target.getClass() == new YhormTheGiant().getClass()) {
+		if (target.getClass() == YhormTheGiant.class) {
 			((YhormsGreatMachete) target.getWeapon()).rageModeTest((YhormTheGiant) target);
 		}
 
@@ -62,9 +71,14 @@ public class AttackAction extends Action {
 
 		//Storm Ruler passive action (dullness)
 		if (target.hasCapability(Status.NOT_WEAK_TO_STORM_RULER) && (weapon.getClass() == StormRuler.class)) {
-            damage = weapon.damage();
+			damage = weapon.damage();
 			damage /= 2;
 		}
+
+		if (!actor.hasCapability(Status.UNARMED))
+			if (((WeaponItem)actor.getWeapon()).hasCapability(Abilities.RANGED)){
+				return new RangedAttackAction(target, direction).execute(actor, map);
+			}
 
 		String result = actor + " " + weapon.verb() + " " + target + " for " + damage + " damage.";
 		target.hurt(damage);
@@ -76,7 +90,7 @@ public class AttackAction extends Action {
 			for (Action drop : dropActions)
 				drop.execute(target, map);
 			// if the dead target can trigger soft reset, means the target is player
-			if (target.hasCapability(Status.SOFT_RESET)) {
+			if (target.hasCapability(Abilities.PLAYER)) {
 				// if player is killed by enemies, no need to modify new location of token
 				Action resetAction = new SoftResetAction(null);
 				result += System.lineSeparator() + resetAction.execute(actor, map);
@@ -98,6 +112,12 @@ public class AttackAction extends Action {
 		return result;
 	}
 
+	/**
+	 * Returns the key used in the menu to trigger this Action.
+	 *
+	 * @param actor The actor who is performing the action
+	 * @return The key we use for this Action in the menu, or null to have it assigned for you.
+	 */
 	public String menuDescription(Actor actor) {
 		// only returns menu description when player attacks enemies
 		String result = actor + " attacks " + target;

@@ -33,11 +33,11 @@ public class RetrieveSoulAction extends PickUpItemAction {
     public String execute(Actor actor, GameMap map) {
         map.locationOf(actor).removeItem(item);
         actor.addItemToInventory(item);
-        return actor + " retrieved souls(" + ((Token)item).getSoulCount() + " souls)";
+        return actor + " retrieved souls (" + ((Token)item).getSoulCount() + " souls)";
     }
 
     @Override
     public String menuDescription(Actor actor){
-        return actor + " retrieve souls(" + ((Token)item).getSoulCount() + " souls)";
+        return actor + " retrieve souls (" + ((Token)item).getSoulCount() + " souls)";
     }
 }

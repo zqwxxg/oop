@@ -19,26 +19,35 @@ import game.enums.Status;
 public class RestAction extends Action {
 
     /**
-     * The direction of bonfire
+     * The direction of the actor that is currently acting on this bonfire
      */
-    protected String direction;
+    private String direction;
 
     /**
      * The key used in the menu to trigger this Action.
      */
-    protected String hotkey;
+    private String bonfireName;
 
     /**
      * Constructor
      *
-     * @param direction the direction of bonfire
-     * @param hotkey the key used in the menu to trigger this Action.
+     * @param direction the direction of the actor that is currently acting on this bonfire
      */
-    public RestAction(String direction, String hotkey) {
+    public RestAction(String direction, String bonfireName) {
         this.direction = direction;
-        this.hotkey = hotkey;
+        this.bonfireName = bonfireName;
     }
 
+    /**
+     * Allow the actor to rest.
+     *
+     * Overrides Action.execute()
+     *
+     * @see Action#execute(Actor, GameMap)
+     * @param actor The actor performing the action.
+     * @param map The map the actor is on.
+     * @return a description of the Action suitable for the menu
+     */
     @Override
     public String execute(Actor actor, GameMap map) {
         ResetManager resetManager = ResetManager.getInstance();
@@ -46,13 +55,17 @@ public class RestAction extends Action {
         return menuDescription(actor);
     }
 
+    /**
+     * Returns the key used in the menu to trigger this Action.
+     *
+     * Overrides Action.menuDescription()
+     *
+     * @see Action#menuDescription(Actor)
+     * @param actor The actor who is performing the action
+     * @return a String. e.g. "Rest at Anor Londo's Bonfire"
+     */
     @Override
     public String menuDescription(Actor actor) {
-        return "Rest at Firelink Shrine's Bonfire";
-    }
-
-    @Override
-    public String hotkey() {
-        return hotkey;
+        return "Rest at " + bonfireName;
     }
 }

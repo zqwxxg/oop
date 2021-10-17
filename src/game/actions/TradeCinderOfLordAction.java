@@ -1,16 +1,12 @@
 package game.actions;
 
-import edu.monash.fit2099.engine.Action;
-import edu.monash.fit2099.engine.Actor;
-import edu.monash.fit2099.engine.GameMap;
-import edu.monash.fit2099.engine.Item;
+import edu.monash.fit2099.engine.*;
 import game.Player;
 import game.enemies.AldrichTheDevourer;
 import game.enemies.LordOfCinder;
 import game.enemies.YhormTheGiant;
 import game.items.CindersOfaLord;
 import game.weapons.DarkmoonLongbow;
-import game.weapons.MeleeWeapon;
 import game.weapons.YhormsGreatMachete;
 
 import java.util.List;
@@ -30,7 +26,7 @@ public class TradeCinderOfLordAction extends Action {
     /**
      * the lord of cinder's weapon
      */
-    private MeleeWeapon weapon;
+    private WeaponItem weapon;
 
     public TradeCinderOfLordAction(LordOfCinder lordOfCinder){
         this.lordOfCinder = lordOfCinder;
@@ -59,7 +55,7 @@ public class TradeCinderOfLordAction extends Action {
                 break; }
         }
         actor.addItemToInventory(weapon); //add new weapon
-        ret += actor.toString() + " traded Cinder of " + lordOfCinder.toString() + " for " + weapon.toString();
+        ret += actor + " traded Cinder of " + lordOfCinder.toString() + " for " + weapon.toString();
         return  ret;
     }
 

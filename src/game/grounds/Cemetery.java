@@ -23,20 +23,37 @@ public class Cemetery extends Ground {
     private Random random = new Random();
 
     /**
-     * Constructor
+     * Constructor.
      *
-     * All cemeteries are displayed as 'C'
+     * All cemeteries are displayed as 'C'.
      */
     public Cemetery() {
         super('C');
     }
 
+    /**
+     * Allows Undead to enter.
+     *
+     * Overrides Ground.canActorEnter()
+     *
+     * @see Ground#canActorEnter(Actor)
+     * @param actor the Actor to check
+     * @return true if Actor is Undead, false otherwise
+     */
     @Override
     public boolean canActorEnter(Actor actor) {
         // allow only undead to be spawned here, other actors cannot enter
         return actor.hasCapability(Status.SPAWN_UNDEAD);
     }
 
+    /**
+     * Allows Cemetery to spawn Undead on each turn.
+     *
+     * Overrides Ground.tick()
+     *
+     * @see Ground#tick(Location)
+     * @param location The location of the Cemetery
+     */
     @Override
     public void tick(Location location) {
         // 25/100 = 1/4

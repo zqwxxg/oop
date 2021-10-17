@@ -5,6 +5,7 @@ import edu.monash.fit2099.engine.DropItemAction;
 import edu.monash.fit2099.engine.PickUpItemAction;
 import edu.monash.fit2099.engine.WeaponItem;
 import game.actions.SwapWeaponAction;
+import game.enums.Abilities;
 
 public class MeleeWeapon extends WeaponItem {
     private int price;
@@ -19,10 +20,12 @@ public class MeleeWeapon extends WeaponItem {
      */
     public MeleeWeapon(String name, char displayChar, int damage, String verb, int hitRate) {
         super(name, displayChar, damage, verb, hitRate);
+        addCapability(Abilities.MELEE);
     }
 
     public MeleeWeapon(String name, char displayChar, int damage, String verb, int hitRate, int price) {
         super(name, displayChar, damage, verb, hitRate);
+        addCapability(Abilities.MELEE);
         this.price = price;
     }
 
@@ -36,5 +39,10 @@ public class MeleeWeapon extends WeaponItem {
     @Override
     public DropItemAction getDropAction(Actor actor) {
         return null;
+    }
+
+    @Override
+    public boolean hasCapability(Enum<?> capability) {
+        return super.hasCapability(capability);
     }
 }

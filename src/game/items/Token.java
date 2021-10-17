@@ -9,6 +9,7 @@ import game.interfaces.Soul;
  *
  * @see edu.monash.fit2099.engine
  * @see Player
+ * @see RetrieveSoulAction
  * @see Soul
  */
 
@@ -17,13 +18,7 @@ public class Token extends PortableItem implements Soul {
     /**
      * The count of souls
      */
-//    private static int soulCount;
-     private int soulCount;
-
-//    /**
-//     * A token instance
-//     */
-//    private static Token tokenInstantiated;
+    private int soulCount;
 
     /***
      * Constructor.
@@ -35,31 +30,37 @@ public class Token extends PortableItem implements Soul {
         this.soulCount = soulCount;
     }
 
+    /**
+     * Returns the soul count of the Token.
+     *
+     * @return an integer representing soul count
+     */
     public int getSoulCount() {
         return soulCount;
     }
 
-    //    /**
-//     * Replaces the zero-parameter constructor and creates an instance of Token
-//     *
-//     * @return a new instance of Token if there is no Token instantiated, the instantiated Token otherwise
-//     */
-//    public static Token getInstance() {
-//        soulCount = 0;
-//        // since only one token is allowed to exist, if there is no token instantiated,
-//        // return a new token instance, else return the instantiated token
-//        // note that token instantiated is static
-//        if (tokenInstantiated == null) {
-//            tokenInstantiated = new Token();
-//        }
-//        return tokenInstantiated;
-//    }
-
+    /**
+     * Transfer current token's souls to another Soul instance.
+     *
+     * Overrides Soul.transferSouls()
+     *
+     * @see Soul#transferSouls(Soul)
+     * @param soulObject a target soul object.
+     */
     @Override
     public void transferSouls(Soul soulObject) {
         soulObject.addSouls(soulCount);
     }
 
+    /**
+     * Adds souls to current instance's souls.
+     *
+     * Overrides Soul.addSouls()
+     *
+     * @see Soul#addSouls(int)
+     * @param souls number of souls to be incremented.
+     * @return transaction status. True if addition successful, otherwise False.
+     */
     @Override
     public boolean addSouls(int souls) {
         if (souls >= 0) {
@@ -71,6 +72,15 @@ public class Token extends PortableItem implements Soul {
         }
     }
 
+    /**
+     * Deducts souls from current instance's souls.
+     *
+     * Overrides Soul.subtractSouls()
+     *
+     * @see Soul#subtractSouls(int)
+     * @param souls number of souls to be decremented.
+     * @return transaction status. True if subtraction successful, otherwise False.
+     */
     @Override
     public boolean subtractSouls(int souls) {
         if (souls >= 0) {
@@ -82,6 +92,16 @@ public class Token extends PortableItem implements Soul {
         }
     }
 
+    /**
+     * Removes a Token from the inventory of the Actor.
+     * This method is called once per turn, if the Token is being carried.
+     *
+     * Overrides PortableItem.tick()
+     *
+     * @see PortableItem#tick(Location)
+     * @param currentLocation The location of the actor carrying this Token.
+     * @param actor The actor carrying this Token.
+     */
     @Override
     public void tick(Location currentLocation, Actor actor) {
         transferSouls((Player) actor);
@@ -90,14 +110,29 @@ public class Token extends PortableItem implements Soul {
         actor.removeItemFromInventory(this);
     }
 
+    /**
+     * Creates and returns an action to retrieve the Token's souls.
+     *
+     * Overrides PortableItem.getPickUpAction
+     *
+     * @see PortableItem#getPickUpAction(Actor)
+     * @param actor an actor that will interact with this item
+     * @return a new RetrieveSoulAction
+     */
     @Override
     public PickUpItemAction getPickUpAction(Actor actor) {
-        if(portable)
-            return new RetrieveSoulAction(this);
-
-        return null;
+        return new RetrieveSoulAction(this);
     }
 
+    /**
+     * Returns null since we cannot drop Token.
+     *
+     * Overrides PortableItem.getDropAction()
+     *
+     * @see PortableItem#getDropAction(Actor)
+     * @param actor an actor that will interact with this item
+     * @return null
+     */
     @Override
     public DropItemAction getDropAction(Actor actor) {
         // cannot drop token

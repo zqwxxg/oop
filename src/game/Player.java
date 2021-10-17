@@ -1,7 +1,7 @@
 package game;
 
 import edu.monash.fit2099.engine.*;
-import game.actions.OpenChestAction;
+import game.actions.RangedAttackAction;
 import game.enums.Abilities;
 import game.enums.Status;
 import game.interfaces.Resettable;
@@ -9,7 +9,7 @@ import game.interfaces.Soul;
 import game.items.EstusFlask;
 import game.items.Token;
 import game.weapons.Broadsword;
-import game.weapons.StormRuler;
+import game.weapons.RangedWeapon;
 
 import java.util.List;
 
@@ -17,6 +17,7 @@ import java.util.List;
  * Class representing the Player.
  *
  * @see edu.monash.fit2099.engine
+ * @see RangedAttackAction
  * @see Abilities
  * @see Status
  * @see Resettable
@@ -24,6 +25,7 @@ import java.util.List;
  * @see EstusFlask
  * @see Token
  * @see Broadsword
+ * @see RangedWeapon
  * @see List
  */
 public class Player extends Actor implements Soul, Resettable {
@@ -46,7 +48,12 @@ public class Player extends Actor implements Soul, Resettable {
 	/**
 	 * The location of the last token
 	 */
-	private Location lastToken;
+	private Location lastTokenLocation;
+
+	/**
+	 * The Token instance of last token
+	 */
+	private Token lastToken;
 
 	/**
 	 * Constructor.
@@ -58,9 +65,8 @@ public class Player extends Actor implements Soul, Resettable {
 	public Player(String name, char displayChar, int hitPoints) {
 		super(name, displayChar, hitPoints);
 		soulCount = 0;
+		this.addCapability(Abilities.PLAYER);
 		this.addCapability(Status.HOSTILE_TO_ENEMY);
-		this.addCapability(Status.REST);
-		this.addCapability(Status.SOFT_RESET);
 		this.addCapability(Status.ENTER_FLOOR);
 		registerInstance();
 		inventory.add(new EstusFlask("Estus Flask", 'e', false));
@@ -76,6 +82,15 @@ public class Player extends Actor implements Soul, Resettable {
 		this.lastBonfire = lastBonfire;
 	}
 
+	/**
+	 * Select and return an action to perform on the current turn.
+	 *
+	 * @param actions    collection of possible Actions for this Actor
+	 * @param lastAction The Action this Actor took last turn. Can do interesting things in conjunction with Action.getNextAction()
+	 * @param map        the map containing the Actor
+	 * @param display    the I/O object to which messages may be written
+	 * @return the Action to be performed
+	 */
 	@Override
 	public Action playTurn(Actions actions, Action lastAction, GameMap map, Display display) {
 		// Handle multi-turn Actions
@@ -84,16 +99,54 @@ public class Player extends Actor implements Soul, Resettable {
 
 		display.println("Unkindled (" + hitPoints + "/" + maxHitPoints + "), holding " + getWeapon() + ", " + soulCount + " souls");
 		actions.add(new drinkEstusFlaskAction());
+
+		// Handles Ranged Weapons
+		if (((Item)this.getWeapon()).hasCapability(Abilities.RANGED)){
+			Location here = map.locationOf(this);
+			for (int counter=0; counter < Application.enemiesList.size(); counter++){
+				int range = ((RangedWeapon)this.getWeapon()).getRange();
+				if (map.locationOf(Application.enemiesList.get(counter)) != null) {
+					if (Math.round(Math.sqrt(Math.pow(
+							map.locationOf(Application.enemiesList.get(counter)).x() - here.x()
+							, 2) + Math.pow(map.locationOf(Application.enemiesList.get(counter)).y() - here.y(), 2))) <= range || ((map.locationOf(Application.enemiesList.get(counter)).y()- here.y() > 1) && Math.round(Math.sqrt(Math.pow(
+							map.locationOf(Application.enemiesList.get(counter)).x() - here.x()
+							, 2) + Math.pow(map.locationOf(Application.enemiesList.get(counter)).y() - here.y(), 2))) <= range + 1) || ((map.locationOf(Application.enemiesList.get(counter)).x()- here.x() > 1) && Math.round(Math.sqrt(Math.pow(
+							map.locationOf(Application.enemiesList.get(counter)).x() - here.x()
+							, 2) + Math.pow(map.locationOf(Application.enemiesList.get(counter)).y() - here.y(), 2))) <= range + 1)) {
+						actions.add(new RangedAttackAction(Application.enemiesList.get(counter), ""));
+					}
+				}else{
+					Application.enemiesList.remove(counter);
+				}
+			}
+		}
 		// return/print the console menu
 		return menu.showMenu(this, actions, display);
 	}
 
+	/**
+	 * Transfer Player's souls to another Soul instance.
+	 *
+	 * Overrides Soul.transferSouls()
+	 *
+	 * @see Soul#transferSouls(Soul)
+	 * @param soulObject a target soul object.
+	 */
 	@Override
 	public void transferSouls(Soul soulObject) {
 		soulObject.addSouls(soulCount);
 		soulCount = 0;
 	}
 
+	/**
+	 * Adds souls to current instance's souls.
+	 *
+	 * Overrides Soul.transferSouls()
+	 *
+	 * @see Soul#addSouls(int)
+	 * @param souls number of souls to be incremented.
+	 * @return transaction status. True if addition successful, otherwise False.
+	 */
 	@Override
 	public boolean addSouls(int souls) {
 		if (souls >= 0) {
@@ -105,6 +158,15 @@ public class Player extends Actor implements Soul, Resettable {
 		}
 	}
 
+	/**
+	 * Deducts souls from current instance's souls.
+	 *
+	 * Overrides Soul.subtractSouls()
+	 *
+	 * @see Soul#subtractSouls(int)
+	 * @param souls number of souls to be decremented.
+	 * @return transaction status. True if addition successful, otherwise False.
+	 */
 	@Override
 	public boolean subtractSouls(int souls) {
 		if (soulCount >= souls && souls >= 0) {
@@ -117,6 +179,16 @@ public class Player extends Actor implements Soul, Resettable {
 
 	}
 
+	/**
+	 * Allows Player to reset abilities, attributes, and items.
+	 *
+	 * Overrides Resettable.resetInstance()
+	 *
+	 * @see game.interfaces.Resettable#resetInstance(GameMap, Status, String)
+	 * @param map the map the Player is on
+	 * @param status the status of the action that triggers reset
+	 * @param direction the direction of the object that triggers reset
+	 */
 	@Override
 	public void resetInstance(GameMap map,Status status, String direction) {
 		hitPoints = maxHitPoints;
@@ -210,23 +282,48 @@ public class Player extends Actor implements Soul, Resettable {
 				transferSouls(token);
 				location.addItem(token);
 				// if the location of last token is not null, which means token has been placed on map,
-				if (lastToken != null) {
+				if (lastTokenLocation != null) {
 					// remove it from the map
-					lastToken.removeItem(token);
+					lastTokenLocation.removeItem(lastToken);
 				}
-				lastToken = location;
+				lastToken = token;
+				lastTokenLocation = location;
 				map.moveActor(this, lastBonfire);
 			}
 		}
 	}
 
+	/**
+	 * A useful method to clean up the list of instances in the ResetManager class
+	 *
+	 * Overrides Resettable.isExist()
+	 *
+	 * @see Resettable#isExist(GameMap)
+	 * @param map the map the Player is on
+	 * @return the existence of the Player in the game.
+	 * for example, true to keep it permanent, or false if Player needs to be removed from the reset list.
+	 */
 	@Override
 	public boolean isExist(GameMap map) {
 		return map.contains(this);
 	}
 
+	/**
+	 * Special action for player to drink estus flask.
+	 */
 	private class drinkEstusFlaskAction extends Action{
 		EstusFlask est;
+
+		/**
+		 * Allow Player to drink an estus flask.
+		 *
+		 * Overrides Action.execute()
+		 *
+		 * @see Action#execute(Actor, GameMap)
+		 * @param actor The Player performing the action.
+		 * @param map The map the Player is on.
+		 * @return a description of the Action suitable for the menu
+		 */
 		@Override
 		public String execute(Actor actor, GameMap map) {
 
@@ -249,6 +346,12 @@ public class Player extends Actor implements Soul, Resettable {
 
 		}
 
+		/**
+		 * Returns the key used in the menu to trigger this Action.
+		 *
+		 * @param actor The Player who is performing the action
+		 * @return a String. e.g. "Drink from Estus FLask 3 charges remaining"
+		 */
 		@Override
 		public String menuDescription(Actor actor) {
 			List<Item> tempList = getInventory();

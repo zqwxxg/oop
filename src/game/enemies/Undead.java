@@ -15,8 +15,6 @@ import java.util.Random;
  * @see edu.monash.fit2099.engine
  * @see UndeadDieAction
  * @see Behaviour
- * @see AttackBehaviour
- * @see WanderBehaviour
  * @see Status
  * @see Random
  */
@@ -46,6 +44,18 @@ public class Undead extends Enemies {
 		addCapability(Status.NOT_WEAK_TO_STORM_RULER);
 	}
 
+	/**
+	 * Select and return an action from list of behaviours to perform on the current turn.
+	 *
+	 * Overrides Enemies.playTurn()
+	 *
+	 * @see Enemies#playTurn(Actions, Action, GameMap, Display)
+	 * @param actions    collection of possible Actions for this Undead
+	 * @param lastAction The Action this Undead took last turn.
+	 * @param map        the map containing the Undead
+	 * @param display    the I/O object to which messages may be written
+	 * @return the Action to be performed
+	 */
 	@Override
 	public Action playTurn(Actions actions, Action lastAction, GameMap map, Display display) {
 		// loop through all behaviours
@@ -69,11 +79,29 @@ public class Undead extends Enemies {
 		return new DoNothingAction();
 	}
 
+	/**
+	 * Allows Undead to reset abilities, attributes, and items.
+	 *
+	 * Overrides Resettable.resetInstance()
+	 *
+	 * @see game.interfaces.Resettable#resetInstance(GameMap, Status, String)
+	 * @param map the map the Undead is on
+	 * @param status the status of the action that triggers reset
+	 * @param direction the direction of the object that triggers reset
+	 */
 	@Override
 	public void resetInstance(GameMap map, Status status, String direction) {
 		map.removeActor(this);
 	}
 
+	/**
+	 * Creates and returns an intrinsic weapon.
+	 *
+	 * Overrides Enemies.getIntrinsicWeapon()
+	 *
+	 * @see Enemies#getIntrinsicWeapon()
+	 * @return a freshly-instantiated IntrinsicWeapon
+	 */
 	@Override
 	public IntrinsicWeapon getIntrinsicWeapon() {
 		// undead has 20 base attack hit points

@@ -3,6 +3,7 @@ package game.actions;
 import edu.monash.fit2099.engine.*;
 import game.Player;
 import game.enemies.Enemies;
+import game.enums.Abilities;
 import game.enums.Status;
 import game.weapons.StormRuler;
 
@@ -44,8 +45,7 @@ public class WindSlashAction extends AttackAction{
             for (Action drop : dropActions)
                 drop.execute(target, map);
             // remove actor
-            if (target.hasCapability(Status.SOFT_RESET)) {
-                // if player is killed by enemies, no need to modify new location of token
+            if (target.hasCapability(Abilities.PLAYER)) {
                 Action resetAction = new SoftResetAction(null);
                 result += System.lineSeparator() + resetAction.execute(actor, map);
             }
