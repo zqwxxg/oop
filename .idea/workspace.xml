@@ -19,12 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3aa9d59-9250-4300-8054-50e53ba8fe1f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/game/actions/BuyBroadswordAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/BuyBroadswordAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/actions/OpenChestAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/OpenChestAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/actions/TradeCinderOfLordAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/actions/TradeCinderOfLordAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/enemies/Mimic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/enemies/Mimic.java" afterDir="false" />
-    </list>
+    <list default="true" id="a3aa9d59-9250-4300-8054-50e53ba8fe1f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -257,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634391942847</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Added all the java doc for my part">
+      <created>1634462762186</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1634462762186</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -288,8 +290,15 @@
     <MESSAGE value="Implemented requirement 1 &amp; 2. Added Abilities.PLAYER and changed Status.REST, Status.SOFT_RESET to this in Player, AttackAction, WindSlashAction, Valley classes. Removed hotkey but added bonfireName parameter at the constructor of RestAction class." />
     <MESSAGE value="Merged with anson's code. Created Anor Londo map." />
     <MESSAGE value="Updated RangedAttackAction. Merged with zhien's code. Fix error of getting weapon for unarmed enemies in AttackAction. Added Token attribute in Player and fix error in resetInstance()." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated RangedAttackAction. Merged with zhien's code. Fix error of getting weapon for unarmed enemies in AttackAction. Added Token attribute in Player and fix error in resetInstance()." />
+    <MESSAGE value="Added all the java doc for my part" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added all the java doc for my part" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1634462784662">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1634462784662" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
