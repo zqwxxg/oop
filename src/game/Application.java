@@ -17,7 +17,7 @@ import game.grounds.Chest;
 import game.weapons.StormRuler;
 
 /**
- * The main class for the Jurassic World game. 
+ * The main class for the Jurassic World game.
  *
  */
 public class Application {
@@ -91,9 +91,7 @@ public class Application {
 		GameMap anorLondo = new GameMap(groundFactory, anorLondoMap);
 		world.addGameMap(anorLondo);
 
-		//testing changes
-		//player wep, hp
-		Player player = new Player("Unkindled (Player)", '@', 10055);
+		Player player = new Player("Unkindled (Player)", '@', 100);
 		world.addPlayer(player, profaneCapital.at(38, 12));
 
 		BonfireManager bonfireManager = new BonfireManager();
